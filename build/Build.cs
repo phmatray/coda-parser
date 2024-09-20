@@ -35,6 +35,9 @@ class Build : NukeBuild
     
     AbsolutePath OutputDirectory
         => RootDirectory / "output";
+    
+    AbsolutePath ChangelogFile
+        => RootDirectory / "CHANGELOG.md";
 
     public static int Main()
         => Execute<Build>(x => x.Pack);
@@ -72,6 +75,38 @@ class Build : NukeBuild
                 .SetConfiguration(Configuration)
                 .EnableNoBuild()
                 .EnableNoRestore());
+        });
+    
+    Target GenerateChangelog => _ => _
+        // .DependsOn(Test)
+        .Executes(() =>
+        {
+            // Ensure NPM is installed
+            if (NpmTasks.NpmPath.IsEmpty())
+            {
+                throw new Exception("NPM is not installed. Please install Node.js and NPM.");
+            }
+           
+            // Ensure git-cliff is installed
+            // You can install git-cliff as a dev dependency or ensure it's available in PATH
+            // Here, we assume git-cliff is installed and available in PATH
+
+            Log.Information("Generating CHANGELOG.md using git-cliff...");
+
+            // Paths
+            var gitCliffConfigPath = RootDirectory / "cliff.toml";
+            var gitCliffOutputPath = ChangelogFile;
+
+            // Check if config file exists
+            if (!gitCliffConfigPath.FileExists())
+            {
+                throw new Exception($"Configuration file not found: {gitCliffConfigPath}");
+            }
+
+            // Run git-cliff command
+            ProcessTasks.StartProcess("git-cliff", $"--config {gitCliffConfigPath} --output {gitCliffOutputPath}");
+
+            Log.Information("CHANGELOG.md generated successfully.");
         });
 
     Target Pack => _ => _
