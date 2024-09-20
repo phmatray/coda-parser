@@ -2,9 +2,13 @@
 
 ## [unreleased]
 
+### 📚 Documentation
+
+- Update README.md - ([05f5c7d](https://github.com/phmatray/coda-parser/commit/05f5c7d172500c09a4c9daa29894dd38eac54236))
+
 ### ⚙️ Miscellaneous Tasks
 
-- Amend commit with the updated CHANGELOG.md - ([cf8b9c1](https://github.com/phmatray/coda-parser/commit/cf8b9c1f5a4b2190b32eee553a322ba7d42e33bb))
+- Amend commit with the updated CHANGELOG.md - ([126dd56](https://github.com/phmatray/coda-parser/commit/126dd56a99f9196097e5a25a68a113981dce0a54))
 - Add version to the library from Build.cs - ([f29b9b2](https://github.com/phmatray/coda-parser/commit/f29b9b2887e5cf6916b86a8fde1da38d77b724fc))
 - Include CHANGELOG.md in the NuGet package - ([a41ab79](https://github.com/phmatray/coda-parser/commit/a41ab796307475e4f7fdad30c7a767d1ed4d0391))
 - Generate CHANGELOG.md using git-cliff - ([141058e](https://github.com/phmatray/coda-parser/commit/141058e8c6484b5207f64a7634fec421be9cc4c2))
