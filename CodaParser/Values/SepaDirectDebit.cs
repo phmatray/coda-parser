@@ -6,7 +6,7 @@ public class SepaDirectDebit
     {
         Helpers.ValidateStringMultipleLengths(value, new[] { 50, 70 }, "SepaDirectDebit");
 
-        SettlementDate = new Date(value.Substring(0, 6));
+        SettlementDate = new Date(value[..6]);
         Type = int.Parse(value.Substring(6, 1));
         Scheme = int.Parse(value.Substring(7, 1));
         PaidReason = int.Parse(value.Substring(8, 1));

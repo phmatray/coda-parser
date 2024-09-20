@@ -27,7 +27,7 @@ public static class Helpers
     /// <returns>The date in the format <c>yyyy-MM-dd</c>.</returns>
     public static string FormatDateString(string dateCoda)
     {
-        return "20" + dateCoda.Substring(4, 2) + "-" + dateCoda.Substring(2, 2) + "-" + dateCoda.Substring(0, 2);
+        return "20" + dateCoda.Substring(4, 2) + "-" + dateCoda.Substring(2, 2) + "-" + dateCoda[..2];
     }
 
     /// <summary>
@@ -62,7 +62,7 @@ public static class Helpers
     /// <returns>The trimmed data from the input.</returns>
     public static string GetTrimmedData(string data, int startPosition)
     {
-        return data.Substring(startPosition).Trim();
+        return data[startPosition..].Trim();
     }
 
     /// <summary>

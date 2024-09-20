@@ -11,7 +11,7 @@ public class IdentificationLineParser : ILineParser
     /// <inheritdoc />
     public bool CanAcceptString(string codaLine)
     {
-        return codaLine.Length == 128 && codaLine.Substring(0, 1) == "0";
+        return codaLine.Length == 128 && codaLine[..1] == "0";
     }
 
     /// <inheritdoc />

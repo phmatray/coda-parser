@@ -6,12 +6,12 @@ public class StructuredMessage
     {
         Helpers.ValidateStringMultipleLengths(value, new[] { 53, 73 }, "StructuredMessage");
 
-        StructuredMessageType = value.Substring(0, 3);
-        StructuredMessageFull = value.Substring(3);
+        StructuredMessageType = value[..3];
+        StructuredMessageFull = value[3..];
 
         if (StructuredMessageType == "101" || StructuredMessageType == "102")
         {
-            Value = StructuredMessageFull.Substring(0, 12);
+            Value = StructuredMessageFull[..12];
         }
         else if (StructuredMessageType == "105" && StructuredMessageFull.Length >= 57)
         {

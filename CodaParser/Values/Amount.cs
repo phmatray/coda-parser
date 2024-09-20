@@ -11,7 +11,7 @@ public class Amount
         {
             Helpers.ValidateStringLength(amountAsString, 16, "Amount");
 
-            negative = amountAsString.Substring(0, 1) == "1" ? -1 : 1;
+            negative = amountAsString[..1] == "1" ? -1 : 1;
             amountAsString = amountAsString.Substring(1, 15);
         }
         else

@@ -19,7 +19,7 @@ public class Account
         var (accountIsIban, accountNumber, accountCurrency, accountCountry) =
             AddAccountInfo(accountInfo, accountNumberTypeString);
         NumberType = new AccountNumberType(accountNumberTypeString);
-        Name = new AccountName(accountNameInfo.Substring(0, 26));
+        Name = new AccountName(accountNameInfo[..26]);
         Description = new AccountDescription(accountNameInfo.Substring(26, 35));
         Number = new AccountNumber(accountNumber, accountIsIban);
         Currency = new Currency(accountCurrency);
@@ -65,26 +65,26 @@ public class Account
 
         if (accountType == "0")
         {
-            accountNumber = accountInfo.Substring(0, 12);
+            accountNumber = accountInfo[..12];
             accountCurrency = accountInfo.Substring(13, 3);
             accountCountry = accountInfo.Substring(17, 2);
         }
         else if (accountType == "1")
         {
-            accountNumber = accountInfo.Substring(0, 34);
+            accountNumber = accountInfo[..34];
             accountCurrency = accountInfo.Substring(34, 3);
         }
         else if (accountType == "2")
         {
             accountIsIban = true;
-            accountNumber = accountInfo.Substring(0, 31);
+            accountNumber = accountInfo[..31];
             accountCurrency = accountInfo.Substring(34, 3);
             accountCountry = "BE";
         }
         else if (accountType == "3")
         {
             accountIsIban = true;
-            accountNumber = accountInfo.Substring(0, 34);
+            accountNumber = accountInfo[..34];
             accountCurrency = accountInfo.Substring(34, 3);
         }
 

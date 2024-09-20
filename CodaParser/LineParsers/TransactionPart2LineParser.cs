@@ -11,7 +11,7 @@ public class TransactionPart2LineParser : ILineParser
     /// <inheritdoc />
     public bool CanAcceptString(string codaLine)
     {
-        return codaLine.Length == 128 && codaLine.Substring(0, 2) == "22";
+        return codaLine.Length == 128 && codaLine[..2] == "22";
     }
 
     /// <inheritdoc />

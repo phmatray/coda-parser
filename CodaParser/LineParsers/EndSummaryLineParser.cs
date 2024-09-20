@@ -11,7 +11,7 @@ public class EndSummaryLineParser : ILineParser
     /// <inheritdoc />
     public bool CanAcceptString(string codaLine)
     {
-        return codaLine.Length == 128 && codaLine.Substring(0, 1) == "9";
+        return codaLine.Length == 128 && codaLine[..1] == "9";
     }
 
     /// <inheritdoc />

@@ -38,8 +38,8 @@ public class AccountOtherPartyParser
                 var lastSpace = number.LastIndexOf(' ');
                 if (lastSpace != -1)
                 {
-                    currency = number.Substring(lastSpace).Trim();
-                    number = number.Substring(0, lastSpace).Trim();
+                    currency = number[lastSpace..].Trim();
+                    number = number[..lastSpace].Trim();
                 }
             }
         }
