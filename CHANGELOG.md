@@ -1,10 +1,11 @@
 # Changelog
 
-## [unreleased]
+## [1.0.2](https://github.com/phmatray/coda-parser/compare/1.0.1..1.0.2) - 2024-09-20
 
 ### 📚 Documentation
 
-- Update README.md - ([afdde0b](https://github.com/phmatray/coda-parser/commit/afdde0b32e1e1bcbced1aed74f772c8acfc91efc))
+- Create DocFX documentation - ([f8f12fb](https://github.com/phmatray/coda-parser/commit/f8f12fb3509241fed3a30a6181f322f67d19ba6e))
+- Update README.md - ([c9b1248](https://github.com/phmatray/coda-parser/commit/c9b124895757db0d9f81226aa96dfc64e159d0b9))
 
 ### ⚙️ Miscellaneous Tasks
 
