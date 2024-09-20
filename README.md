@@ -3,7 +3,6 @@
 ![NuGet](https://img.shields.io/nuget/v/CodaParser)
 ![License](https://img.shields.io/github/license/phmatray/CodaParser)
 ![.NET](https://img.shields.io/badge/.NET-Standard%202.0-blue.svg)
-![Conventional Commits](https://img.shields.io/badge/commit-message-conventional%20commits-green.svg)
 
 CodaParser is a modern C# .NET library for parsing Belgian CODA banking files. It is a fork of [supervos/coda-parser](https://github.com/supervos/coda-parser) by Christophe Devos, bringing enhanced functionality and updated dependencies to the .NET ecosystem.
 
@@ -30,7 +29,7 @@ CodaParser is a modern C# .NET library for parsing Belgian CODA banking files. I
 
 CodaParser will be available as a NuGet package soon. In the meantime, you can download the source code and build it yourself.
 
-### NuGet Package (Coming Soon)
+### NuGet Package
 
 ```bash
 Install-Package CodaParser
@@ -70,29 +69,27 @@ If you prefer to build the library yourself, follow these steps:
 Using CodaParser is straightforward. Below is a simple example demonstrating how to parse a CODA file and iterate through the statements and transactions.
 
 ```csharp
-using System;
 using CodaParser;
+using System.Collections.Generic;
 
-class Program
+// Instantiate the parser (assuming a concrete implementation is available)
+IParser<Statement> parser = new Parser();
+
+// Parse the CODA file
+IEnumerable<Statement> statements = parser.ParseFile("path/to/coda-file.cod");
+
+// Iterate through the statements and transactions
+foreach (var statement in statements)
 {
-    static void Main(string[] args)
+    Console.WriteLine($"Date: {statement.Date:yyyy-MM-dd}");
+    
+    foreach (var transaction in statement.Transactions)
     {
-        var parser = new Parser();
-        var statements = parser.ParseFile("path/to/coda-file.cod");
-        
-        foreach (var statement in statements)
-        {
-            Console.WriteLine($"Date: {statement.Date:yyyy-MM-dd}");
-            
-            foreach (var transaction in statement.Transactions)
-            {
-                Console.WriteLine($"{transaction.Account.Name}: {transaction.Amount}");
-            }
-            
-            Console.WriteLine($"New Balance: {statement.NewBalance}");
-            Console.WriteLine(new string('-', 40));
-        }
+        Console.WriteLine($"{transaction.Account.Name}: {transaction.Amount}");
     }
+    
+    Console.WriteLine($"New Balance: {statement.NewBalance}");
+    Console.WriteLine(new string('-', 40));
 }
 ```
 
@@ -105,18 +102,20 @@ Provides methods to parse CODA files into structured statements.
 - **Methods**
     - `IEnumerable<Statement> Parse(IEnumerable<string> codaLines)`: Parses a collection of CODA lines.
     - `IEnumerable<Statement> ParseFile(string codaFile)`: Parses a CODA file from the specified path.
-    - `IEnumerable<IEnumerable<ILine>> GroupTransactionsPerStatement(IEnumerable<ILine> lines)`: Groups lines belonging to the same statement.
 
 ### `Statement` Class
 
 Represents a single banking statement extracted from a CODA file.
 
 - **Properties**
-    - `Date`: The date of the statement.
-    - `Transactions`: A collection of transactions within the statement.
-    - `NewBalance`: The balance after the statement.
+    - `Date`: The execution date of the statement.
+    - `Account`: The changed account.
+    - `InitialBalance`: The initial balance of the account.
+    - `NewBalance`: The new balance of the account.
+    - `InformationalMessage`: An informational message.
+    - `Transactions`: The executed transactions.
 
-*For a complete API reference, please refer to the [documentation](https://github.com/yourusername/CodaParser/wiki).*
+*For a complete API reference, please refer to the [documentation](https://github.com/phmatray/coda-parser/wiki).*
 
 ## Contributing
 
