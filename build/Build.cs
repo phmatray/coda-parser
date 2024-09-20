@@ -7,6 +7,7 @@ using Nuke.Common.IO;
 using Nuke.Common.ProjectModel;
 using Nuke.Common.Tooling;
 using Nuke.Common.Tools.DotNet;
+using Nuke.Common.Tools.Git;
 using Nuke.Common.Tools.MinVer;
 using Nuke.Common.Tools.Npm;
 using Nuke.Common.Utilities.Collections;
@@ -111,6 +112,12 @@ class Build : NukeBuild
             ProcessTasks.StartProcess("git-cliff", $"--config {gitCliffConfigPath} --output {gitCliffOutputPath}");
 
             Log.Information("CHANGELOG.md generated successfully.");
+            
+            // Amend commit with the updated CHANGELOG.md
+            GitTasks.Git($"add {ChangelogFile}");
+            GitTasks.Git($"commit --amend --no-edit");
+            
+            Log.Information("Amended commit with updated CHANGELOG.md.");
         });
 
     Target Pack => _ => _
