@@ -43,7 +43,7 @@ If you prefer to build the library yourself, follow these steps:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/CodaParser.git
+   git clone https://github.com/phmatray/coda-parser.git
    cd CodaParser
    ```
 

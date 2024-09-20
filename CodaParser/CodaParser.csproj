@@ -22,15 +22,16 @@
     <Product>CodaParser</Product>
     <Description>A C# .NET parser for Belgian CODA banking files.</Description>
     <PackageTags>CODA; Banking; Parser; .NET; Belgium</PackageTags>
-    <RepositoryUrl>https://github.com/phmatray/CodaParser</RepositoryUrl>
+    <RepositoryUrl>https://github.com/phmatray/coda-parser</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression>GPL-2.0-only</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/phmatray/CodaParser</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/phmatray/coda-parser</PackageProjectUrl>
     <PackageIcon>./logo.png</PackageIcon>
+    <PackageReadmeFile>./README.md</PackageReadmeFile>
     <Summary>A C# .NET parser for Belgian CODA banking files.</Summary>
     <Copyright>© Atypical Consulting SRL, 2024</Copyright>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-
+    
     <!-- Build Properties -->
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <IncludeSymbols>true</IncludeSymbols>
@@ -46,9 +47,9 @@
 
   <!-- Ensure README.md and LICENSE are included in the package -->
   <ItemGroup>
-    <None Include="..\README.md" Pack="true" PackagePath="" />
-    <None Include="..\LICENSE" Pack="true" PackagePath="" />
-    <None Include="..\logo.png" Pack="true" PackagePath="" />
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\LICENSE" Pack="true" PackagePath="\" />
+    <None Include="..\logo.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
