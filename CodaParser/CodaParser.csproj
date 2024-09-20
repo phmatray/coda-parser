@@ -7,16 +7,12 @@
     <Nullable>enable</Nullable>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
-    
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);1591</NoWarn>
     <MinVerMinimumMajorMinor>1.0</MinVerMinimumMajorMinor>
 
     <!-- Package Metadata -->
     <PackageId>CodaParser</PackageId>
-    <Version>1.0.0</Version>
     <Authors>Philippe Matray</Authors>
     <Company>Atypical Consulting SRL</Company>
     <Product>CodaParser</Product>

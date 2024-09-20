@@ -4,7 +4,8 @@
 
 ### ⚙️ Miscellaneous Tasks
 
-- Include CHANGELOG.md in the NuGet package - ([4610df9](https://github.com/phmatray/coda-parser/commit/4610df9213f6290b7b34a654b5dacddcfcdca723))
+- Add version to the library from Build.cs - ([86eca2a](https://github.com/phmatray/coda-parser/commit/86eca2ae55793f3fdf25de22fa7aaba3ed07fe68))
+- Include CHANGELOG.md in the NuGet package - ([a41ab79](https://github.com/phmatray/coda-parser/commit/a41ab796307475e4f7fdad30c7a767d1ed4d0391))
 - Generate CHANGELOG.md using git-cliff - ([141058e](https://github.com/phmatray/coda-parser/commit/141058e8c6484b5207f64a7634fec421be9cc4c2))
 
 

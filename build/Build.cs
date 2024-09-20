@@ -63,7 +63,11 @@ class Build : NukeBuild
                 .SetProjectFile(Solution)
                 .SetConfiguration(Configuration)
                 .EnableNoRestore()
-                .SetDeterministic(true));
+                .SetDeterministic(true)
+                // Inject versioning properties
+                .SetProperty("Version", MinVer.Version)
+                .SetProperty("AssemblyVersion", MinVer.AssemblyVersion)
+                .SetProperty("FileVersion", MinVer.FileVersion));
         });
     
     Target Test => _ => _
@@ -122,6 +126,7 @@ class Build : NukeBuild
                 .SetIncludeSymbols(true)
                 .SetIncludeSource(true)
                 .SetSymbolPackageFormat(DotNetSymbolPackageFormat.snupkg)
+                // Use MinVer version for the package
                 .SetVersion(MinVer.Version));
         });
 
