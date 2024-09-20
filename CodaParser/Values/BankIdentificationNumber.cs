@@ -1,14 +1,13 @@
-﻿namespace CodaParser.Values
+﻿namespace CodaParser.Values;
+
+public class BankIdentificationNumber
 {
-    public class BankIdentificationNumber
+    public BankIdentificationNumber(string value)
     {
-        public BankIdentificationNumber(string value)
-        {
-            Helpers.ValidateStringLength(value, 3, "BankIdentificationNumber");
+        Helpers.ValidateStringLength(value, 3, "BankIdentificationNumber");
 
-            Value = value.Trim();
-        }
-
-        public string Value { get; }
+        Value = value.Trim();
     }
+
+    public string Value { get; }
 }

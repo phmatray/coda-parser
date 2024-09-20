@@ -1,14 +1,13 @@
-﻿namespace CodaParser.Values
+﻿namespace CodaParser.Values;
+
+public class AccountNumberType
 {
-    public class AccountNumberType
+    public AccountNumberType(string value)
     {
-        public AccountNumberType(string value)
-        {
-            Helpers.ValidateStringLength(value, 1, "AccountNumberType");
+        Helpers.ValidateStringLength(value, 1, "AccountNumberType");
 
-            Value = value;
-        }
-
-        public string Value { get; }
+        Value = value;
     }
+
+    public string Value { get; }
 }

@@ -1,14 +1,13 @@
-namespace CodaParser.Values
+namespace CodaParser.Values;
+
+public class RelatedReference
 {
-    public class RelatedReference
+    public RelatedReference(string value)
     {
-        public RelatedReference(string value)
-        {
-            Helpers.ValidateStringLength(value, 16, "RelatedReference");
+        Helpers.ValidateStringLength(value, 16, "RelatedReference");
 
-            Value = value.Trim();
-        }
-
-        public string Value { get; }
+        Value = value.Trim();
     }
+
+    public string Value { get; }
 }

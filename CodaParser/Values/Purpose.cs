@@ -1,14 +1,13 @@
-namespace CodaParser.Values
+namespace CodaParser.Values;
+
+public class Purpose
 {
-    public class Purpose
+    public Purpose(string value)
     {
-        public Purpose(string value)
-        {
-            Helpers.ValidateStringLength(value, 4, "Purpose");
+        Helpers.ValidateStringLength(value, 4, "Purpose");
 
-            Value = value.Trim();
-        }
-
-        public string Value { get; }
+        Value = value.Trim();
     }
+
+    public string Value { get; }
 }

@@ -1,17 +1,16 @@
 ﻿using System;
 
-namespace CodaParser.Values
+namespace CodaParser.Values;
+
+public class Date
 {
-    public class Date
+    public Date(string dateString)
     {
-        public Date(string dateString)
-        {
-            Helpers.ValidateStringLength(dateString, 6, "Date");
-            Helpers.ValidateStringDigitOnly(dateString, "Date");
+        Helpers.ValidateStringLength(dateString, 6, "Date");
+        Helpers.ValidateStringDigitOnly(dateString, "Date");
 
-            Value = DateTime.Parse(Helpers.FormatDateString(dateString));
-        }
-
-        public DateTime Value { get; }
+        Value = DateTime.Parse(Helpers.FormatDateString(dateString));
     }
+
+    public DateTime Value { get; }
 }

@@ -1,23 +1,22 @@
 using CodaParser.Exceptions;
 
-namespace CodaParser.Values
+namespace CodaParser.Values;
+
+public class SequenceNumberDetail
 {
-    public class SequenceNumberDetail
+    public SequenceNumberDetail(string sequenceNumberDetail)
     {
-        public SequenceNumberDetail(string sequenceNumberDetail)
+        Helpers.ValidateStringLength(sequenceNumberDetail, 4, "SequenceNumberDetail");
+        Helpers.ValidateStringDigitOnly(sequenceNumberDetail, "SequenceNumberDetail");
+
+        var value = int.Parse(sequenceNumberDetail);
+        if (value < 0)
         {
-            Helpers.ValidateStringLength(sequenceNumberDetail, 4, "SequenceNumberDetail");
-            Helpers.ValidateStringDigitOnly(sequenceNumberDetail, "SequenceNumberDetail");
-
-            var value = int.Parse(sequenceNumberDetail);
-            if (value < 0)
-            {
-                throw new InvalidValueException("SequenceNumberDetail", sequenceNumberDetail, "Value cannot be negative");
-            }
-
-            Value = value;
+            throw new InvalidValueException("SequenceNumberDetail", sequenceNumberDetail, "Value cannot be negative");
         }
 
-        public int Value { get; }
+        Value = value;
     }
+
+    public int Value { get; }
 }

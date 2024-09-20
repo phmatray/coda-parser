@@ -1,12 +1,11 @@
-namespace CodaParser.Values
-{
-    public class Message
-    {
-        public Message(string value)
-        {
-            Value = Helpers.TrimSpace(value);
-        }
+namespace CodaParser.Values;
 
-        public string Value { get; }
+public class Message
+{
+    public Message(string value)
+    {
+        Value = Helpers.TrimSpace(value);
     }
+
+    public string Value { get; }
 }

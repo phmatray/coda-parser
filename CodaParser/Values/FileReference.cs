@@ -1,14 +1,13 @@
-namespace CodaParser.Values
+namespace CodaParser.Values;
+
+public class FileReference
 {
-    public class FileReference
+    public FileReference(string value)
     {
-        public FileReference(string value)
-        {
-            Helpers.ValidateStringLength(value, 10, "FileReference");
+        Helpers.ValidateStringLength(value, 10, "FileReference");
 
-            Value = value.Trim();
-        }
-
-        public string Value { get; }
+        Value = value.Trim();
     }
+
+    public string Value { get; }
 }

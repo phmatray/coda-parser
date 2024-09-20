@@ -1,14 +1,13 @@
-﻿namespace CodaParser.Values
+﻿namespace CodaParser.Values;
+
+public class ApplicationCode
 {
-    public class ApplicationCode
+    public ApplicationCode(string value)
     {
-        public ApplicationCode(string value)
-        {
-            Helpers.ValidateStringLength(value, 2, "ApplicationCode");
+        Helpers.ValidateStringLength(value, 2, "ApplicationCode");
 
-            Value = value.Trim();
-        }
-
-        public string Value { get; }
+        Value = value.Trim();
     }
+
+    public string Value { get; }
 }

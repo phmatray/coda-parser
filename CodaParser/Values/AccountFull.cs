@@ -1,14 +1,13 @@
-﻿namespace CodaParser.Values
+﻿namespace CodaParser.Values;
+
+public class AccountFull
 {
-    public class AccountFull
+    public AccountFull(string value)
     {
-        public AccountFull(string value)
-        {
-            Helpers.ValidateStringLength(value, 37, "AccountFull");
+        Helpers.ValidateStringLength(value, 37, "AccountFull");
 
-            Value = value.Trim();
-        }
-
-        public string Value { get; }
+        Value = value.Trim();
     }
+
+    public string Value { get; }
 }

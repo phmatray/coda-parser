@@ -1,12 +1,11 @@
-namespace CodaParser.Values
-{
-    public class Country
-    {
-        public Country(string countryCode)
-        {
-            CountryCode = countryCode;
-        }
+namespace CodaParser.Values;
 
-        public string CountryCode { get; }
+public class Country
+{
+    public Country(string countryCode)
+    {
+        CountryCode = countryCode;
     }
+
+    public string CountryCode { get; }
 }

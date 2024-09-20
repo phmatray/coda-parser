@@ -1,14 +1,13 @@
-﻿namespace CodaParser.Values
+﻿namespace CodaParser.Values;
+
+public class ClientReference
 {
-    public class ClientReference
+    public ClientReference(string value)
     {
-        public ClientReference(string value)
-        {
-            Helpers.ValidateStringLength(value, 35, "ClientReference");
+        Helpers.ValidateStringLength(value, 35, "ClientReference");
 
-            Value = value.Trim();
-        }
-
-        public string Value { get; }
+        Value = value.Trim();
     }
+
+    public string Value { get; }
 }

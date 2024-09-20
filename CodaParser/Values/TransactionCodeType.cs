@@ -1,14 +1,13 @@
-namespace CodaParser.Values
+namespace CodaParser.Values;
+
+public class TransactionCodeType
 {
-    public class TransactionCodeType
+    public TransactionCodeType(string value)
     {
-        public TransactionCodeType(string value)
-        {
-            Helpers.ValidateStringLength(value, 1, "TransactionCodeType");
+        Helpers.ValidateStringLength(value, 1, "TransactionCodeType");
 
-            Value = value;
-        }
-
-        public string Value { get; }
+        Value = value;
     }
+
+    public string Value { get; }
 }

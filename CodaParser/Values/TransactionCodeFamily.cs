@@ -1,15 +1,14 @@
-namespace CodaParser.Values
+namespace CodaParser.Values;
+
+public class TransactionCodeFamily
 {
-    public class TransactionCodeFamily
+    public string Value;
+
+    public TransactionCodeFamily(string value)
     {
-        public string Value;
+        Helpers.ValidateStringLength(value, 2, "TransactionCodeFamily");
+        Helpers.ValidateStringDigitOnly(value, "TransactionCodeFamily");
 
-        public TransactionCodeFamily(string value)
-        {
-            Helpers.ValidateStringLength(value, 2, "TransactionCodeFamily");
-            Helpers.ValidateStringDigitOnly(value, "TransactionCodeFamily");
-
-            Value = value;
-        }
+        Value = value;
     }
 }

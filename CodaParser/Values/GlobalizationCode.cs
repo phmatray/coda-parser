@@ -1,14 +1,13 @@
-namespace CodaParser.Values
+namespace CodaParser.Values;
+
+public class GlobalizationCode
 {
-    public class GlobalizationCode
+    public GlobalizationCode(string value)
     {
-        public GlobalizationCode(string value)
-        {
-            Helpers.ValidateStringLength(value, 1, "GlobalizationCode");
+        Helpers.ValidateStringLength(value, 1, "GlobalizationCode");
 
-            Value = int.Parse(value);
-        }
-
-        public int Value { get; }
+        Value = int.Parse(value);
     }
+
+    public int Value { get; }
 }

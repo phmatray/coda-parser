@@ -1,14 +1,13 @@
-namespace CodaParser.Values
+namespace CodaParser.Values;
+
+public class ExternalApplicationCode
 {
-    public class ExternalApplicationCode
+    public ExternalApplicationCode(string value)
     {
-        public ExternalApplicationCode(string value)
-        {
-            Helpers.ValidateStringLength(value, 5, "ExternalApplicationCode");
+        Helpers.ValidateStringLength(value, 5, "ExternalApplicationCode");
 
-            Value = value.Trim();
-        }
-
-        public string Value { get; }
+        Value = value.Trim();
     }
+
+    public string Value { get; }
 }

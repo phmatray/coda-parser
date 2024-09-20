@@ -1,14 +1,13 @@
-﻿namespace CodaParser.Values
+﻿namespace CodaParser.Values;
+
+public class Bic
 {
-    public class Bic
+    public Bic(string value)
     {
-        public Bic(string value)
-        {
-            Helpers.ValidateStringLength(value, 11, "Bic");
+        Helpers.ValidateStringLength(value, 11, "Bic");
 
-            Value = value.Trim();
-        }
-
-        public string Value { get; }
+        Value = value.Trim();
     }
+
+    public string Value { get; }
 }

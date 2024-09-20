@@ -1,47 +1,46 @@
 using CodaParser.Values;
 
-namespace CodaParser.Lines
+namespace CodaParser.Lines;
+
+/// <summary>
+/// The free communication.
+/// </summary>
+public class MessageLine : ILine
 {
     /// <summary>
-    /// The free communication.
+    /// Initializes a new instance of the <see cref="MessageLine"/> class.
     /// </summary>
-    public class MessageLine : ILine
+    /// <param name="sequenceNumber">The continous sequence number.</param>
+    /// <param name="sequenceNumberDetail">The detail number.</param>
+    /// <param name="content">The text of the free communication.</param>
+    public MessageLine(
+        SequenceNumber sequenceNumber,
+        SequenceNumberDetail sequenceNumberDetail,
+        Message content)
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="MessageLine"/> class.
-        /// </summary>
-        /// <param name="sequenceNumber">The continous sequence number.</param>
-        /// <param name="sequenceNumberDetail">The detail number.</param>
-        /// <param name="content">The text of the free communication.</param>
-        public MessageLine(
-            SequenceNumber sequenceNumber,
-            SequenceNumberDetail sequenceNumberDetail,
-            Message content)
-        {
-            SequenceNumber = sequenceNumber;
-            SequenceNumberDetail = sequenceNumberDetail;
-            Content = content;
-        }
+        SequenceNumber = sequenceNumber;
+        SequenceNumberDetail = sequenceNumberDetail;
+        Content = content;
+    }
 
-        /// <summary>
-        /// Gets the text of the free communication.
-        /// </summary>
-        public Message Content { get; }
+    /// <summary>
+    /// Gets the text of the free communication.
+    /// </summary>
+    public Message Content { get; }
 
-        /// <summary>
-        /// Gets the continous sequence number.
-        /// </summary>
-        public SequenceNumber SequenceNumber { get; }
+    /// <summary>
+    /// Gets the continous sequence number.
+    /// </summary>
+    public SequenceNumber SequenceNumber { get; }
 
-        /// <summary>
-        /// Gets the detail number.
-        /// </summary>
-        public SequenceNumberDetail SequenceNumberDetail { get; }
+    /// <summary>
+    /// Gets the detail number.
+    /// </summary>
+    public SequenceNumberDetail SequenceNumberDetail { get; }
 
-        /// <inheritdoc />
-        public LineType GetLineType()
-        {
-            return LineType.Message;
-        }
+    /// <inheritdoc />
+    public LineType GetLineType()
+    {
+        return LineType.Message;
     }
 }
