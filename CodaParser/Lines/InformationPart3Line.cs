@@ -24,7 +24,7 @@ namespace CodaParser.Lines
         }
 
         /// <inheritdoc />
-        public Message Message { get; }
+        public Message? Message { get; }
 
         /// <inheritdoc />
         public SequenceNumber SequenceNumber { get; }

@@ -14,12 +14,12 @@ namespace CodaParserTests.LineParsers
 
             var sample = "9               000015000000016837520000000003967220                                                                           1";
 
-            Assert.IsTrue(parser.CanAcceptString(sample));
+            Assert.That(parser.CanAcceptString(sample), Is.True);
 
             var result = (EndSummaryLine)parser.Parse(sample);
 
-            Assert.AreEqual(16837.520m, result.DebetAmount.Value);
-            Assert.AreEqual(3967.220m, result.CreditAmount.Value);
+            Assert.That(result.DebetAmount.Value, Is.EqualTo(16837.520m));
+            Assert.That(result.CreditAmount.Value, Is.EqualTo(3967.220m));
         }
     }
 }

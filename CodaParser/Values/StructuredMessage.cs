@@ -23,7 +23,7 @@ namespace CodaParser.Values
             }
         }
 
-        public SepaDirectDebit SepaDirectDebit { get; }
+        public SepaDirectDebit? SepaDirectDebit { get; }
 
         public string StructuredMessageFull { get; }
 

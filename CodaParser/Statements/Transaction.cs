@@ -20,7 +20,7 @@ namespace CodaParser.Statements
         /// <param name="message">A message that is included in the transaction.</param>
         /// <param name="structuredMessage">A structured message.</param>
         /// <param name="sepaDirectDebit">The sepa direct debit information.</param>
-        public Transaction(AccountOtherParty account, int statementSequence, int transactionSequence, DateTime transactionDate, DateTime valutaDate, decimal amount, string message, string structuredMessage, SepaDirectDebit sepaDirectDebit)
+        public Transaction(AccountOtherParty account, int statementSequence, int transactionSequence, DateTime transactionDate, DateTime valutaDate, decimal amount, string message, string? structuredMessage, SepaDirectDebit? sepaDirectDebit)
         {
             Account = account;
             StatementSequence = statementSequence;
@@ -51,7 +51,7 @@ namespace CodaParser.Statements
         /// <summary>
         /// Gets the sepa direct debit information.
         /// </summary>
-        public SepaDirectDebit SepaDirectDebit { get; }
+        public SepaDirectDebit? SepaDirectDebit { get; }
 
         /// <summary>
         /// Gets the sequence id of the statement.
@@ -61,7 +61,7 @@ namespace CodaParser.Statements
         /// <summary>
         /// Gets the structured message.
         /// </summary>
-        public string StructuredMessage { get; }
+        public string? StructuredMessage { get; }
 
         /// <summary>
         /// Gets the date where the transaction is executed.

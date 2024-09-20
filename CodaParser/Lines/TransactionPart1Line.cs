@@ -60,7 +60,7 @@ namespace CodaParser.Lines
         public GlobalizationCode GlobalizationCode { get; }
 
         /// <inheritdoc />
-        Message IInformationOrTransactionLine.Message => MessageOrStructuredMessage.Message;
+        Message? IInformationOrTransactionLine.Message => MessageOrStructuredMessage.Message;
 
         /// <summary>
         /// Gets the communication, structured or unstructured.

@@ -20,8 +20,8 @@ namespace CodaParser.Values
             }
         }
 
-        public Message Message { get; }
+        public Message? Message { get; }
 
-        public StructuredMessage StructuredMessage { get; }
+        public StructuredMessage? StructuredMessage { get; }
     }
 }

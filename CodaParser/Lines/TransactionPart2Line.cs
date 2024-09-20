@@ -57,7 +57,7 @@ namespace CodaParser.Lines
         public IsoReasonReturnCode IsoReasonReturnCode { get; }
 
         /// <inheritdoc />
-        public Message Message { get; }
+        public Message? Message { get; }
 
         /// <summary>
         /// Gets the bic of the counterparty's bank.

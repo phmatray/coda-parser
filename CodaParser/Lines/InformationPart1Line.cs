@@ -35,7 +35,7 @@ namespace CodaParser.Lines
         public BankReference BankReference { get; }
 
         /// <inheritdoc />
-        Message IInformationOrTransactionLine.Message => MessageOrStructuredMessage.Message;
+        Message? IInformationOrTransactionLine.Message => MessageOrStructuredMessage.Message;
 
         /// <summary>
         /// Gets the communication in structured or unstructered format.

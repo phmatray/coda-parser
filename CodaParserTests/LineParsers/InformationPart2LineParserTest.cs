@@ -14,13 +14,13 @@ namespace CodaParserTests.LineParsers
 
             var sample = "3200010001MAIN STREET 928                    5480 SOME CITY                                                                  0 0";
 
-            Assert.IsTrue(parser.CanAcceptString(sample));
+            Assert.That(parser.CanAcceptString(sample), Is.True);
 
             var result = (InformationPart2Line)parser.Parse(sample);
 
-            Assert.AreEqual(1, result.SequenceNumber.Value);
-            Assert.AreEqual(1, result.SequenceNumberDetail.Value);
-            Assert.AreEqual("MAIN STREET 928                    5480 SOME CITY ", result.Message.Value);
+            Assert.That(result.SequenceNumber.Value, Is.EqualTo(1));
+            Assert.That(result.SequenceNumberDetail.Value, Is.EqualTo(1));
+            Assert.That(result.Message.Value, Is.EqualTo("MAIN STREET 928                    5480 SOME CITY "));
         }
     }
 }

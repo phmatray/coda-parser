@@ -15,22 +15,22 @@ namespace CodaParserTests.LineParsers
 
             var sample = "0000018011520105        0938409934CODELICIOUS               GEBABEBB   09029308273 00001          984309          834080       2";
 
-            Assert.IsTrue(parser.CanAcceptString(sample));
+            Assert.That(parser.CanAcceptString(sample), Is.True);
 
             var result = (IdentificationLine)parser.Parse(sample);
 
-            Assert.AreEqual(new DateTime(2015, 01, 18), result.CreationDate.Value);
-            Assert.AreEqual("201", result.BankIdentificationNumber.Value);
-            Assert.AreEqual("05", result.ApplicationCode.Value);
-            Assert.AreEqual(false, result.IsDuplicate);
-            Assert.AreEqual("0938409934", result.FileReference.Value);
-            Assert.AreEqual("CODELICIOUS", result.AccountName.Value);
-            Assert.AreEqual("GEBABEBB", result.AccountBic.Value);
-            Assert.AreEqual("09029308273", result.AccountCompanyIdentificationNumber.Value);
-            Assert.AreEqual("00001", result.ExternalApplicationCode.Value);
-            Assert.AreEqual("984309", result.TransactionReference.Value);
-            Assert.AreEqual("834080", result.RelatedReference.Value);
-            Assert.AreEqual("2", result.VersionCode.Value);
+            Assert.That(result.CreationDate.Value, Is.EqualTo(new DateTime(2015, 01, 18)));
+            Assert.That(result.BankIdentificationNumber.Value, Is.EqualTo("201"));
+            Assert.That(result.ApplicationCode.Value, Is.EqualTo("05"));
+            Assert.That(result.IsDuplicate, Is.False);
+            Assert.That(result.FileReference.Value, Is.EqualTo("0938409934"));
+            Assert.That(result.AccountName.Value, Is.EqualTo("CODELICIOUS"));
+            Assert.That(result.AccountBic.Value, Is.EqualTo("GEBABEBB"));
+            Assert.That(result.AccountCompanyIdentificationNumber.Value, Is.EqualTo("09029308273"));
+            Assert.That(result.ExternalApplicationCode.Value, Is.EqualTo("00001"));
+            Assert.That(result.TransactionReference.Value, Is.EqualTo("984309"));
+            Assert.That(result.RelatedReference.Value, Is.EqualTo("834080"));
+            Assert.That(result.VersionCode.Value, Is.EqualTo("2"));
         }
     }
 }

@@ -30,7 +30,7 @@ namespace CodaParser.Lines
         }
 
         /// <inheritdoc />
-        public Message Message { get; }
+        public Message? Message { get; }
 
         /// <summary>
         /// Gets the counterparty's name.

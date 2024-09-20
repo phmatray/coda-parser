@@ -24,7 +24,7 @@ namespace CodaParser.StatementParsers
             var transactionDate = new DateTime(1, 1, 1);
             var valutaDate = new DateTime(1, 1, 1);
             var amount = 0.0m;
-            SepaDirectDebit sepaDirectDebit = null;
+            SepaDirectDebit? sepaDirectDebit = null;
 
             var statementSequence = 0;
             var transactionSequence = 0;
@@ -46,11 +46,11 @@ namespace CodaParser.StatementParsers
             var structuredMessage = "";
             if (!string.IsNullOrEmpty(transactionPart1Line?.MessageOrStructuredMessage.StructuredMessage?.Value))
             {
-                structuredMessage = transactionPart1Line.MessageOrStructuredMessage.StructuredMessage.Value;
+                structuredMessage = transactionPart1Line?.MessageOrStructuredMessage.StructuredMessage?.Value;
             }
             else if (!string.IsNullOrEmpty(informationPart1Line?.MessageOrStructuredMessage.StructuredMessage?.Value))
             {
-                structuredMessage = informationPart1Line.MessageOrStructuredMessage.StructuredMessage.Value;
+                structuredMessage = informationPart1Line?.MessageOrStructuredMessage.StructuredMessage?.Value;
             }
 
             var linesWithAccountInfo = Helpers.FilterLinesOfTypes(
@@ -91,7 +91,7 @@ namespace CodaParser.StatementParsers
 
             var message = string.Join("", transactionLines.Select(line =>
             {
-                Message m = null;
+                Message? m = null;
                 switch (line)
                 {
                     case TransactionPart1Line l:
@@ -137,7 +137,7 @@ namespace CodaParser.StatementParsers
 
                 message += string.Join("", informationLines.Select(line =>
                 {
-                    Message m = null;
+                    Message? m = null;
                     switch (line)
                     {
                         case InformationPart1Line i:

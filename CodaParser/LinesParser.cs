@@ -31,7 +31,7 @@ namespace CodaParser
             {
                 if (!string.IsNullOrEmpty(line))
                 {
-                    ILine lineObject = null;
+                    ILine? lineObject = null;
 
                     foreach (var parser in _lineParsers)
                     {

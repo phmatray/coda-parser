@@ -10,7 +10,7 @@ namespace CodaParser.Lines
         /// <summary>
         /// Gets the message.
         /// </summary>
-        Message Message { get; }
+        Message? Message { get; }
 
         /// <summary>
         /// Gets the sequence number.
