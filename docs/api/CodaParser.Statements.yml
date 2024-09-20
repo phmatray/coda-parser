@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodaParser.Statements
+  commentId: N:CodaParser.Statements
+  id: CodaParser.Statements
+  children:
+  - CodaParser.Statements.Account
+  - CodaParser.Statements.AccountOtherParty
+  - CodaParser.Statements.Statement
+  - CodaParser.Statements.Transaction
+  langs:
+  - csharp
+  - vb
+  name: CodaParser.Statements
+  nameWithType: CodaParser.Statements
+  fullName: CodaParser.Statements
+  type: Namespace
+  assemblies:
+  - CodaParser
+references:
+- uid: CodaParser.Statements.Account
+  commentId: T:CodaParser.Statements.Account
+  parent: CodaParser.Statements
+  href: CodaParser.Statements.Account.html
+  name: Account
+  nameWithType: Account
+  fullName: CodaParser.Statements.Account
+- uid: CodaParser.Statements.AccountOtherParty
+  commentId: T:CodaParser.Statements.AccountOtherParty
+  parent: CodaParser.Statements
+  href: CodaParser.Statements.AccountOtherParty.html
+  name: AccountOtherParty
+  nameWithType: AccountOtherParty
+  fullName: CodaParser.Statements.AccountOtherParty
+- uid: CodaParser.Statements.Statement
+  commentId: T:CodaParser.Statements.Statement
+  parent: CodaParser.Statements
+  href: CodaParser.Statements.Statement.html
+  name: Statement
+  nameWithType: Statement
+  fullName: CodaParser.Statements.Statement
+- uid: CodaParser.Statements.Transaction
+  commentId: T:CodaParser.Statements.Transaction
+  parent: CodaParser.Statements
+  href: CodaParser.Statements.Transaction.html
+  name: Transaction
+  nameWithType: Transaction
+  fullName: CodaParser.Statements.Transaction
+- uid: CodaParser.Statements
+  commentId: N:CodaParser.Statements
+  href: CodaParser.html
+  name: CodaParser.Statements
+  nameWithType: CodaParser.Statements
+  fullName: CodaParser.Statements
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Statements
+    name: Statements
+    href: CodaParser.Statements.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Statements
+    name: Statements
+    href: CodaParser.Statements.html

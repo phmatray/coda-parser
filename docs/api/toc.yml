@@ -1,0 +1,180 @@
+### YamlMime:TableOfContent
+items:
+- uid: CodaParser
+  name: CodaParser
+  items:
+  - uid: CodaParser.Helpers
+    name: Helpers
+  - uid: CodaParser.IParser`1
+    name: IParser<T>
+  - uid: CodaParser.LinesParser
+    name: LinesParser
+  - uid: CodaParser.Parser
+    name: Parser
+- uid: CodaParser.Exceptions
+  name: CodaParser.Exceptions
+  items:
+  - uid: CodaParser.Exceptions.InvalidValueException
+    name: InvalidValueException
+- uid: CodaParser.LineParsers
+  name: CodaParser.LineParsers
+  items:
+  - uid: CodaParser.LineParsers.EndSummaryLineParser
+    name: EndSummaryLineParser
+  - uid: CodaParser.LineParsers.ILineParser
+    name: ILineParser
+  - uid: CodaParser.LineParsers.IdentificationLineParser
+    name: IdentificationLineParser
+  - uid: CodaParser.LineParsers.InformationPart1LineParser
+    name: InformationPart1LineParser
+  - uid: CodaParser.LineParsers.InformationPart2LineParser
+    name: InformationPart2LineParser
+  - uid: CodaParser.LineParsers.InformationPart3LineParser
+    name: InformationPart3LineParser
+  - uid: CodaParser.LineParsers.InitialStateLineParser
+    name: InitialStateLineParser
+  - uid: CodaParser.LineParsers.MessageLineParser
+    name: MessageLineParser
+  - uid: CodaParser.LineParsers.NewStateLineParser
+    name: NewStateLineParser
+  - uid: CodaParser.LineParsers.TransactionPart1LineParser
+    name: TransactionPart1LineParser
+  - uid: CodaParser.LineParsers.TransactionPart2LineParser
+    name: TransactionPart2LineParser
+  - uid: CodaParser.LineParsers.TransactionPart3LineParser
+    name: TransactionPart3LineParser
+- uid: CodaParser.Lines
+  name: CodaParser.Lines
+  items:
+  - uid: CodaParser.Lines.EndSummaryLine
+    name: EndSummaryLine
+  - uid: CodaParser.Lines.IInformationOrTransactionLine
+    name: IInformationOrTransactionLine
+  - uid: CodaParser.Lines.ILine
+    name: ILine
+  - uid: CodaParser.Lines.IdentificationLine
+    name: IdentificationLine
+  - uid: CodaParser.Lines.InformationPart1Line
+    name: InformationPart1Line
+  - uid: CodaParser.Lines.InformationPart2Line
+    name: InformationPart2Line
+  - uid: CodaParser.Lines.InformationPart3Line
+    name: InformationPart3Line
+  - uid: CodaParser.Lines.InitialStateLine
+    name: InitialStateLine
+  - uid: CodaParser.Lines.LineType
+    name: LineType
+  - uid: CodaParser.Lines.MessageLine
+    name: MessageLine
+  - uid: CodaParser.Lines.NewStateLine
+    name: NewStateLine
+  - uid: CodaParser.Lines.TransactionPart1Line
+    name: TransactionPart1Line
+  - uid: CodaParser.Lines.TransactionPart2Line
+    name: TransactionPart2Line
+  - uid: CodaParser.Lines.TransactionPart3Line
+    name: TransactionPart3Line
+- uid: CodaParser.StatementParsers
+  name: CodaParser.StatementParsers
+  items:
+  - uid: CodaParser.StatementParsers.AccountOtherPartyParser
+    name: AccountOtherPartyParser
+  - uid: CodaParser.StatementParsers.AccountParser
+    name: AccountParser
+  - uid: CodaParser.StatementParsers.MessageParser
+    name: MessageParser
+  - uid: CodaParser.StatementParsers.StatementParser
+    name: StatementParser
+  - uid: CodaParser.StatementParsers.TransactionParser
+    name: TransactionParser
+- uid: CodaParser.Statements
+  name: CodaParser.Statements
+  items:
+  - uid: CodaParser.Statements.Account
+    name: Account
+  - uid: CodaParser.Statements.AccountOtherParty
+    name: AccountOtherParty
+  - uid: CodaParser.Statements.Statement
+    name: Statement
+  - uid: CodaParser.Statements.Transaction
+    name: Transaction
+- uid: CodaParser.Values
+  name: CodaParser.Values
+  items:
+  - uid: CodaParser.Values.Account
+    name: Account
+  - uid: CodaParser.Values.AccountDescription
+    name: AccountDescription
+  - uid: CodaParser.Values.AccountFull
+    name: AccountFull
+  - uid: CodaParser.Values.AccountName
+    name: AccountName
+  - uid: CodaParser.Values.AccountNumber
+    name: AccountNumber
+  - uid: CodaParser.Values.AccountNumberType
+    name: AccountNumberType
+  - uid: CodaParser.Values.Amount
+    name: Amount
+  - uid: CodaParser.Values.ApplicationCode
+    name: ApplicationCode
+  - uid: CodaParser.Values.BankIdentificationNumber
+    name: BankIdentificationNumber
+  - uid: CodaParser.Values.BankReference
+    name: BankReference
+  - uid: CodaParser.Values.Bic
+    name: Bic
+  - uid: CodaParser.Values.CategoryPurpose
+    name: CategoryPurpose
+  - uid: CodaParser.Values.ClientReference
+    name: ClientReference
+  - uid: CodaParser.Values.CompanyIdentificationNumber
+    name: CompanyIdentificationNumber
+  - uid: CodaParser.Values.Country
+    name: Country
+  - uid: CodaParser.Values.Currency
+    name: Currency
+  - uid: CodaParser.Values.Date
+    name: Date
+  - uid: CodaParser.Values.ExternalApplicationCode
+    name: ExternalApplicationCode
+  - uid: CodaParser.Values.FileReference
+    name: FileReference
+  - uid: CodaParser.Values.GlobalizationCode
+    name: GlobalizationCode
+  - uid: CodaParser.Values.IsoReasonReturnCode
+    name: IsoReasonReturnCode
+  - uid: CodaParser.Values.Message
+    name: Message
+  - uid: CodaParser.Values.MessageOrStructuredMessage
+    name: MessageOrStructuredMessage
+  - uid: CodaParser.Values.PaperStatementSequenceNumber
+    name: PaperStatementSequenceNumber
+  - uid: CodaParser.Values.Purpose
+    name: Purpose
+  - uid: CodaParser.Values.RelatedReference
+    name: RelatedReference
+  - uid: CodaParser.Values.SepaDirectDebit
+    name: SepaDirectDebit
+  - uid: CodaParser.Values.SequenceNumber
+    name: SequenceNumber
+  - uid: CodaParser.Values.SequenceNumberDetail
+    name: SequenceNumberDetail
+  - uid: CodaParser.Values.StatementSequenceNumber
+    name: StatementSequenceNumber
+  - uid: CodaParser.Values.StructuredMessage
+    name: StructuredMessage
+  - uid: CodaParser.Values.TransactionCode
+    name: TransactionCode
+  - uid: CodaParser.Values.TransactionCodeCategory
+    name: TransactionCodeCategory
+  - uid: CodaParser.Values.TransactionCodeFamily
+    name: TransactionCodeFamily
+  - uid: CodaParser.Values.TransactionCodeOperation
+    name: TransactionCodeOperation
+  - uid: CodaParser.Values.TransactionCodeType
+    name: TransactionCodeType
+  - uid: CodaParser.Values.TransactionReference
+    name: TransactionReference
+  - uid: CodaParser.Values.VersionCode
+    name: VersionCode
+memberLayout: SamePage

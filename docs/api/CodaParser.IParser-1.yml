@@ -1,0 +1,284 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodaParser.IParser`1
+  commentId: T:CodaParser.IParser`1
+  id: IParser`1
+  parent: CodaParser
+  children:
+  - CodaParser.IParser`1.Parse(System.Collections.Generic.IEnumerable{System.String})
+  - CodaParser.IParser`1.ParseFile(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IParser<T>
+  nameWithType: IParser<T>
+  fullName: CodaParser.IParser<T>
+  type: Interface
+  source:
+    remote:
+      path: CodaParser/IParser.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: IParser
+    path: ../CodaParser/IParser.cs
+    startLine: 6
+  assemblies:
+  - CodaParser
+  namespace: CodaParser
+  summary: Interface for parsing list of string or a file to a specific type.
+  example: []
+  syntax:
+    content: public interface IParser<out T>
+    typeParameters:
+    - id: T
+      description: The result type of the parsing.
+    content.vb: Public Interface IParser(Of Out T)
+  nameWithType.vb: IParser(Of T)
+  fullName.vb: CodaParser.IParser(Of T)
+  name.vb: IParser(Of T)
+- uid: CodaParser.IParser`1.Parse(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:CodaParser.IParser`1.Parse(System.Collections.Generic.IEnumerable{System.String})
+  id: Parse(System.Collections.Generic.IEnumerable{System.String})
+  parent: CodaParser.IParser`1
+  langs:
+  - csharp
+  - vb
+  name: Parse(IEnumerable<string>)
+  nameWithType: IParser<T>.Parse(IEnumerable<string>)
+  fullName: CodaParser.IParser<T>.Parse(System.Collections.Generic.IEnumerable<string>)
+  type: Method
+  source:
+    remote:
+      path: CodaParser/IParser.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Parse
+    path: ../CodaParser/IParser.cs
+    startLine: 13
+  assemblies:
+  - CodaParser
+  namespace: CodaParser
+  summary: Parse a list of strings to their mathing type.
+  example: []
+  syntax:
+    content: IEnumerable<out T> Parse(IEnumerable<string> codaLines)
+    parameters:
+    - id: codaLines
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: The strings to parse.
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The parsed result.
+    content.vb: Function Parse(codaLines As IEnumerable(Of String)) As IEnumerable(Of Out T)
+  overload: CodaParser.IParser`1.Parse*
+  nameWithType.vb: IParser(Of T).Parse(IEnumerable(Of String))
+  fullName.vb: CodaParser.IParser(Of T).Parse(System.Collections.Generic.IEnumerable(Of String))
+  name.vb: Parse(IEnumerable(Of String))
+- uid: CodaParser.IParser`1.ParseFile(System.String)
+  commentId: M:CodaParser.IParser`1.ParseFile(System.String)
+  id: ParseFile(System.String)
+  parent: CodaParser.IParser`1
+  langs:
+  - csharp
+  - vb
+  name: ParseFile(string)
+  nameWithType: IParser<T>.ParseFile(string)
+  fullName: CodaParser.IParser<T>.ParseFile(string)
+  type: Method
+  source:
+    remote:
+      path: CodaParser/IParser.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: ParseFile
+    path: ../CodaParser/IParser.cs
+    startLine: 20
+  assemblies:
+  - CodaParser
+  namespace: CodaParser
+  summary: Read the content of the requested file and parse the content to the matching type.
+  example: []
+  syntax:
+    content: IEnumerable<out T> ParseFile(string codaFile)
+    parameters:
+    - id: codaFile
+      type: System.String
+      description: Location of the file to parse.
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The parsed result.
+    content.vb: Function ParseFile(codaFile As String) As IEnumerable(Of Out T)
+  overload: CodaParser.IParser`1.ParseFile*
+  nameWithType.vb: IParser(Of T).ParseFile(String)
+  fullName.vb: CodaParser.IParser(Of T).ParseFile(String)
+  name.vb: ParseFile(String)
+references:
+- uid: CodaParser
+  commentId: N:CodaParser
+  href: CodaParser.html
+  name: CodaParser
+  nameWithType: CodaParser
+  fullName: CodaParser
+- uid: CodaParser.IParser`1.Parse*
+  commentId: Overload:CodaParser.IParser`1.Parse
+  href: CodaParser.IParser-1.html#CodaParser_IParser_1_Parse_System_Collections_Generic_IEnumerable_System_String__
+  name: Parse
+  nameWithType: IParser<T>.Parse
+  fullName: CodaParser.IParser<T>.Parse
+  nameWithType.vb: IParser(Of T).Parse
+  fullName.vb: CodaParser.IParser(Of T).Parse
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: CodaParser.IParser`1.ParseFile*
+  commentId: Overload:CodaParser.IParser`1.ParseFile
+  href: CodaParser.IParser-1.html#CodaParser_IParser_1_ParseFile_System_String_
+  name: ParseFile
+  nameWithType: IParser<T>.ParseFile
+  fullName: CodaParser.IParser<T>.ParseFile
+  nameWithType.vb: IParser(Of T).ParseFile
+  fullName.vb: CodaParser.IParser(Of T).ParseFile
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

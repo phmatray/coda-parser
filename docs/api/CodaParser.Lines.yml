@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodaParser.Lines
+  commentId: N:CodaParser.Lines
+  id: CodaParser.Lines
+  children:
+  - CodaParser.Lines.EndSummaryLine
+  - CodaParser.Lines.IInformationOrTransactionLine
+  - CodaParser.Lines.ILine
+  - CodaParser.Lines.IdentificationLine
+  - CodaParser.Lines.InformationPart1Line
+  - CodaParser.Lines.InformationPart2Line
+  - CodaParser.Lines.InformationPart3Line
+  - CodaParser.Lines.InitialStateLine
+  - CodaParser.Lines.LineType
+  - CodaParser.Lines.MessageLine
+  - CodaParser.Lines.NewStateLine
+  - CodaParser.Lines.TransactionPart1Line
+  - CodaParser.Lines.TransactionPart2Line
+  - CodaParser.Lines.TransactionPart3Line
+  langs:
+  - csharp
+  - vb
+  name: CodaParser.Lines
+  nameWithType: CodaParser.Lines
+  fullName: CodaParser.Lines
+  type: Namespace
+  assemblies:
+  - CodaParser
+references:
+- uid: CodaParser.Lines.EndSummaryLine
+  commentId: T:CodaParser.Lines.EndSummaryLine
+  href: CodaParser.Lines.EndSummaryLine.html
+  name: EndSummaryLine
+  nameWithType: EndSummaryLine
+  fullName: CodaParser.Lines.EndSummaryLine
+- uid: CodaParser.Lines.IdentificationLine
+  commentId: T:CodaParser.Lines.IdentificationLine
+  href: CodaParser.Lines.IdentificationLine.html
+  name: IdentificationLine
+  nameWithType: IdentificationLine
+  fullName: CodaParser.Lines.IdentificationLine
+- uid: CodaParser.Lines.IInformationOrTransactionLine
+  commentId: T:CodaParser.Lines.IInformationOrTransactionLine
+  parent: CodaParser.Lines
+  href: CodaParser.Lines.IInformationOrTransactionLine.html
+  name: IInformationOrTransactionLine
+  nameWithType: IInformationOrTransactionLine
+  fullName: CodaParser.Lines.IInformationOrTransactionLine
+- uid: CodaParser.Lines.ILine
+  commentId: T:CodaParser.Lines.ILine
+  parent: CodaParser.Lines
+  href: CodaParser.Lines.ILine.html
+  name: ILine
+  nameWithType: ILine
+  fullName: CodaParser.Lines.ILine
+- uid: CodaParser.Lines.InformationPart1Line
+  commentId: T:CodaParser.Lines.InformationPart1Line
+  href: CodaParser.Lines.InformationPart1Line.html
+  name: InformationPart1Line
+  nameWithType: InformationPart1Line
+  fullName: CodaParser.Lines.InformationPart1Line
+- uid: CodaParser.Lines.InformationPart2Line
+  commentId: T:CodaParser.Lines.InformationPart2Line
+  href: CodaParser.Lines.InformationPart2Line.html
+  name: InformationPart2Line
+  nameWithType: InformationPart2Line
+  fullName: CodaParser.Lines.InformationPart2Line
+- uid: CodaParser.Lines.InformationPart3Line
+  commentId: T:CodaParser.Lines.InformationPart3Line
+  href: CodaParser.Lines.InformationPart3Line.html
+  name: InformationPart3Line
+  nameWithType: InformationPart3Line
+  fullName: CodaParser.Lines.InformationPart3Line
+- uid: CodaParser.Lines.InitialStateLine
+  commentId: T:CodaParser.Lines.InitialStateLine
+  href: CodaParser.Lines.InitialStateLine.html
+  name: InitialStateLine
+  nameWithType: InitialStateLine
+  fullName: CodaParser.Lines.InitialStateLine
+- uid: CodaParser.Lines.LineType
+  commentId: T:CodaParser.Lines.LineType
+  parent: CodaParser.Lines
+  href: CodaParser.Lines.LineType.html
+  name: LineType
+  nameWithType: LineType
+  fullName: CodaParser.Lines.LineType
+- uid: CodaParser.Lines.MessageLine
+  commentId: T:CodaParser.Lines.MessageLine
+  href: CodaParser.Lines.MessageLine.html
+  name: MessageLine
+  nameWithType: MessageLine
+  fullName: CodaParser.Lines.MessageLine
+- uid: CodaParser.Lines.NewStateLine
+  commentId: T:CodaParser.Lines.NewStateLine
+  href: CodaParser.Lines.NewStateLine.html
+  name: NewStateLine
+  nameWithType: NewStateLine
+  fullName: CodaParser.Lines.NewStateLine
+- uid: CodaParser.Lines.TransactionPart1Line
+  commentId: T:CodaParser.Lines.TransactionPart1Line
+  href: CodaParser.Lines.TransactionPart1Line.html
+  name: TransactionPart1Line
+  nameWithType: TransactionPart1Line
+  fullName: CodaParser.Lines.TransactionPart1Line
+- uid: CodaParser.Lines.TransactionPart2Line
+  commentId: T:CodaParser.Lines.TransactionPart2Line
+  href: CodaParser.Lines.TransactionPart2Line.html
+  name: TransactionPart2Line
+  nameWithType: TransactionPart2Line
+  fullName: CodaParser.Lines.TransactionPart2Line
+- uid: CodaParser.Lines.TransactionPart3Line
+  commentId: T:CodaParser.Lines.TransactionPart3Line
+  href: CodaParser.Lines.TransactionPart3Line.html
+  name: TransactionPart3Line
+  nameWithType: TransactionPart3Line
+  fullName: CodaParser.Lines.TransactionPart3Line
+- uid: CodaParser.Lines
+  commentId: N:CodaParser.Lines
+  href: CodaParser.html
+  name: CodaParser.Lines
+  nameWithType: CodaParser.Lines
+  fullName: CodaParser.Lines
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Lines
+    name: Lines
+    href: CodaParser.Lines.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Lines
+    name: Lines
+    href: CodaParser.Lines.html

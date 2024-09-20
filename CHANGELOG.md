@@ -1,10 +1,10 @@
 # Changelog
 
-## [1.0.2](https://github.com/phmatray/coda-parser/compare/1.0.1..1.0.2) - 2024-09-20
+## [unreleased]
 
 ### 📚 Documentation
 
-- Update README.md - ([d30110f](https://github.com/phmatray/coda-parser/commit/d30110fb7dc1cb09111febab3fa0b4cf0a582477))
+- Update README.md - ([afdde0b](https://github.com/phmatray/coda-parser/commit/afdde0b32e1e1bcbced1aed74f772c8acfc91efc))
 
 ### ⚙️ Miscellaneous Tasks
 

@@ -48,5 +48,10 @@
     <None Include="..\LICENSE" Pack="true" PackagePath="\" />
     <None Include="..\logo.png" Pack="true" PackagePath="\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\CODE_OF_CONDUCT.md">
+      <Link>CODE_OF_CONDUCT.md</Link>
+    </Content>
+  </ItemGroup>
 
 </Project>

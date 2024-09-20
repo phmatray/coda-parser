@@ -2,10 +2,12 @@ using System;
 using System.Linq;
 using Nuke.Common;
 using Nuke.Common.CI;
+using Nuke.Common.CI.GitHubActions;
 using Nuke.Common.Execution;
 using Nuke.Common.IO;
 using Nuke.Common.ProjectModel;
 using Nuke.Common.Tooling;
+using Nuke.Common.Tools.DocFX;
 using Nuke.Common.Tools.DotNet;
 using Nuke.Common.Tools.Git;
 using Nuke.Common.Tools.MinVer;
@@ -17,6 +19,11 @@ using static Nuke.Common.IO.FileSystemTasks;
 using static Nuke.Common.IO.PathConstruction;
 using static Nuke.Common.Tools.DotNet.DotNetTasks;
 
+[GitHubActions(
+    "ci",
+    GitHubActionsImage.UbuntuLatest,
+    On = [GitHubActionsTrigger.Push],
+    InvokedTargets = [nameof(Test)])]
 class Build : NukeBuild
 {
     [Solution]
@@ -39,6 +46,12 @@ class Build : NukeBuild
     
     AbsolutePath ChangelogFile
         => RootDirectory / "CHANGELOG.md";
+    
+    AbsolutePath DocfxConfig
+        => RootDirectory / "docfx.json";
+    
+    AbsolutePath DocfxSite
+        => RootDirectory / "_site";
 
     public static int Main()
         => Execute<Build>(x => x.Pack);
@@ -135,6 +148,20 @@ class Build : NukeBuild
                 .SetSymbolPackageFormat(DotNetSymbolPackageFormat.snupkg)
                 // Use MinVer version for the package
                 .SetVersion(MinVer.Version));
+        });
+
+    Target GenerateDocs => _ => _
+        // .DependsOn(Pack)
+        .Executes(() =>
+        {
+            Log.Information("Generating documentation with DocFX...");
+
+            // Build documentation
+            DocFXTasks.DocFXBuild(s => s
+                .SetConfigFile(DocfxConfig)
+                .SetOutputFolder(DocfxSite));
+
+            Log.Information("Documentation generated successfully at '{0}'.", DocfxSite);
         });
 
     Target Publish => _ => _

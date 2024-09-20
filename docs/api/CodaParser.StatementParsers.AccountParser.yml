@@ -1,0 +1,472 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodaParser.StatementParsers.AccountParser
+  commentId: T:CodaParser.StatementParsers.AccountParser
+  id: AccountParser
+  parent: CodaParser.StatementParsers
+  children:
+  - CodaParser.StatementParsers.AccountParser.Parse(System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine})
+  langs:
+  - csharp
+  - vb
+  name: AccountParser
+  nameWithType: AccountParser
+  fullName: CodaParser.StatementParsers.AccountParser
+  type: Class
+  source:
+    remote:
+      path: CodaParser/StatementParsers/AccountParser.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: AccountParser
+    path: ../CodaParser/StatementParsers/AccountParser.cs
+    startLine: 7
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.StatementParsers
+  summary: Parser for the account.
+  example: []
+  syntax:
+    content: public class AccountParser
+    content.vb: Public Class AccountParser
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CodaParser.StatementParsers.AccountParser.Parse(System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine})
+  commentId: M:CodaParser.StatementParsers.AccountParser.Parse(System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine})
+  id: Parse(System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine})
+  parent: CodaParser.StatementParsers.AccountParser
+  langs:
+  - csharp
+  - vb
+  name: Parse(IEnumerable<ILine>)
+  nameWithType: AccountParser.Parse(IEnumerable<ILine>)
+  fullName: CodaParser.StatementParsers.AccountParser.Parse(System.Collections.Generic.IEnumerable<CodaParser.Lines.ILine>)
+  type: Method
+  source:
+    remote:
+      path: CodaParser/StatementParsers/AccountParser.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Parse
+    path: ../CodaParser/StatementParsers/AccountParser.cs
+    startLine: 14
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.StatementParsers
+  summary: Parse the relevant lines in an <xref href="CodaParser.Statements.Account" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Account Parse(IEnumerable<ILine> lines)
+    parameters:
+    - id: lines
+      type: System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine}
+      description: The lines to parse.
+    return:
+      type: CodaParser.Statements.Account
+      description: The account of the customer.
+    content.vb: Public Function Parse(lines As IEnumerable(Of ILine)) As Account
+  overload: CodaParser.StatementParsers.AccountParser.Parse*
+  nameWithType.vb: AccountParser.Parse(IEnumerable(Of ILine))
+  fullName.vb: CodaParser.StatementParsers.AccountParser.Parse(System.Collections.Generic.IEnumerable(Of CodaParser.Lines.ILine))
+  name.vb: Parse(IEnumerable(Of ILine))
+references:
+- uid: CodaParser.StatementParsers
+  commentId: N:CodaParser.StatementParsers
+  href: CodaParser.html
+  name: CodaParser.StatementParsers
+  nameWithType: CodaParser.StatementParsers
+  fullName: CodaParser.StatementParsers
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.StatementParsers
+    name: StatementParsers
+    href: CodaParser.StatementParsers.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.StatementParsers
+    name: StatementParsers
+    href: CodaParser.StatementParsers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodaParser.Statements.Account
+  commentId: T:CodaParser.Statements.Account
+  parent: CodaParser.Statements
+  href: CodaParser.Statements.Account.html
+  name: Account
+  nameWithType: Account
+  fullName: CodaParser.Statements.Account
+- uid: CodaParser.StatementParsers.AccountParser.Parse*
+  commentId: Overload:CodaParser.StatementParsers.AccountParser.Parse
+  href: CodaParser.StatementParsers.AccountParser.html#CodaParser_StatementParsers_AccountParser_Parse_System_Collections_Generic_IEnumerable_CodaParser_Lines_ILine__
+  name: Parse
+  nameWithType: AccountParser.Parse
+  fullName: CodaParser.StatementParsers.AccountParser.Parse
+- uid: System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine}
+  commentId: T:System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ILine>
+  nameWithType: IEnumerable<ILine>
+  fullName: System.Collections.Generic.IEnumerable<CodaParser.Lines.ILine>
+  nameWithType.vb: IEnumerable(Of ILine)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of CodaParser.Lines.ILine)
+  name.vb: IEnumerable(Of ILine)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: CodaParser.Lines.ILine
+    name: ILine
+    href: CodaParser.Lines.ILine.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodaParser.Lines.ILine
+    name: ILine
+    href: CodaParser.Lines.ILine.html
+  - name: )
+- uid: CodaParser.Statements
+  commentId: N:CodaParser.Statements
+  href: CodaParser.html
+  name: CodaParser.Statements
+  nameWithType: CodaParser.Statements
+  fullName: CodaParser.Statements
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Statements
+    name: Statements
+    href: CodaParser.Statements.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Statements
+    name: Statements
+    href: CodaParser.Statements.html
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

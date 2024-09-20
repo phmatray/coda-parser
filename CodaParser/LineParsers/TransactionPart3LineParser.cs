@@ -5,7 +5,7 @@ namespace CodaParser.LineParsers;
 
 /// <summary>
 /// The parser for the third transaction movement information line part.
-/// /// </summary>
+/// </summary>
 public class TransactionPart3LineParser : ILineParser
 {
     /// <inheritdoc />

@@ -1,0 +1,606 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodaParser.Statements.Account
+  commentId: T:CodaParser.Statements.Account
+  id: Account
+  parent: CodaParser.Statements
+  children:
+  - CodaParser.Statements.Account.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)
+  - CodaParser.Statements.Account.Bic
+  - CodaParser.Statements.Account.CompanyIdentificationNumber
+  - CodaParser.Statements.Account.CountryCode
+  - CodaParser.Statements.Account.CurrencyCode
+  - CodaParser.Statements.Account.Name
+  - CodaParser.Statements.Account.Number
+  langs:
+  - csharp
+  - vb
+  name: Account
+  nameWithType: Account
+  fullName: CodaParser.Statements.Account
+  type: Class
+  source:
+    remote:
+      path: CodaParser/Statements/Account.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Account
+    path: ../CodaParser/Statements/Account.cs
+    startLine: 5
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Information abount an account.
+  example: []
+  syntax:
+    content: public class Account
+    content.vb: Public Class Account
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CodaParser.Statements.Account.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)
+  commentId: M:CodaParser.Statements.Account.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String,System.String,System.String,System.String)'
+  parent: CodaParser.Statements.Account
+  langs:
+  - csharp
+  - vb
+  name: Account(string, string, string, string, string, string)
+  nameWithType: Account.Account(string, string, string, string, string, string)
+  fullName: CodaParser.Statements.Account.Account(string, string, string, string, string, string)
+  type: Constructor
+  source:
+    remote:
+      path: CodaParser/Statements/Account.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: .ctor
+    path: ../CodaParser/Statements/Account.cs
+    startLine: 16
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Initializes a new instance of the <xref href="CodaParser.Statements.Account" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public Account(string name, string bic, string companyIdentificationNumber, string number, string currencyCode, string countryCode)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name addressee.
+    - id: bic
+      type: System.String
+      description: The bic of the bank holding the account.
+    - id: companyIdentificationNumber
+      type: System.String
+      description: The identification number of the Belgium-based account holder
+    - id: number
+      type: System.String
+      description: The number of the account.
+    - id: currencyCode
+      type: System.String
+      description: The currency code.
+    - id: countryCode
+      type: System.String
+      description: The country code.
+    content.vb: Public Sub New(name As String, bic As String, companyIdentificationNumber As String, number As String, currencyCode As String, countryCode As String)
+  overload: CodaParser.Statements.Account.#ctor*
+  nameWithType.vb: Account.New(String, String, String, String, String, String)
+  fullName.vb: CodaParser.Statements.Account.New(String, String, String, String, String, String)
+  name.vb: New(String, String, String, String, String, String)
+- uid: CodaParser.Statements.Account.Bic
+  commentId: P:CodaParser.Statements.Account.Bic
+  id: Bic
+  parent: CodaParser.Statements.Account
+  langs:
+  - csharp
+  - vb
+  name: Bic
+  nameWithType: Account.Bic
+  fullName: CodaParser.Statements.Account.Bic
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Statements/Account.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Bic
+    path: ../CodaParser/Statements/Account.cs
+    startLine: 29
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Gets the bic of the bank holding the account
+  example: []
+  syntax:
+    content: public string Bic { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Bic As String
+  overload: CodaParser.Statements.Account.Bic*
+- uid: CodaParser.Statements.Account.CompanyIdentificationNumber
+  commentId: P:CodaParser.Statements.Account.CompanyIdentificationNumber
+  id: CompanyIdentificationNumber
+  parent: CodaParser.Statements.Account
+  langs:
+  - csharp
+  - vb
+  name: CompanyIdentificationNumber
+  nameWithType: Account.CompanyIdentificationNumber
+  fullName: CodaParser.Statements.Account.CompanyIdentificationNumber
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Statements/Account.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: CompanyIdentificationNumber
+    path: ../CodaParser/Statements/Account.cs
+    startLine: 34
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Gets the identification number of the Belgium-based account holder
+  example: []
+  syntax:
+    content: public string CompanyIdentificationNumber { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CompanyIdentificationNumber As String
+  overload: CodaParser.Statements.Account.CompanyIdentificationNumber*
+- uid: CodaParser.Statements.Account.CountryCode
+  commentId: P:CodaParser.Statements.Account.CountryCode
+  id: CountryCode
+  parent: CodaParser.Statements.Account
+  langs:
+  - csharp
+  - vb
+  name: CountryCode
+  nameWithType: Account.CountryCode
+  fullName: CodaParser.Statements.Account.CountryCode
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Statements/Account.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: CountryCode
+    path: ../CodaParser/Statements/Account.cs
+    startLine: 39
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Gets the country code.
+  example: []
+  syntax:
+    content: public string CountryCode { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CountryCode As String
+  overload: CodaParser.Statements.Account.CountryCode*
+- uid: CodaParser.Statements.Account.CurrencyCode
+  commentId: P:CodaParser.Statements.Account.CurrencyCode
+  id: CurrencyCode
+  parent: CodaParser.Statements.Account
+  langs:
+  - csharp
+  - vb
+  name: CurrencyCode
+  nameWithType: Account.CurrencyCode
+  fullName: CodaParser.Statements.Account.CurrencyCode
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Statements/Account.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: CurrencyCode
+    path: ../CodaParser/Statements/Account.cs
+    startLine: 44
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Gets the currency code.
+  example: []
+  syntax:
+    content: public string CurrencyCode { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CurrencyCode As String
+  overload: CodaParser.Statements.Account.CurrencyCode*
+- uid: CodaParser.Statements.Account.Name
+  commentId: P:CodaParser.Statements.Account.Name
+  id: Name
+  parent: CodaParser.Statements.Account
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Account.Name
+  fullName: CodaParser.Statements.Account.Name
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Statements/Account.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Name
+    path: ../CodaParser/Statements/Account.cs
+    startLine: 49
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Gets the name addressee
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: CodaParser.Statements.Account.Name*
+- uid: CodaParser.Statements.Account.Number
+  commentId: P:CodaParser.Statements.Account.Number
+  id: Number
+  parent: CodaParser.Statements.Account
+  langs:
+  - csharp
+  - vb
+  name: Number
+  nameWithType: Account.Number
+  fullName: CodaParser.Statements.Account.Number
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Statements/Account.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Number
+    path: ../CodaParser/Statements/Account.cs
+    startLine: 54
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Gets the number of the account.
+  example: []
+  syntax:
+    content: public string Number { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Number As String
+  overload: CodaParser.Statements.Account.Number*
+references:
+- uid: CodaParser.Statements
+  commentId: N:CodaParser.Statements
+  href: CodaParser.html
+  name: CodaParser.Statements
+  nameWithType: CodaParser.Statements
+  fullName: CodaParser.Statements
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Statements
+    name: Statements
+    href: CodaParser.Statements.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Statements
+    name: Statements
+    href: CodaParser.Statements.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodaParser.Statements.Account
+  commentId: T:CodaParser.Statements.Account
+  parent: CodaParser.Statements
+  href: CodaParser.Statements.Account.html
+  name: Account
+  nameWithType: Account
+  fullName: CodaParser.Statements.Account
+- uid: CodaParser.Statements.Account.#ctor*
+  commentId: Overload:CodaParser.Statements.Account.#ctor
+  href: CodaParser.Statements.Account.html#CodaParser_Statements_Account__ctor_System_String_System_String_System_String_System_String_System_String_System_String_
+  name: Account
+  nameWithType: Account.Account
+  fullName: CodaParser.Statements.Account.Account
+  nameWithType.vb: Account.New
+  fullName.vb: CodaParser.Statements.Account.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CodaParser.Statements.Account.Bic*
+  commentId: Overload:CodaParser.Statements.Account.Bic
+  href: CodaParser.Statements.Account.html#CodaParser_Statements_Account_Bic
+  name: Bic
+  nameWithType: Account.Bic
+  fullName: CodaParser.Statements.Account.Bic
+- uid: CodaParser.Statements.Account.CompanyIdentificationNumber*
+  commentId: Overload:CodaParser.Statements.Account.CompanyIdentificationNumber
+  href: CodaParser.Statements.Account.html#CodaParser_Statements_Account_CompanyIdentificationNumber
+  name: CompanyIdentificationNumber
+  nameWithType: Account.CompanyIdentificationNumber
+  fullName: CodaParser.Statements.Account.CompanyIdentificationNumber
+- uid: CodaParser.Statements.Account.CountryCode*
+  commentId: Overload:CodaParser.Statements.Account.CountryCode
+  href: CodaParser.Statements.Account.html#CodaParser_Statements_Account_CountryCode
+  name: CountryCode
+  nameWithType: Account.CountryCode
+  fullName: CodaParser.Statements.Account.CountryCode
+- uid: CodaParser.Statements.Account.CurrencyCode*
+  commentId: Overload:CodaParser.Statements.Account.CurrencyCode
+  href: CodaParser.Statements.Account.html#CodaParser_Statements_Account_CurrencyCode
+  name: CurrencyCode
+  nameWithType: Account.CurrencyCode
+  fullName: CodaParser.Statements.Account.CurrencyCode
+- uid: CodaParser.Statements.Account.Name*
+  commentId: Overload:CodaParser.Statements.Account.Name
+  href: CodaParser.Statements.Account.html#CodaParser_Statements_Account_Name
+  name: Name
+  nameWithType: Account.Name
+  fullName: CodaParser.Statements.Account.Name
+- uid: CodaParser.Statements.Account.Number*
+  commentId: Overload:CodaParser.Statements.Account.Number
+  href: CodaParser.Statements.Account.html#CodaParser_Statements_Account_Number
+  name: Number
+  nameWithType: Account.Number
+  fullName: CodaParser.Statements.Account.Number

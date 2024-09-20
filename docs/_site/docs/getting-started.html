@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Getting Started | CodaParser Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Getting Started | CodaParser Documentation ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/phmatray/coda-parser/blob/main/docs/docs/getting-started.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="CodaParser">
+            CodaParser
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="getting-started">
+<h1 id="getting-started">Getting Started</h1>
+
+<p>This guide will help you set up and start using CodaParser in your .NET projects.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li><strong>.NET SDK:</strong> Ensure you have the .NET 8 SDK installed.</li>
+<li><strong>Git:</strong> Required for cloning the repository and version control.</li>
+<li><strong>Optional Tools:</strong>
+<ul>
+<li><strong>DocFX:</strong> For generating documentation.</li>
+<li><strong>Nuke:</strong> For build automation (if using the provided Nuke build script).</li>
+</ul>
+</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<h3 id="nuget-package">NuGet Package</h3>
+<p>CodaParser is available as a NuGet package. Install it using the following commands:</p>
+<h4 id="using-net-cli">Using .NET CLI</h4>
+<pre><code class="lang-bash">dotnet add package CodaParser
+</code></pre>
+<h4 id="using-package-manager-console">Using Package Manager Console</h4>
+<pre><code class="lang-powershell">Install-Package CodaParser
+</code></pre>
+<h3 id="building-from-source">Building from Source</h3>
+<p>If you prefer to build the library yourself, follow these steps:</p>
+<ol>
+<li><p><strong>Clone the Repository</strong></p>
+<pre><code class="lang-bash">git clone https://github.com/phmatray/CodaParser.git
+cd CodaParser
+</code></pre>
+</li>
+<li><p><strong>Restore Dependencies</strong></p>
+<p>Ensure you have the .NET SDK installed. Then run:</p>
+<pre><code class="lang-bash">dotnet restore
+</code></pre>
+</li>
+<li><p><strong>Build the Project</strong></p>
+<pre><code class="lang-bash">dotnet build
+</code></pre>
+</li>
+<li><p><strong>Use the Library</strong></p>
+<p>Reference the built DLLs in your project by adding them to your project's dependencies.</p>
+</li>
+</ol>
+<h2 id="basic-usage">Basic Usage</h2>
+<p>Below is a simple example demonstrating how to parse a CODA file and iterate through the statements and transactions using the <code>IParser&lt;T&gt;</code> interface.</p>
+<pre><code class="lang-csharp">using CodaParser;
+using System.Collections.Generic;
+
+// Instantiate the parser (assuming a concrete implementation is available)
+IParser&lt;Statement&gt; parser = new Parser();
+
+// Parse the CODA file
+IEnumerable&lt;Statement&gt; statements = parser.ParseFile(&quot;path/to/coda-file.cod&quot;);
+
+// Iterate through the statements and transactions
+foreach (var statement in statements)
+{
+    Console.WriteLine($&quot;Date: {statement.Date:yyyy-MM-dd}&quot;);
+    
+    foreach (var transaction in statement.Transactions)
+    {
+        Console.WriteLine($&quot;{transaction.Account.Name}: {transaction.Amount}&quot;);
+    }
+    
+    Console.WriteLine($&quot;New Balance: {statement.NewBalance}&quot;);
+    Console.WriteLine(new string('-', 40));
+}
+</code></pre>
+<h3 id="minimal-api-example-net-8">Minimal API Example (.NET 8)</h3>
+<p>Leveraging .NET 8's minimal API features, you can create a streamlined application without explicit <code>Program</code> and <code>Main</code> methods:</p>
+<pre><code class="lang-csharp">using CodaParser;
+using System.Collections.Generic;
+
+IParser&lt;Statement&gt; parser = new Parser();
+
+IEnumerable&lt;Statement&gt; statements = parser.ParseFile(&quot;path/to/coda-file.cod&quot;);
+
+foreach (var statement in statements)
+{
+    Console.WriteLine($&quot;Date: {statement.Date:yyyy-MM-dd}&quot;);
+    
+    foreach (var transaction in statement.Transactions)
+    {
+        Console.WriteLine($&quot;{transaction.Account.Name}: {transaction.Amount}&quot;);
+    }
+    
+    Console.WriteLine($&quot;New Balance: {statement.NewBalance}&quot;);
+    Console.WriteLine(new string('-', 40));
+}
+</code></pre>
+<h2 id="running-the-example">Running the Example</h2>
+<ol>
+<li><p><strong>Create a New .NET Project</strong></p>
+<pre><code class="lang-bash">dotnet new console -n CodaParserDemo
+cd CodaParserDemo
+</code></pre>
+</li>
+<li><p><strong>Add CodaParser Package</strong></p>
+<pre><code class="lang-bash">dotnet add package CodaParser
+</code></pre>
+</li>
+<li><p><strong>Replace <code>Program.cs</code> with the Example Code</strong></p>
+</li>
+<li><p><strong>Run the Application</strong></p>
+<pre><code class="lang-bash">dotnet run
+</code></pre>
+</li>
+</ol>
+<p>Ensure that the path to your CODA file is correct. The application will parse the file and display the transactions in the console.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/phmatray/coda-parser/blob/main/docs/docs/getting-started.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

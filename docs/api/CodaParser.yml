@@ -1,0 +1,63 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodaParser
+  commentId: N:CodaParser
+  id: CodaParser
+  children:
+  - CodaParser.Helpers
+  - CodaParser.IParser`1
+  - CodaParser.LinesParser
+  - CodaParser.Parser
+  langs:
+  - csharp
+  - vb
+  name: CodaParser
+  nameWithType: CodaParser
+  fullName: CodaParser
+  type: Namespace
+  assemblies:
+  - CodaParser
+references:
+- uid: CodaParser.Helpers
+  commentId: T:CodaParser.Helpers
+  href: CodaParser.Helpers.html
+  name: Helpers
+  nameWithType: Helpers
+  fullName: CodaParser.Helpers
+- uid: CodaParser.IParser`1
+  commentId: T:CodaParser.IParser`1
+  href: CodaParser.IParser-1.html
+  name: IParser<T>
+  nameWithType: IParser<T>
+  fullName: CodaParser.IParser<T>
+  nameWithType.vb: IParser(Of T)
+  fullName.vb: CodaParser.IParser(Of T)
+  name.vb: IParser(Of T)
+  spec.csharp:
+  - uid: CodaParser.IParser`1
+    name: IParser
+    href: CodaParser.IParser-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: CodaParser.IParser`1
+    name: IParser
+    href: CodaParser.IParser-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: CodaParser.LinesParser
+  commentId: T:CodaParser.LinesParser
+  href: CodaParser.LinesParser.html
+  name: LinesParser
+  nameWithType: LinesParser
+  fullName: CodaParser.LinesParser
+- uid: CodaParser.Parser
+  commentId: T:CodaParser.Parser
+  href: CodaParser.Parser.html
+  name: Parser
+  nameWithType: Parser
+  fullName: CodaParser.Parser

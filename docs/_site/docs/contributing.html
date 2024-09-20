@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Contributing | CodaParser Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Contributing | CodaParser Documentation ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/phmatray/coda-parser/blob/main/docs/docs/contributing.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="CodaParser">
+            CodaParser
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="contributing">
+<h1 id="contributing">Contributing</h1>
+
+<p>We welcome contributions to the CodaParser project! By contributing, you help improve the library and assist other developers in effectively parsing CODA banking files.</p>
+<h2 id="code-of-conduct">Code of Conduct</h2>
+<p>Please adhere to the <a href="../../CODE_OF_CONDUCT.md">Code of Conduct</a> when interacting with the project.</p>
+<h2 id="how-to-contribute">How to Contribute</h2>
+<p>Follow these steps to contribute to CodaParser:</p>
+<h3 id="1-fork-the-repository">1. Fork the Repository</h3>
+<p>Start by forking the <a href="https://github.com/phmatray/CodaParser">CodaParser repository</a> to your GitHub account.</p>
+<h3 id="2-clone-your-fork">2. Clone Your Fork</h3>
+<p>Clone the forked repository to your local machine:</p>
+<pre><code class="lang-bash">git clone https://github.com/phmatray/CodaParser.git
+cd CodaParser
+</code></pre>
+<h3 id="3-create-a-feature-branch">3. Create a Feature Branch</h3>
+<p>Create a new branch for your feature or bug fix:</p>
+<pre><code class="lang-bash">git checkout -b feature/YourFeature
+</code></pre>
+<h3 id="4-make-your-changes">4. Make Your Changes</h3>
+<p>Implement your feature or fix the bug. Ensure your code adheres to the project's coding standards and includes appropriate tests.</p>
+<h3 id="5-commit-your-changes">5. Commit Your Changes</h3>
+<p>Use conventional commit messages to describe your changes. This helps maintain a consistent commit history.</p>
+<h4 id="example-commit-message">Example Commit Message</h4>
+<pre><code>feat(parser): add support for new transaction types
+</code></pre>
+<h3 id="6-push-to-your-fork">6. Push to Your Fork</h3>
+<p>Push your changes to your forked repository:</p>
+<pre><code class="lang-bash">git push origin feature/YourFeature
+</code></pre>
+<h3 id="7-open-a-pull-request">7. Open a Pull Request</h3>
+<p>Navigate to the original <a href="https://github.com/phmatray/CodaParser">CodaParser repository</a> and open a pull request from your forked repository's feature branch.</p>
+<h3 id="8-respond-to-feedback">8. Respond to Feedback</h3>
+<p>Maintain an open line of communication with the project maintainers. Address any feedback or requested changes promptly.</p>
+<h2 id="reporting-issues">Reporting Issues</h2>
+<p>If you encounter any issues or bugs, please report them using the <a href="https://github.com/phmatray/CodaParser/issues">issue tracker</a>. Include detailed information to help us reproduce and address the problem effectively.</p>
+<h2 id="development-guidelines">Development Guidelines</h2>
+<ul>
+<li><strong>Coding Standards:</strong> Follow the existing coding conventions used throughout the project.</li>
+<li><strong>Testing:</strong> Write unit tests for new features and ensure existing tests pass.</li>
+<li><strong>Documentation:</strong> Update documentation as necessary to reflect your changes.</li>
+<li><strong>Commit Messages:</strong> Use clear and descriptive commit messages following the <a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits</a> guidelines.</li>
+</ul>
+<h2 id="thank-you">Thank You!</h2>
+<p>Your contributions are greatly appreciated and help make CodaParser a valuable tool for the developer community. Thank you for your interest and support!</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/phmatray/coda-parser/blob/main/docs/docs/contributing.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

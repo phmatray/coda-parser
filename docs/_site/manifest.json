@@ -1,0 +1,988 @@
+{
+  "source_base_path": "/Users/phmatray/Repositories/github-phm/coda-parser/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Exceptions.InvalidValueException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Exceptions.InvalidValueException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Exceptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Helpers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.IParser-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.IParser-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.LineParsers.EndSummaryLineParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.LineParsers.EndSummaryLineParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.LineParsers.ILineParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.LineParsers.ILineParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.LineParsers.IdentificationLineParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.LineParsers.IdentificationLineParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.LineParsers.InformationPart1LineParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.LineParsers.InformationPart1LineParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.LineParsers.InformationPart2LineParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.LineParsers.InformationPart2LineParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.LineParsers.InformationPart3LineParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.LineParsers.InformationPart3LineParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.LineParsers.InitialStateLineParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.LineParsers.InitialStateLineParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.LineParsers.MessageLineParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.LineParsers.MessageLineParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.LineParsers.NewStateLineParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.LineParsers.NewStateLineParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.LineParsers.TransactionPart1LineParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.LineParsers.TransactionPart1LineParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.LineParsers.TransactionPart2LineParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.LineParsers.TransactionPart2LineParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.LineParsers.TransactionPart3LineParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.LineParsers.TransactionPart3LineParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.LineParsers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.LineParsers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Lines.EndSummaryLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Lines.EndSummaryLine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Lines.IInformationOrTransactionLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Lines.IInformationOrTransactionLine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Lines.ILine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Lines.ILine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Lines.IdentificationLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Lines.IdentificationLine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Lines.InformationPart1Line.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Lines.InformationPart1Line.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Lines.InformationPart2Line.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Lines.InformationPart2Line.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Lines.InformationPart3Line.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Lines.InformationPart3Line.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Lines.InitialStateLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Lines.InitialStateLine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Lines.LineType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Lines.LineType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Lines.MessageLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Lines.MessageLine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Lines.NewStateLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Lines.NewStateLine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Lines.TransactionPart1Line.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Lines.TransactionPart1Line.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Lines.TransactionPart2Line.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Lines.TransactionPart2Line.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Lines.TransactionPart3Line.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Lines.TransactionPart3Line.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Lines.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Lines.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.LinesParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.LinesParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Parser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Parser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.StatementParsers.AccountOtherPartyParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.StatementParsers.AccountOtherPartyParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.StatementParsers.AccountParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.StatementParsers.AccountParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.StatementParsers.MessageParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.StatementParsers.MessageParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.StatementParsers.StatementParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.StatementParsers.StatementParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.StatementParsers.TransactionParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.StatementParsers.TransactionParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.StatementParsers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.StatementParsers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Statements.Account.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Statements.Account.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Statements.AccountOtherParty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Statements.AccountOtherParty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Statements.Statement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Statements.Statement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Statements.Transaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Statements.Transaction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Statements.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Statements.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.Account.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.Account.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.AccountDescription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.AccountDescription.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.AccountFull.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.AccountFull.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.AccountName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.AccountName.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.AccountNumber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.AccountNumber.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.AccountNumberType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.AccountNumberType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.Amount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.Amount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.ApplicationCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.ApplicationCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.BankIdentificationNumber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.BankIdentificationNumber.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.BankReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.BankReference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.Bic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.Bic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.CategoryPurpose.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.CategoryPurpose.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.ClientReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.ClientReference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.CompanyIdentificationNumber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.CompanyIdentificationNumber.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.Country.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.Country.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.Currency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.Currency.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.Date.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.Date.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.ExternalApplicationCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.ExternalApplicationCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.FileReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.FileReference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.GlobalizationCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.GlobalizationCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.IsoReasonReturnCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.IsoReasonReturnCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.Message.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.Message.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.MessageOrStructuredMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.MessageOrStructuredMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.PaperStatementSequenceNumber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.PaperStatementSequenceNumber.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.Purpose.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.Purpose.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.RelatedReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.RelatedReference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.SepaDirectDebit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.SepaDirectDebit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.SequenceNumber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.SequenceNumber.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.SequenceNumberDetail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.SequenceNumberDetail.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.StatementSequenceNumber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.StatementSequenceNumber.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.StructuredMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.StructuredMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.TransactionCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.TransactionCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.TransactionCodeCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.TransactionCodeCategory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.TransactionCodeFamily.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.TransactionCodeFamily.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.TransactionCodeOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.TransactionCodeOperation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.TransactionCodeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.TransactionCodeType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.TransactionReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.TransactionReference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.VersionCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.VersionCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.Values.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.Values.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CodaParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CodaParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/acknowledgements.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/acknowledgements.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/api-reference.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/api-reference.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/contributing.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/contributing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/features.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/features.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/license.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/license.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

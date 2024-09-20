@@ -1,0 +1,798 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodaParser.Statements.Transaction
+  commentId: T:CodaParser.Statements.Transaction
+  id: Transaction
+  parent: CodaParser.Statements
+  children:
+  - CodaParser.Statements.Transaction.#ctor(CodaParser.Statements.AccountOtherParty,System.Int32,System.Int32,System.DateTime,System.DateTime,System.Decimal,System.String,System.String,CodaParser.Values.SepaDirectDebit)
+  - CodaParser.Statements.Transaction.Account
+  - CodaParser.Statements.Transaction.Amount
+  - CodaParser.Statements.Transaction.Message
+  - CodaParser.Statements.Transaction.SepaDirectDebit
+  - CodaParser.Statements.Transaction.StatementSequence
+  - CodaParser.Statements.Transaction.StructuredMessage
+  - CodaParser.Statements.Transaction.TransactionDate
+  - CodaParser.Statements.Transaction.TransactionSequence
+  - CodaParser.Statements.Transaction.ValutaDate
+  langs:
+  - csharp
+  - vb
+  name: Transaction
+  nameWithType: Transaction
+  fullName: CodaParser.Statements.Transaction
+  type: Class
+  source:
+    remote:
+      path: CodaParser/Statements/Transaction.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Transaction
+    path: ../CodaParser/Statements/Transaction.cs
+    startLine: 7
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Information about a single transaction.
+  example: []
+  syntax:
+    content: public class Transaction
+    content.vb: Public Class Transaction
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CodaParser.Statements.Transaction.#ctor(CodaParser.Statements.AccountOtherParty,System.Int32,System.Int32,System.DateTime,System.DateTime,System.Decimal,System.String,System.String,CodaParser.Values.SepaDirectDebit)
+  commentId: M:CodaParser.Statements.Transaction.#ctor(CodaParser.Statements.AccountOtherParty,System.Int32,System.Int32,System.DateTime,System.DateTime,System.Decimal,System.String,System.String,CodaParser.Values.SepaDirectDebit)
+  id: '#ctor(CodaParser.Statements.AccountOtherParty,System.Int32,System.Int32,System.DateTime,System.DateTime,System.Decimal,System.String,System.String,CodaParser.Values.SepaDirectDebit)'
+  parent: CodaParser.Statements.Transaction
+  langs:
+  - csharp
+  - vb
+  name: Transaction(AccountOtherParty, int, int, DateTime, DateTime, decimal, string, string?, SepaDirectDebit?)
+  nameWithType: Transaction.Transaction(AccountOtherParty, int, int, DateTime, DateTime, decimal, string, string?, SepaDirectDebit?)
+  fullName: CodaParser.Statements.Transaction.Transaction(CodaParser.Statements.AccountOtherParty, int, int, System.DateTime, System.DateTime, decimal, string, string?, CodaParser.Values.SepaDirectDebit?)
+  type: Constructor
+  source:
+    remote:
+      path: CodaParser/Statements/Transaction.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: .ctor
+    path: ../CodaParser/Statements/Transaction.cs
+    startLine: 21
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Initializes a new instance of the <xref href="CodaParser.Statements.Transaction" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public Transaction(AccountOtherParty account, int statementSequence, int transactionSequence, DateTime transactionDate, DateTime valutaDate, decimal amount, string message, string? structuredMessage, SepaDirectDebit? sepaDirectDebit)
+    parameters:
+    - id: account
+      type: CodaParser.Statements.AccountOtherParty
+      description: The account of the other party.
+    - id: statementSequence
+      type: System.Int32
+      description: The sequence id of the statement.
+    - id: transactionSequence
+      type: System.Int32
+      description: The sequence id of the transaction.
+    - id: transactionDate
+      type: System.DateTime
+      description: The date where the transaction is executed.
+    - id: valutaDate
+      type: System.DateTime
+      description: The date where the valuta is changed.
+    - id: amount
+      type: System.Decimal
+      description: The amount that has been transfered.
+    - id: message
+      type: System.String
+      description: A message that is included in the transaction.
+    - id: structuredMessage
+      type: System.String
+      description: A structured message.
+    - id: sepaDirectDebit
+      type: CodaParser.Values.SepaDirectDebit
+      description: The sepa direct debit information.
+    content.vb: Public Sub New(account As AccountOtherParty, statementSequence As Integer, transactionSequence As Integer, transactionDate As Date, valutaDate As Date, amount As Decimal, message As String, structuredMessage As String, sepaDirectDebit As SepaDirectDebit)
+  overload: CodaParser.Statements.Transaction.#ctor*
+  nameWithType.vb: Transaction.New(AccountOtherParty, Integer, Integer, Date, Date, Decimal, String, String, SepaDirectDebit)
+  fullName.vb: CodaParser.Statements.Transaction.New(CodaParser.Statements.AccountOtherParty, Integer, Integer, Date, Date, Decimal, String, String, CodaParser.Values.SepaDirectDebit)
+  name.vb: New(AccountOtherParty, Integer, Integer, Date, Date, Decimal, String, String, SepaDirectDebit)
+- uid: CodaParser.Statements.Transaction.Account
+  commentId: P:CodaParser.Statements.Transaction.Account
+  id: Account
+  parent: CodaParser.Statements.Transaction
+  langs:
+  - csharp
+  - vb
+  name: Account
+  nameWithType: Transaction.Account
+  fullName: CodaParser.Statements.Transaction.Account
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Statements/Transaction.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Account
+    path: ../CodaParser/Statements/Transaction.cs
+    startLine: 37
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Gets the account of the other party.
+  example: []
+  syntax:
+    content: public AccountOtherParty Account { get; }
+    parameters: []
+    return:
+      type: CodaParser.Statements.AccountOtherParty
+    content.vb: Public ReadOnly Property Account As AccountOtherParty
+  overload: CodaParser.Statements.Transaction.Account*
+- uid: CodaParser.Statements.Transaction.Amount
+  commentId: P:CodaParser.Statements.Transaction.Amount
+  id: Amount
+  parent: CodaParser.Statements.Transaction
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: Transaction.Amount
+  fullName: CodaParser.Statements.Transaction.Amount
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Statements/Transaction.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Amount
+    path: ../CodaParser/Statements/Transaction.cs
+    startLine: 42
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Gets the transferred amount.
+  example: []
+  syntax:
+    content: public decimal Amount { get; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: Public ReadOnly Property Amount As Decimal
+  overload: CodaParser.Statements.Transaction.Amount*
+- uid: CodaParser.Statements.Transaction.Message
+  commentId: P:CodaParser.Statements.Transaction.Message
+  id: Message
+  parent: CodaParser.Statements.Transaction
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: Transaction.Message
+  fullName: CodaParser.Statements.Transaction.Message
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Statements/Transaction.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Message
+    path: ../CodaParser/Statements/Transaction.cs
+    startLine: 47
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Gets the included message.
+  example: []
+  syntax:
+    content: public string Message { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Message As String
+  overload: CodaParser.Statements.Transaction.Message*
+- uid: CodaParser.Statements.Transaction.SepaDirectDebit
+  commentId: P:CodaParser.Statements.Transaction.SepaDirectDebit
+  id: SepaDirectDebit
+  parent: CodaParser.Statements.Transaction
+  langs:
+  - csharp
+  - vb
+  name: SepaDirectDebit
+  nameWithType: Transaction.SepaDirectDebit
+  fullName: CodaParser.Statements.Transaction.SepaDirectDebit
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Statements/Transaction.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: SepaDirectDebit
+    path: ../CodaParser/Statements/Transaction.cs
+    startLine: 52
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Gets the sepa direct debit information.
+  example: []
+  syntax:
+    content: public SepaDirectDebit? SepaDirectDebit { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.SepaDirectDebit
+    content.vb: Public ReadOnly Property SepaDirectDebit As SepaDirectDebit
+  overload: CodaParser.Statements.Transaction.SepaDirectDebit*
+- uid: CodaParser.Statements.Transaction.StatementSequence
+  commentId: P:CodaParser.Statements.Transaction.StatementSequence
+  id: StatementSequence
+  parent: CodaParser.Statements.Transaction
+  langs:
+  - csharp
+  - vb
+  name: StatementSequence
+  nameWithType: Transaction.StatementSequence
+  fullName: CodaParser.Statements.Transaction.StatementSequence
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Statements/Transaction.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: StatementSequence
+    path: ../CodaParser/Statements/Transaction.cs
+    startLine: 57
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Gets the sequence id of the statement.
+  example: []
+  syntax:
+    content: public int StatementSequence { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property StatementSequence As Integer
+  overload: CodaParser.Statements.Transaction.StatementSequence*
+- uid: CodaParser.Statements.Transaction.StructuredMessage
+  commentId: P:CodaParser.Statements.Transaction.StructuredMessage
+  id: StructuredMessage
+  parent: CodaParser.Statements.Transaction
+  langs:
+  - csharp
+  - vb
+  name: StructuredMessage
+  nameWithType: Transaction.StructuredMessage
+  fullName: CodaParser.Statements.Transaction.StructuredMessage
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Statements/Transaction.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: StructuredMessage
+    path: ../CodaParser/Statements/Transaction.cs
+    startLine: 62
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Gets the structured message.
+  example: []
+  syntax:
+    content: public string? StructuredMessage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property StructuredMessage As String
+  overload: CodaParser.Statements.Transaction.StructuredMessage*
+- uid: CodaParser.Statements.Transaction.TransactionDate
+  commentId: P:CodaParser.Statements.Transaction.TransactionDate
+  id: TransactionDate
+  parent: CodaParser.Statements.Transaction
+  langs:
+  - csharp
+  - vb
+  name: TransactionDate
+  nameWithType: Transaction.TransactionDate
+  fullName: CodaParser.Statements.Transaction.TransactionDate
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Statements/Transaction.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: TransactionDate
+    path: ../CodaParser/Statements/Transaction.cs
+    startLine: 67
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Gets the date where the transaction is executed.
+  example: []
+  syntax:
+    content: public DateTime TransactionDate { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public ReadOnly Property TransactionDate As Date
+  overload: CodaParser.Statements.Transaction.TransactionDate*
+- uid: CodaParser.Statements.Transaction.TransactionSequence
+  commentId: P:CodaParser.Statements.Transaction.TransactionSequence
+  id: TransactionSequence
+  parent: CodaParser.Statements.Transaction
+  langs:
+  - csharp
+  - vb
+  name: TransactionSequence
+  nameWithType: Transaction.TransactionSequence
+  fullName: CodaParser.Statements.Transaction.TransactionSequence
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Statements/Transaction.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: TransactionSequence
+    path: ../CodaParser/Statements/Transaction.cs
+    startLine: 72
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Gets the sequence id of the transaction.
+  example: []
+  syntax:
+    content: public int TransactionSequence { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property TransactionSequence As Integer
+  overload: CodaParser.Statements.Transaction.TransactionSequence*
+- uid: CodaParser.Statements.Transaction.ValutaDate
+  commentId: P:CodaParser.Statements.Transaction.ValutaDate
+  id: ValutaDate
+  parent: CodaParser.Statements.Transaction
+  langs:
+  - csharp
+  - vb
+  name: ValutaDate
+  nameWithType: Transaction.ValutaDate
+  fullName: CodaParser.Statements.Transaction.ValutaDate
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Statements/Transaction.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: ValutaDate
+    path: ../CodaParser/Statements/Transaction.cs
+    startLine: 77
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Statements
+  summary: Gets the date when the valuta is changed.
+  example: []
+  syntax:
+    content: public DateTime ValutaDate { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public ReadOnly Property ValutaDate As Date
+  overload: CodaParser.Statements.Transaction.ValutaDate*
+references:
+- uid: CodaParser.Statements
+  commentId: N:CodaParser.Statements
+  href: CodaParser.html
+  name: CodaParser.Statements
+  nameWithType: CodaParser.Statements
+  fullName: CodaParser.Statements
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Statements
+    name: Statements
+    href: CodaParser.Statements.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Statements
+    name: Statements
+    href: CodaParser.Statements.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodaParser.Statements.Transaction
+  commentId: T:CodaParser.Statements.Transaction
+  parent: CodaParser.Statements
+  href: CodaParser.Statements.Transaction.html
+  name: Transaction
+  nameWithType: Transaction
+  fullName: CodaParser.Statements.Transaction
+- uid: CodaParser.Statements.Transaction.#ctor*
+  commentId: Overload:CodaParser.Statements.Transaction.#ctor
+  href: CodaParser.Statements.Transaction.html#CodaParser_Statements_Transaction__ctor_CodaParser_Statements_AccountOtherParty_System_Int32_System_Int32_System_DateTime_System_DateTime_System_Decimal_System_String_System_String_CodaParser_Values_SepaDirectDebit_
+  name: Transaction
+  nameWithType: Transaction.Transaction
+  fullName: CodaParser.Statements.Transaction.Transaction
+  nameWithType.vb: Transaction.New
+  fullName.vb: CodaParser.Statements.Transaction.New
+  name.vb: New
+- uid: CodaParser.Statements.AccountOtherParty
+  commentId: T:CodaParser.Statements.AccountOtherParty
+  parent: CodaParser.Statements
+  href: CodaParser.Statements.AccountOtherParty.html
+  name: AccountOtherParty
+  nameWithType: AccountOtherParty
+  fullName: CodaParser.Statements.AccountOtherParty
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CodaParser.Values.SepaDirectDebit
+  commentId: T:CodaParser.Values.SepaDirectDebit
+  parent: CodaParser.Values
+  href: CodaParser.Values.SepaDirectDebit.html
+  name: SepaDirectDebit
+  nameWithType: SepaDirectDebit
+  fullName: CodaParser.Values.SepaDirectDebit
+- uid: CodaParser.Values
+  commentId: N:CodaParser.Values
+  href: CodaParser.html
+  name: CodaParser.Values
+  nameWithType: CodaParser.Values
+  fullName: CodaParser.Values
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Values
+    name: Values
+    href: CodaParser.Values.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Values
+    name: Values
+    href: CodaParser.Values.html
+- uid: CodaParser.Statements.Transaction.Account*
+  commentId: Overload:CodaParser.Statements.Transaction.Account
+  href: CodaParser.Statements.Transaction.html#CodaParser_Statements_Transaction_Account
+  name: Account
+  nameWithType: Transaction.Account
+  fullName: CodaParser.Statements.Transaction.Account
+- uid: CodaParser.Statements.Transaction.Amount*
+  commentId: Overload:CodaParser.Statements.Transaction.Amount
+  href: CodaParser.Statements.Transaction.html#CodaParser_Statements_Transaction_Amount
+  name: Amount
+  nameWithType: Transaction.Amount
+  fullName: CodaParser.Statements.Transaction.Amount
+- uid: CodaParser.Statements.Transaction.Message*
+  commentId: Overload:CodaParser.Statements.Transaction.Message
+  href: CodaParser.Statements.Transaction.html#CodaParser_Statements_Transaction_Message
+  name: Message
+  nameWithType: Transaction.Message
+  fullName: CodaParser.Statements.Transaction.Message
+- uid: CodaParser.Statements.Transaction.SepaDirectDebit*
+  commentId: Overload:CodaParser.Statements.Transaction.SepaDirectDebit
+  href: CodaParser.Statements.Transaction.html#CodaParser_Statements_Transaction_SepaDirectDebit
+  name: SepaDirectDebit
+  nameWithType: Transaction.SepaDirectDebit
+  fullName: CodaParser.Statements.Transaction.SepaDirectDebit
+- uid: CodaParser.Statements.Transaction.StatementSequence*
+  commentId: Overload:CodaParser.Statements.Transaction.StatementSequence
+  href: CodaParser.Statements.Transaction.html#CodaParser_Statements_Transaction_StatementSequence
+  name: StatementSequence
+  nameWithType: Transaction.StatementSequence
+  fullName: CodaParser.Statements.Transaction.StatementSequence
+- uid: CodaParser.Statements.Transaction.StructuredMessage*
+  commentId: Overload:CodaParser.Statements.Transaction.StructuredMessage
+  href: CodaParser.Statements.Transaction.html#CodaParser_Statements_Transaction_StructuredMessage
+  name: StructuredMessage
+  nameWithType: Transaction.StructuredMessage
+  fullName: CodaParser.Statements.Transaction.StructuredMessage
+- uid: CodaParser.Statements.Transaction.TransactionDate*
+  commentId: Overload:CodaParser.Statements.Transaction.TransactionDate
+  href: CodaParser.Statements.Transaction.html#CodaParser_Statements_Transaction_TransactionDate
+  name: TransactionDate
+  nameWithType: Transaction.TransactionDate
+  fullName: CodaParser.Statements.Transaction.TransactionDate
+- uid: CodaParser.Statements.Transaction.TransactionSequence*
+  commentId: Overload:CodaParser.Statements.Transaction.TransactionSequence
+  href: CodaParser.Statements.Transaction.html#CodaParser_Statements_Transaction_TransactionSequence
+  name: TransactionSequence
+  nameWithType: Transaction.TransactionSequence
+  fullName: CodaParser.Statements.Transaction.TransactionSequence
+- uid: CodaParser.Statements.Transaction.ValutaDate*
+  commentId: Overload:CodaParser.Statements.Transaction.ValutaDate
+  href: CodaParser.Statements.Transaction.html#CodaParser_Statements_Transaction_ValutaDate
+  name: ValutaDate
+  nameWithType: Transaction.ValutaDate
+  fullName: CodaParser.Statements.Transaction.ValutaDate

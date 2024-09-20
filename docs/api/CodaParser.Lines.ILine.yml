@@ -1,0 +1,98 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodaParser.Lines.ILine
+  commentId: T:CodaParser.Lines.ILine
+  id: ILine
+  parent: CodaParser.Lines
+  children:
+  - CodaParser.Lines.ILine.GetLineType
+  langs:
+  - csharp
+  - vb
+  name: ILine
+  nameWithType: ILine
+  fullName: CodaParser.Lines.ILine
+  type: Interface
+  source:
+    remote:
+      path: CodaParser/Lines/ILine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: ILine
+    path: ../CodaParser/Lines/ILine.cs
+    startLine: 5
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Information about a line in a coda format.
+  example: []
+  syntax:
+    content: public interface ILine
+    content.vb: Public Interface ILine
+- uid: CodaParser.Lines.ILine.GetLineType
+  commentId: M:CodaParser.Lines.ILine.GetLineType
+  id: GetLineType
+  parent: CodaParser.Lines.ILine
+  langs:
+  - csharp
+  - vb
+  name: GetLineType()
+  nameWithType: ILine.GetLineType()
+  fullName: CodaParser.Lines.ILine.GetLineType()
+  type: Method
+  source:
+    remote:
+      path: CodaParser/Lines/ILine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: GetLineType
+    path: ../CodaParser/Lines/ILine.cs
+    startLine: 11
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the type of the line.
+  example: []
+  syntax:
+    content: LineType GetLineType()
+    return:
+      type: CodaParser.Lines.LineType
+      description: The type that this line represents.
+    content.vb: Function GetLineType() As LineType
+  overload: CodaParser.Lines.ILine.GetLineType*
+references:
+- uid: CodaParser.Lines
+  commentId: N:CodaParser.Lines
+  href: CodaParser.html
+  name: CodaParser.Lines
+  nameWithType: CodaParser.Lines
+  fullName: CodaParser.Lines
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Lines
+    name: Lines
+    href: CodaParser.Lines.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Lines
+    name: Lines
+    href: CodaParser.Lines.html
+- uid: CodaParser.Lines.ILine.GetLineType*
+  commentId: Overload:CodaParser.Lines.ILine.GetLineType
+  href: CodaParser.Lines.ILine.html#CodaParser_Lines_ILine_GetLineType
+  name: GetLineType
+  nameWithType: ILine.GetLineType
+  fullName: CodaParser.Lines.ILine.GetLineType
+- uid: CodaParser.Lines.LineType
+  commentId: T:CodaParser.Lines.LineType
+  parent: CodaParser.Lines
+  href: CodaParser.Lines.LineType.html
+  name: LineType
+  nameWithType: LineType
+  fullName: CodaParser.Lines.LineType

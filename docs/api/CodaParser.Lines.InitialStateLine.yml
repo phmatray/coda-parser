@@ -1,0 +1,685 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodaParser.Lines.InitialStateLine
+  commentId: T:CodaParser.Lines.InitialStateLine
+  id: InitialStateLine
+  parent: CodaParser.Lines
+  children:
+  - CodaParser.Lines.InitialStateLine.#ctor(CodaParser.Values.PaperStatementSequenceNumber,CodaParser.Values.StatementSequenceNumber,CodaParser.Values.Account,CodaParser.Values.Amount,CodaParser.Values.Date)
+  - CodaParser.Lines.InitialStateLine.Account
+  - CodaParser.Lines.InitialStateLine.Balance
+  - CodaParser.Lines.InitialStateLine.Date
+  - CodaParser.Lines.InitialStateLine.GetLineType
+  - CodaParser.Lines.InitialStateLine.PaperStatementSequenceNumber
+  - CodaParser.Lines.InitialStateLine.StatementSequenceNumber
+  langs:
+  - csharp
+  - vb
+  name: InitialStateLine
+  nameWithType: InitialStateLine
+  fullName: CodaParser.Lines.InitialStateLine
+  type: Class
+  source:
+    remote:
+      path: CodaParser/Lines/InitialStateLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: InitialStateLine
+    path: ../CodaParser/Lines/InitialStateLine.cs
+    startLine: 7
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Initial state of the balance.
+  example: []
+  syntax:
+    content: 'public class InitialStateLine : ILine'
+    content.vb: Public Class InitialStateLine Implements ILine
+  inheritance:
+  - System.Object
+  implements:
+  - CodaParser.Lines.ILine
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CodaParser.Lines.InitialStateLine.#ctor(CodaParser.Values.PaperStatementSequenceNumber,CodaParser.Values.StatementSequenceNumber,CodaParser.Values.Account,CodaParser.Values.Amount,CodaParser.Values.Date)
+  commentId: M:CodaParser.Lines.InitialStateLine.#ctor(CodaParser.Values.PaperStatementSequenceNumber,CodaParser.Values.StatementSequenceNumber,CodaParser.Values.Account,CodaParser.Values.Amount,CodaParser.Values.Date)
+  id: '#ctor(CodaParser.Values.PaperStatementSequenceNumber,CodaParser.Values.StatementSequenceNumber,CodaParser.Values.Account,CodaParser.Values.Amount,CodaParser.Values.Date)'
+  parent: CodaParser.Lines.InitialStateLine
+  langs:
+  - csharp
+  - vb
+  name: InitialStateLine(PaperStatementSequenceNumber, StatementSequenceNumber, Account, Amount, Date)
+  nameWithType: InitialStateLine.InitialStateLine(PaperStatementSequenceNumber, StatementSequenceNumber, Account, Amount, Date)
+  fullName: CodaParser.Lines.InitialStateLine.InitialStateLine(CodaParser.Values.PaperStatementSequenceNumber, CodaParser.Values.StatementSequenceNumber, CodaParser.Values.Account, CodaParser.Values.Amount, CodaParser.Values.Date)
+  type: Constructor
+  source:
+    remote:
+      path: CodaParser/Lines/InitialStateLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: .ctor
+    path: ../CodaParser/Lines/InitialStateLine.cs
+    startLine: 17
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Initializes a new instance of the <xref href="CodaParser.Lines.InitialStateLine" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public InitialStateLine(PaperStatementSequenceNumber paperStatementSequenceNumber, StatementSequenceNumber statementSequenceNumber, Account account, Amount balance, Date date)
+    parameters:
+    - id: paperStatementSequenceNumber
+      type: CodaParser.Values.PaperStatementSequenceNumber
+      description: The sequence number statement of account on paper or Julian date or zeros.
+    - id: statementSequenceNumber
+      type: CodaParser.Values.StatementSequenceNumber
+      description: The sequence number of the coded statement of account or zeros.
+    - id: account
+      type: CodaParser.Values.Account
+      description: The account.
+    - id: balance
+      type: CodaParser.Values.Amount
+      description: The old balance.
+    - id: date
+      type: CodaParser.Values.Date
+      description: The date of the balance.
+    content.vb: Public Sub New(paperStatementSequenceNumber As PaperStatementSequenceNumber, statementSequenceNumber As StatementSequenceNumber, account As Account, balance As Amount, [date] As [Date])
+  overload: CodaParser.Lines.InitialStateLine.#ctor*
+  nameWithType.vb: InitialStateLine.New(PaperStatementSequenceNumber, StatementSequenceNumber, Account, Amount, Date)
+  fullName.vb: CodaParser.Lines.InitialStateLine.New(CodaParser.Values.PaperStatementSequenceNumber, CodaParser.Values.StatementSequenceNumber, CodaParser.Values.Account, CodaParser.Values.Amount, CodaParser.Values.Date)
+  name.vb: New(PaperStatementSequenceNumber, StatementSequenceNumber, Account, Amount, Date)
+- uid: CodaParser.Lines.InitialStateLine.Account
+  commentId: P:CodaParser.Lines.InitialStateLine.Account
+  id: Account
+  parent: CodaParser.Lines.InitialStateLine
+  langs:
+  - csharp
+  - vb
+  name: Account
+  nameWithType: InitialStateLine.Account
+  fullName: CodaParser.Lines.InitialStateLine.Account
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/InitialStateLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Account
+    path: ../CodaParser/Lines/InitialStateLine.cs
+    startLine: 34
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the account.
+  example: []
+  syntax:
+    content: public Account Account { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.Account
+    content.vb: Public ReadOnly Property Account As Account
+  overload: CodaParser.Lines.InitialStateLine.Account*
+- uid: CodaParser.Lines.InitialStateLine.Balance
+  commentId: P:CodaParser.Lines.InitialStateLine.Balance
+  id: Balance
+  parent: CodaParser.Lines.InitialStateLine
+  langs:
+  - csharp
+  - vb
+  name: Balance
+  nameWithType: InitialStateLine.Balance
+  fullName: CodaParser.Lines.InitialStateLine.Balance
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/InitialStateLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Balance
+    path: ../CodaParser/Lines/InitialStateLine.cs
+    startLine: 39
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the balance.
+  example: []
+  syntax:
+    content: public Amount Balance { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.Amount
+    content.vb: Public ReadOnly Property Balance As Amount
+  overload: CodaParser.Lines.InitialStateLine.Balance*
+- uid: CodaParser.Lines.InitialStateLine.Date
+  commentId: P:CodaParser.Lines.InitialStateLine.Date
+  id: Date
+  parent: CodaParser.Lines.InitialStateLine
+  langs:
+  - csharp
+  - vb
+  name: Date
+  nameWithType: InitialStateLine.Date
+  fullName: CodaParser.Lines.InitialStateLine.Date
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/InitialStateLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Date
+    path: ../CodaParser/Lines/InitialStateLine.cs
+    startLine: 44
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the date.
+  example: []
+  syntax:
+    content: public Date Date { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.Date
+    content.vb: Public ReadOnly Property [Date] As [Date]
+  overload: CodaParser.Lines.InitialStateLine.Date*
+- uid: CodaParser.Lines.InitialStateLine.PaperStatementSequenceNumber
+  commentId: P:CodaParser.Lines.InitialStateLine.PaperStatementSequenceNumber
+  id: PaperStatementSequenceNumber
+  parent: CodaParser.Lines.InitialStateLine
+  langs:
+  - csharp
+  - vb
+  name: PaperStatementSequenceNumber
+  nameWithType: InitialStateLine.PaperStatementSequenceNumber
+  fullName: CodaParser.Lines.InitialStateLine.PaperStatementSequenceNumber
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/InitialStateLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: PaperStatementSequenceNumber
+    path: ../CodaParser/Lines/InitialStateLine.cs
+    startLine: 49
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the sequence number statement of account on paper.
+  example: []
+  syntax:
+    content: public PaperStatementSequenceNumber PaperStatementSequenceNumber { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.PaperStatementSequenceNumber
+    content.vb: Public ReadOnly Property PaperStatementSequenceNumber As PaperStatementSequenceNumber
+  overload: CodaParser.Lines.InitialStateLine.PaperStatementSequenceNumber*
+- uid: CodaParser.Lines.InitialStateLine.StatementSequenceNumber
+  commentId: P:CodaParser.Lines.InitialStateLine.StatementSequenceNumber
+  id: StatementSequenceNumber
+  parent: CodaParser.Lines.InitialStateLine
+  langs:
+  - csharp
+  - vb
+  name: StatementSequenceNumber
+  nameWithType: InitialStateLine.StatementSequenceNumber
+  fullName: CodaParser.Lines.InitialStateLine.StatementSequenceNumber
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/InitialStateLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: StatementSequenceNumber
+    path: ../CodaParser/Lines/InitialStateLine.cs
+    startLine: 54
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the sequence number of the coded statement.
+  example: []
+  syntax:
+    content: public StatementSequenceNumber StatementSequenceNumber { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.StatementSequenceNumber
+    content.vb: Public ReadOnly Property StatementSequenceNumber As StatementSequenceNumber
+  overload: CodaParser.Lines.InitialStateLine.StatementSequenceNumber*
+- uid: CodaParser.Lines.InitialStateLine.GetLineType
+  commentId: M:CodaParser.Lines.InitialStateLine.GetLineType
+  id: GetLineType
+  parent: CodaParser.Lines.InitialStateLine
+  langs:
+  - csharp
+  - vb
+  name: GetLineType()
+  nameWithType: InitialStateLine.GetLineType()
+  fullName: CodaParser.Lines.InitialStateLine.GetLineType()
+  type: Method
+  source:
+    remote:
+      path: CodaParser/Lines/InitialStateLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: GetLineType
+    path: ../CodaParser/Lines/InitialStateLine.cs
+    startLine: 57
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the type of the line.
+  example: []
+  syntax:
+    content: public LineType GetLineType()
+    return:
+      type: CodaParser.Lines.LineType
+      description: The type that this line represents.
+    content.vb: Public Function GetLineType() As LineType
+  overload: CodaParser.Lines.InitialStateLine.GetLineType*
+  implements:
+  - CodaParser.Lines.ILine.GetLineType
+references:
+- uid: CodaParser.Lines
+  commentId: N:CodaParser.Lines
+  href: CodaParser.html
+  name: CodaParser.Lines
+  nameWithType: CodaParser.Lines
+  fullName: CodaParser.Lines
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Lines
+    name: Lines
+    href: CodaParser.Lines.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Lines
+    name: Lines
+    href: CodaParser.Lines.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: CodaParser.Lines.ILine
+  commentId: T:CodaParser.Lines.ILine
+  parent: CodaParser.Lines
+  href: CodaParser.Lines.ILine.html
+  name: ILine
+  nameWithType: ILine
+  fullName: CodaParser.Lines.ILine
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodaParser.Lines.InitialStateLine
+  commentId: T:CodaParser.Lines.InitialStateLine
+  href: CodaParser.Lines.InitialStateLine.html
+  name: InitialStateLine
+  nameWithType: InitialStateLine
+  fullName: CodaParser.Lines.InitialStateLine
+- uid: CodaParser.Lines.InitialStateLine.#ctor*
+  commentId: Overload:CodaParser.Lines.InitialStateLine.#ctor
+  href: CodaParser.Lines.InitialStateLine.html#CodaParser_Lines_InitialStateLine__ctor_CodaParser_Values_PaperStatementSequenceNumber_CodaParser_Values_StatementSequenceNumber_CodaParser_Values_Account_CodaParser_Values_Amount_CodaParser_Values_Date_
+  name: InitialStateLine
+  nameWithType: InitialStateLine.InitialStateLine
+  fullName: CodaParser.Lines.InitialStateLine.InitialStateLine
+  nameWithType.vb: InitialStateLine.New
+  fullName.vb: CodaParser.Lines.InitialStateLine.New
+  name.vb: New
+- uid: CodaParser.Values.PaperStatementSequenceNumber
+  commentId: T:CodaParser.Values.PaperStatementSequenceNumber
+  parent: CodaParser.Values
+  href: CodaParser.Values.PaperStatementSequenceNumber.html
+  name: PaperStatementSequenceNumber
+  nameWithType: PaperStatementSequenceNumber
+  fullName: CodaParser.Values.PaperStatementSequenceNumber
+- uid: CodaParser.Values.StatementSequenceNumber
+  commentId: T:CodaParser.Values.StatementSequenceNumber
+  parent: CodaParser.Values
+  href: CodaParser.Values.StatementSequenceNumber.html
+  name: StatementSequenceNumber
+  nameWithType: StatementSequenceNumber
+  fullName: CodaParser.Values.StatementSequenceNumber
+- uid: CodaParser.Values.Account
+  commentId: T:CodaParser.Values.Account
+  parent: CodaParser.Values
+  href: CodaParser.Values.Account.html
+  name: Account
+  nameWithType: Account
+  fullName: CodaParser.Values.Account
+- uid: CodaParser.Values.Amount
+  commentId: T:CodaParser.Values.Amount
+  parent: CodaParser.Values
+  href: CodaParser.Values.Amount.html
+  name: Amount
+  nameWithType: Amount
+  fullName: CodaParser.Values.Amount
+- uid: CodaParser.Values.Date
+  commentId: T:CodaParser.Values.Date
+  parent: CodaParser.Values
+  href: CodaParser.Values.Date.html
+  name: Date
+  nameWithType: Date
+  fullName: CodaParser.Values.Date
+- uid: CodaParser.Values
+  commentId: N:CodaParser.Values
+  href: CodaParser.html
+  name: CodaParser.Values
+  nameWithType: CodaParser.Values
+  fullName: CodaParser.Values
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Values
+    name: Values
+    href: CodaParser.Values.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Values
+    name: Values
+    href: CodaParser.Values.html
+- uid: CodaParser.Lines.InitialStateLine.Account*
+  commentId: Overload:CodaParser.Lines.InitialStateLine.Account
+  href: CodaParser.Lines.InitialStateLine.html#CodaParser_Lines_InitialStateLine_Account
+  name: Account
+  nameWithType: InitialStateLine.Account
+  fullName: CodaParser.Lines.InitialStateLine.Account
+- uid: CodaParser.Lines.InitialStateLine.Balance*
+  commentId: Overload:CodaParser.Lines.InitialStateLine.Balance
+  href: CodaParser.Lines.InitialStateLine.html#CodaParser_Lines_InitialStateLine_Balance
+  name: Balance
+  nameWithType: InitialStateLine.Balance
+  fullName: CodaParser.Lines.InitialStateLine.Balance
+- uid: CodaParser.Lines.InitialStateLine.Date*
+  commentId: Overload:CodaParser.Lines.InitialStateLine.Date
+  href: CodaParser.Lines.InitialStateLine.html#CodaParser_Lines_InitialStateLine_Date
+  name: Date
+  nameWithType: InitialStateLine.Date
+  fullName: CodaParser.Lines.InitialStateLine.Date
+- uid: CodaParser.Lines.InitialStateLine.PaperStatementSequenceNumber*
+  commentId: Overload:CodaParser.Lines.InitialStateLine.PaperStatementSequenceNumber
+  href: CodaParser.Lines.InitialStateLine.html#CodaParser_Lines_InitialStateLine_PaperStatementSequenceNumber
+  name: PaperStatementSequenceNumber
+  nameWithType: InitialStateLine.PaperStatementSequenceNumber
+  fullName: CodaParser.Lines.InitialStateLine.PaperStatementSequenceNumber
+- uid: CodaParser.Lines.InitialStateLine.StatementSequenceNumber*
+  commentId: Overload:CodaParser.Lines.InitialStateLine.StatementSequenceNumber
+  href: CodaParser.Lines.InitialStateLine.html#CodaParser_Lines_InitialStateLine_StatementSequenceNumber
+  name: StatementSequenceNumber
+  nameWithType: InitialStateLine.StatementSequenceNumber
+  fullName: CodaParser.Lines.InitialStateLine.StatementSequenceNumber
+- uid: CodaParser.Lines.InitialStateLine.GetLineType*
+  commentId: Overload:CodaParser.Lines.InitialStateLine.GetLineType
+  href: CodaParser.Lines.InitialStateLine.html#CodaParser_Lines_InitialStateLine_GetLineType
+  name: GetLineType
+  nameWithType: InitialStateLine.GetLineType
+  fullName: CodaParser.Lines.InitialStateLine.GetLineType
+- uid: CodaParser.Lines.ILine.GetLineType
+  commentId: M:CodaParser.Lines.ILine.GetLineType
+  parent: CodaParser.Lines.ILine
+  href: CodaParser.Lines.ILine.html#CodaParser_Lines_ILine_GetLineType
+  name: GetLineType()
+  nameWithType: ILine.GetLineType()
+  fullName: CodaParser.Lines.ILine.GetLineType()
+  spec.csharp:
+  - uid: CodaParser.Lines.ILine.GetLineType
+    name: GetLineType
+    href: CodaParser.Lines.ILine.html#CodaParser_Lines_ILine_GetLineType
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: CodaParser.Lines.ILine.GetLineType
+    name: GetLineType
+    href: CodaParser.Lines.ILine.html#CodaParser_Lines_ILine_GetLineType
+  - name: (
+  - name: )
+- uid: CodaParser.Lines.LineType
+  commentId: T:CodaParser.Lines.LineType
+  parent: CodaParser.Lines
+  href: CodaParser.Lines.LineType.html
+  name: LineType
+  nameWithType: LineType
+  fullName: CodaParser.Lines.LineType

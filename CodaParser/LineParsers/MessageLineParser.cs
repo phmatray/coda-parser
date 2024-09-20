@@ -5,7 +5,7 @@ namespace CodaParser.LineParsers;
 
 /// <summary>
 /// The parser for the free communication lines.
-/// /// </summary>
+/// </summary>
 public class MessageLineParser : ILineParser
 {
     /// <inheritdoc />

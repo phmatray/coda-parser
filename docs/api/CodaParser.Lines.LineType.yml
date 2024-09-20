@@ -1,0 +1,379 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodaParser.Lines.LineType
+  commentId: T:CodaParser.Lines.LineType
+  id: LineType
+  parent: CodaParser.Lines
+  children:
+  - CodaParser.Lines.LineType.EndSummary
+  - CodaParser.Lines.LineType.Identification
+  - CodaParser.Lines.LineType.InformationPart1
+  - CodaParser.Lines.LineType.InformationPart2
+  - CodaParser.Lines.LineType.InformationPart3
+  - CodaParser.Lines.LineType.InitialState
+  - CodaParser.Lines.LineType.Message
+  - CodaParser.Lines.LineType.NewState
+  - CodaParser.Lines.LineType.TransactionPart1
+  - CodaParser.Lines.LineType.TransactionPart2
+  - CodaParser.Lines.LineType.TransactionPart3
+  langs:
+  - csharp
+  - vb
+  name: LineType
+  nameWithType: LineType
+  fullName: CodaParser.Lines.LineType
+  type: Enum
+  source:
+    remote:
+      path: CodaParser/Lines/LineType.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: LineType
+    path: ../CodaParser/Lines/LineType.cs
+    startLine: 5
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: The type of a line.
+  example: []
+  syntax:
+    content: public enum LineType
+    content.vb: Public Enum LineType
+- uid: CodaParser.Lines.LineType.Identification
+  commentId: F:CodaParser.Lines.LineType.Identification
+  id: Identification
+  parent: CodaParser.Lines.LineType
+  langs:
+  - csharp
+  - vb
+  name: Identification
+  nameWithType: LineType.Identification
+  fullName: CodaParser.Lines.LineType.Identification
+  type: Field
+  source:
+    remote:
+      path: CodaParser/Lines/LineType.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Identification
+    path: ../CodaParser/Lines/LineType.cs
+    startLine: 10
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: The header record (00).
+  example: []
+  syntax:
+    content: Identification = 0
+    return:
+      type: CodaParser.Lines.LineType
+- uid: CodaParser.Lines.LineType.InitialState
+  commentId: F:CodaParser.Lines.LineType.InitialState
+  id: InitialState
+  parent: CodaParser.Lines.LineType
+  langs:
+  - csharp
+  - vb
+  name: InitialState
+  nameWithType: LineType.InitialState
+  fullName: CodaParser.Lines.LineType.InitialState
+  type: Field
+  source:
+    remote:
+      path: CodaParser/Lines/LineType.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: InitialState
+    path: ../CodaParser/Lines/LineType.cs
+    startLine: 15
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: The old balance record (10).
+  example: []
+  syntax:
+    content: InitialState = 10
+    return:
+      type: CodaParser.Lines.LineType
+- uid: CodaParser.Lines.LineType.TransactionPart1
+  commentId: F:CodaParser.Lines.LineType.TransactionPart1
+  id: TransactionPart1
+  parent: CodaParser.Lines.LineType
+  langs:
+  - csharp
+  - vb
+  name: TransactionPart1
+  nameWithType: LineType.TransactionPart1
+  fullName: CodaParser.Lines.LineType.TransactionPart1
+  type: Field
+  source:
+    remote:
+      path: CodaParser/Lines/LineType.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: TransactionPart1
+    path: ../CodaParser/Lines/LineType.cs
+    startLine: 20
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: The first movement record (21).
+  example: []
+  syntax:
+    content: TransactionPart1 = 21
+    return:
+      type: CodaParser.Lines.LineType
+- uid: CodaParser.Lines.LineType.TransactionPart2
+  commentId: F:CodaParser.Lines.LineType.TransactionPart2
+  id: TransactionPart2
+  parent: CodaParser.Lines.LineType
+  langs:
+  - csharp
+  - vb
+  name: TransactionPart2
+  nameWithType: LineType.TransactionPart2
+  fullName: CodaParser.Lines.LineType.TransactionPart2
+  type: Field
+  source:
+    remote:
+      path: CodaParser/Lines/LineType.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: TransactionPart2
+    path: ../CodaParser/Lines/LineType.cs
+    startLine: 25
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: The second movement record (22).
+  example: []
+  syntax:
+    content: TransactionPart2 = 22
+    return:
+      type: CodaParser.Lines.LineType
+- uid: CodaParser.Lines.LineType.TransactionPart3
+  commentId: F:CodaParser.Lines.LineType.TransactionPart3
+  id: TransactionPart3
+  parent: CodaParser.Lines.LineType
+  langs:
+  - csharp
+  - vb
+  name: TransactionPart3
+  nameWithType: LineType.TransactionPart3
+  fullName: CodaParser.Lines.LineType.TransactionPart3
+  type: Field
+  source:
+    remote:
+      path: CodaParser/Lines/LineType.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: TransactionPart3
+    path: ../CodaParser/Lines/LineType.cs
+    startLine: 30
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: The thrid movement record (23).
+  example: []
+  syntax:
+    content: TransactionPart3 = 23
+    return:
+      type: CodaParser.Lines.LineType
+- uid: CodaParser.Lines.LineType.InformationPart1
+  commentId: F:CodaParser.Lines.LineType.InformationPart1
+  id: InformationPart1
+  parent: CodaParser.Lines.LineType
+  langs:
+  - csharp
+  - vb
+  name: InformationPart1
+  nameWithType: LineType.InformationPart1
+  fullName: CodaParser.Lines.LineType.InformationPart1
+  type: Field
+  source:
+    remote:
+      path: CodaParser/Lines/LineType.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: InformationPart1
+    path: ../CodaParser/Lines/LineType.cs
+    startLine: 35
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: The first information record (31).
+  example: []
+  syntax:
+    content: InformationPart1 = 31
+    return:
+      type: CodaParser.Lines.LineType
+- uid: CodaParser.Lines.LineType.InformationPart2
+  commentId: F:CodaParser.Lines.LineType.InformationPart2
+  id: InformationPart2
+  parent: CodaParser.Lines.LineType
+  langs:
+  - csharp
+  - vb
+  name: InformationPart2
+  nameWithType: LineType.InformationPart2
+  fullName: CodaParser.Lines.LineType.InformationPart2
+  type: Field
+  source:
+    remote:
+      path: CodaParser/Lines/LineType.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: InformationPart2
+    path: ../CodaParser/Lines/LineType.cs
+    startLine: 40
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: The second information record (32).
+  example: []
+  syntax:
+    content: InformationPart2 = 32
+    return:
+      type: CodaParser.Lines.LineType
+- uid: CodaParser.Lines.LineType.InformationPart3
+  commentId: F:CodaParser.Lines.LineType.InformationPart3
+  id: InformationPart3
+  parent: CodaParser.Lines.LineType
+  langs:
+  - csharp
+  - vb
+  name: InformationPart3
+  nameWithType: LineType.InformationPart3
+  fullName: CodaParser.Lines.LineType.InformationPart3
+  type: Field
+  source:
+    remote:
+      path: CodaParser/Lines/LineType.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: InformationPart3
+    path: ../CodaParser/Lines/LineType.cs
+    startLine: 45
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: The third information record (33).
+  example: []
+  syntax:
+    content: InformationPart3 = 33
+    return:
+      type: CodaParser.Lines.LineType
+- uid: CodaParser.Lines.LineType.Message
+  commentId: F:CodaParser.Lines.LineType.Message
+  id: Message
+  parent: CodaParser.Lines.LineType
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: LineType.Message
+  fullName: CodaParser.Lines.LineType.Message
+  type: Field
+  source:
+    remote:
+      path: CodaParser/Lines/LineType.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Message
+    path: ../CodaParser/Lines/LineType.cs
+    startLine: 50
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: The free communication record (40).
+  example: []
+  syntax:
+    content: Message = 40
+    return:
+      type: CodaParser.Lines.LineType
+- uid: CodaParser.Lines.LineType.NewState
+  commentId: F:CodaParser.Lines.LineType.NewState
+  id: NewState
+  parent: CodaParser.Lines.LineType
+  langs:
+  - csharp
+  - vb
+  name: NewState
+  nameWithType: LineType.NewState
+  fullName: CodaParser.Lines.LineType.NewState
+  type: Field
+  source:
+    remote:
+      path: CodaParser/Lines/LineType.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: NewState
+    path: ../CodaParser/Lines/LineType.cs
+    startLine: 55
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: The new balance record (80).
+  example: []
+  syntax:
+    content: NewState = 80
+    return:
+      type: CodaParser.Lines.LineType
+- uid: CodaParser.Lines.LineType.EndSummary
+  commentId: F:CodaParser.Lines.LineType.EndSummary
+  id: EndSummary
+  parent: CodaParser.Lines.LineType
+  langs:
+  - csharp
+  - vb
+  name: EndSummary
+  nameWithType: LineType.EndSummary
+  fullName: CodaParser.Lines.LineType.EndSummary
+  type: Field
+  source:
+    remote:
+      path: CodaParser/Lines/LineType.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: EndSummary
+    path: ../CodaParser/Lines/LineType.cs
+    startLine: 60
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: The trailer record (90).
+  example: []
+  syntax:
+    content: EndSummary = 90
+    return:
+      type: CodaParser.Lines.LineType
+references:
+- uid: CodaParser.Lines
+  commentId: N:CodaParser.Lines
+  href: CodaParser.html
+  name: CodaParser.Lines
+  nameWithType: CodaParser.Lines
+  fullName: CodaParser.Lines
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Lines
+    name: Lines
+    href: CodaParser.Lines.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Lines
+    name: Lines
+    href: CodaParser.Lines.html
+- uid: CodaParser.Lines.LineType
+  commentId: T:CodaParser.Lines.LineType
+  parent: CodaParser.Lines
+  href: CodaParser.Lines.LineType.html
+  name: LineType
+  nameWithType: LineType
+  fullName: CodaParser.Lines.LineType

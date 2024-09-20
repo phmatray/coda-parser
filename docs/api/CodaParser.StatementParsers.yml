@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodaParser.StatementParsers
+  commentId: N:CodaParser.StatementParsers
+  id: CodaParser.StatementParsers
+  children:
+  - CodaParser.StatementParsers.AccountOtherPartyParser
+  - CodaParser.StatementParsers.AccountParser
+  - CodaParser.StatementParsers.MessageParser
+  - CodaParser.StatementParsers.StatementParser
+  - CodaParser.StatementParsers.TransactionParser
+  langs:
+  - csharp
+  - vb
+  name: CodaParser.StatementParsers
+  nameWithType: CodaParser.StatementParsers
+  fullName: CodaParser.StatementParsers
+  type: Namespace
+  assemblies:
+  - CodaParser
+references:
+- uid: CodaParser.StatementParsers.AccountOtherPartyParser
+  commentId: T:CodaParser.StatementParsers.AccountOtherPartyParser
+  href: CodaParser.StatementParsers.AccountOtherPartyParser.html
+  name: AccountOtherPartyParser
+  nameWithType: AccountOtherPartyParser
+  fullName: CodaParser.StatementParsers.AccountOtherPartyParser
+- uid: CodaParser.StatementParsers.AccountParser
+  commentId: T:CodaParser.StatementParsers.AccountParser
+  href: CodaParser.StatementParsers.AccountParser.html
+  name: AccountParser
+  nameWithType: AccountParser
+  fullName: CodaParser.StatementParsers.AccountParser
+- uid: CodaParser.StatementParsers.MessageParser
+  commentId: T:CodaParser.StatementParsers.MessageParser
+  href: CodaParser.StatementParsers.MessageParser.html
+  name: MessageParser
+  nameWithType: MessageParser
+  fullName: CodaParser.StatementParsers.MessageParser
+- uid: CodaParser.StatementParsers.StatementParser
+  commentId: T:CodaParser.StatementParsers.StatementParser
+  href: CodaParser.StatementParsers.StatementParser.html
+  name: StatementParser
+  nameWithType: StatementParser
+  fullName: CodaParser.StatementParsers.StatementParser
+- uid: CodaParser.StatementParsers.TransactionParser
+  commentId: T:CodaParser.StatementParsers.TransactionParser
+  href: CodaParser.StatementParsers.TransactionParser.html
+  name: TransactionParser
+  nameWithType: TransactionParser
+  fullName: CodaParser.StatementParsers.TransactionParser

@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodaParser.Lines.IInformationOrTransactionLine
+  commentId: T:CodaParser.Lines.IInformationOrTransactionLine
+  id: IInformationOrTransactionLine
+  parent: CodaParser.Lines
+  children:
+  - CodaParser.Lines.IInformationOrTransactionLine.Message
+  - CodaParser.Lines.IInformationOrTransactionLine.SequenceNumber
+  langs:
+  - csharp
+  - vb
+  name: IInformationOrTransactionLine
+  nameWithType: IInformationOrTransactionLine
+  fullName: CodaParser.Lines.IInformationOrTransactionLine
+  type: Interface
+  source:
+    remote:
+      path: CodaParser/Lines/IInformationOrTransactionLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: IInformationOrTransactionLine
+    path: ../CodaParser/Lines/IInformationOrTransactionLine.cs
+    startLine: 7
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Information about an information or a transaction line.
+  example: []
+  syntax:
+    content: 'public interface IInformationOrTransactionLine : ILine'
+    content.vb: Public Interface IInformationOrTransactionLine Inherits ILine
+  inheritedMembers:
+  - CodaParser.Lines.ILine.GetLineType
+- uid: CodaParser.Lines.IInformationOrTransactionLine.Message
+  commentId: P:CodaParser.Lines.IInformationOrTransactionLine.Message
+  id: Message
+  parent: CodaParser.Lines.IInformationOrTransactionLine
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: IInformationOrTransactionLine.Message
+  fullName: CodaParser.Lines.IInformationOrTransactionLine.Message
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/IInformationOrTransactionLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Message
+    path: ../CodaParser/Lines/IInformationOrTransactionLine.cs
+    startLine: 12
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the message.
+  example: []
+  syntax:
+    content: Message? Message { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.Message
+    content.vb: ReadOnly Property Message As Message
+  overload: CodaParser.Lines.IInformationOrTransactionLine.Message*
+- uid: CodaParser.Lines.IInformationOrTransactionLine.SequenceNumber
+  commentId: P:CodaParser.Lines.IInformationOrTransactionLine.SequenceNumber
+  id: SequenceNumber
+  parent: CodaParser.Lines.IInformationOrTransactionLine
+  langs:
+  - csharp
+  - vb
+  name: SequenceNumber
+  nameWithType: IInformationOrTransactionLine.SequenceNumber
+  fullName: CodaParser.Lines.IInformationOrTransactionLine.SequenceNumber
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/IInformationOrTransactionLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: SequenceNumber
+    path: ../CodaParser/Lines/IInformationOrTransactionLine.cs
+    startLine: 17
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the sequence number.
+  example: []
+  syntax:
+    content: SequenceNumber SequenceNumber { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.SequenceNumber
+    content.vb: ReadOnly Property SequenceNumber As SequenceNumber
+  overload: CodaParser.Lines.IInformationOrTransactionLine.SequenceNumber*
+references:
+- uid: CodaParser.Lines
+  commentId: N:CodaParser.Lines
+  href: CodaParser.html
+  name: CodaParser.Lines
+  nameWithType: CodaParser.Lines
+  fullName: CodaParser.Lines
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Lines
+    name: Lines
+    href: CodaParser.Lines.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Lines
+    name: Lines
+    href: CodaParser.Lines.html
+- uid: CodaParser.Lines.ILine.GetLineType
+  commentId: M:CodaParser.Lines.ILine.GetLineType
+  parent: CodaParser.Lines.ILine
+  href: CodaParser.Lines.ILine.html#CodaParser_Lines_ILine_GetLineType
+  name: GetLineType()
+  nameWithType: ILine.GetLineType()
+  fullName: CodaParser.Lines.ILine.GetLineType()
+  spec.csharp:
+  - uid: CodaParser.Lines.ILine.GetLineType
+    name: GetLineType
+    href: CodaParser.Lines.ILine.html#CodaParser_Lines_ILine_GetLineType
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: CodaParser.Lines.ILine.GetLineType
+    name: GetLineType
+    href: CodaParser.Lines.ILine.html#CodaParser_Lines_ILine_GetLineType
+  - name: (
+  - name: )
+- uid: CodaParser.Lines.ILine
+  commentId: T:CodaParser.Lines.ILine
+  parent: CodaParser.Lines
+  href: CodaParser.Lines.ILine.html
+  name: ILine
+  nameWithType: ILine
+  fullName: CodaParser.Lines.ILine
+- uid: CodaParser.Lines.IInformationOrTransactionLine.Message*
+  commentId: Overload:CodaParser.Lines.IInformationOrTransactionLine.Message
+  href: CodaParser.Lines.IInformationOrTransactionLine.html#CodaParser_Lines_IInformationOrTransactionLine_Message
+  name: Message
+  nameWithType: IInformationOrTransactionLine.Message
+  fullName: CodaParser.Lines.IInformationOrTransactionLine.Message
+- uid: CodaParser.Values.Message
+  commentId: T:CodaParser.Values.Message
+  parent: CodaParser.Values
+  href: CodaParser.Values.Message.html
+  name: Message
+  nameWithType: Message
+  fullName: CodaParser.Values.Message
+- uid: CodaParser.Values
+  commentId: N:CodaParser.Values
+  href: CodaParser.html
+  name: CodaParser.Values
+  nameWithType: CodaParser.Values
+  fullName: CodaParser.Values
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Values
+    name: Values
+    href: CodaParser.Values.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Values
+    name: Values
+    href: CodaParser.Values.html
+- uid: CodaParser.Lines.IInformationOrTransactionLine.SequenceNumber*
+  commentId: Overload:CodaParser.Lines.IInformationOrTransactionLine.SequenceNumber
+  href: CodaParser.Lines.IInformationOrTransactionLine.html#CodaParser_Lines_IInformationOrTransactionLine_SequenceNumber
+  name: SequenceNumber
+  nameWithType: IInformationOrTransactionLine.SequenceNumber
+  fullName: CodaParser.Lines.IInformationOrTransactionLine.SequenceNumber
+- uid: CodaParser.Values.SequenceNumber
+  commentId: T:CodaParser.Values.SequenceNumber
+  parent: CodaParser.Values
+  href: CodaParser.Values.SequenceNumber.html
+  name: SequenceNumber
+  nameWithType: SequenceNumber
+  fullName: CodaParser.Values.SequenceNumber

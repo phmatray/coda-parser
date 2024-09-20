@@ -1,0 +1,939 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodaParser.Helpers
+  commentId: T:CodaParser.Helpers
+  id: Helpers
+  parent: CodaParser
+  children:
+  - CodaParser.Helpers.FilterLinesOfTypes(System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine},System.Collections.Generic.IEnumerable{CodaParser.Lines.LineType})
+  - CodaParser.Helpers.FormatDateString(System.String)
+  - CodaParser.Helpers.GetFirstLineOfType``1(System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine})
+  - CodaParser.Helpers.GetTrimmedData(System.String,System.Int32)
+  - CodaParser.Helpers.GetTrimmedData(System.String,System.Int32,System.Int32)
+  - CodaParser.Helpers.TrimSpace(System.String)
+  - CodaParser.Helpers.ValidateStringDigitOnly(System.String,System.String)
+  - CodaParser.Helpers.ValidateStringLength(System.String,System.Int32,System.String)
+  - CodaParser.Helpers.ValidateStringMultipleLengths(System.String,System.Collections.Generic.IEnumerable{System.Int32},System.String)
+  langs:
+  - csharp
+  - vb
+  name: Helpers
+  nameWithType: Helpers
+  fullName: CodaParser.Helpers
+  type: Class
+  source:
+    remote:
+      path: CodaParser/Helpers.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Helpers
+    path: ../CodaParser/Helpers.cs
+    startLine: 9
+  assemblies:
+  - CodaParser
+  namespace: CodaParser
+  summary: Class with helper methods.
+  example: []
+  syntax:
+    content: public static class Helpers
+    content.vb: Public Module Helpers
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CodaParser.Helpers.FilterLinesOfTypes(System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine},System.Collections.Generic.IEnumerable{CodaParser.Lines.LineType})
+  commentId: M:CodaParser.Helpers.FilterLinesOfTypes(System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine},System.Collections.Generic.IEnumerable{CodaParser.Lines.LineType})
+  id: FilterLinesOfTypes(System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine},System.Collections.Generic.IEnumerable{CodaParser.Lines.LineType})
+  parent: CodaParser.Helpers
+  langs:
+  - csharp
+  - vb
+  name: FilterLinesOfTypes(IEnumerable<ILine>, IEnumerable<LineType>)
+  nameWithType: Helpers.FilterLinesOfTypes(IEnumerable<ILine>, IEnumerable<LineType>)
+  fullName: CodaParser.Helpers.FilterLinesOfTypes(System.Collections.Generic.IEnumerable<CodaParser.Lines.ILine>, System.Collections.Generic.IEnumerable<CodaParser.Lines.LineType>)
+  type: Method
+  source:
+    remote:
+      path: CodaParser/Helpers.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: FilterLinesOfTypes
+    path: ../CodaParser/Helpers.cs
+    startLine: 17
+  assemblies:
+  - CodaParser
+  namespace: CodaParser
+  summary: Get a list of all the lines that are of the requested <xref href="CodaParser.Lines.LineType" data-throw-if-not-resolved="false"></xref> type.
+  example: []
+  syntax:
+    content: public static IEnumerable<ILine> FilterLinesOfTypes(IEnumerable<ILine> lines, IEnumerable<LineType> types)
+    parameters:
+    - id: lines
+      type: System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine}
+      description: The lines to filter.
+    - id: types
+      type: System.Collections.Generic.IEnumerable{CodaParser.Lines.LineType}
+      description: The types to filter out.
+    return:
+      type: System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine}
+      description: The filtered list of <xref href="CodaParser.Lines.ILine" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function FilterLinesOfTypes(lines As IEnumerable(Of ILine), types As IEnumerable(Of LineType)) As IEnumerable(Of ILine)
+  overload: CodaParser.Helpers.FilterLinesOfTypes*
+  nameWithType.vb: Helpers.FilterLinesOfTypes(IEnumerable(Of ILine), IEnumerable(Of LineType))
+  fullName.vb: CodaParser.Helpers.FilterLinesOfTypes(System.Collections.Generic.IEnumerable(Of CodaParser.Lines.ILine), System.Collections.Generic.IEnumerable(Of CodaParser.Lines.LineType))
+  name.vb: FilterLinesOfTypes(IEnumerable(Of ILine), IEnumerable(Of LineType))
+- uid: CodaParser.Helpers.FormatDateString(System.String)
+  commentId: M:CodaParser.Helpers.FormatDateString(System.String)
+  id: FormatDateString(System.String)
+  parent: CodaParser.Helpers
+  langs:
+  - csharp
+  - vb
+  name: FormatDateString(string)
+  nameWithType: Helpers.FormatDateString(string)
+  fullName: CodaParser.Helpers.FormatDateString(string)
+  type: Method
+  source:
+    remote:
+      path: CodaParser/Helpers.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: FormatDateString
+    path: ../CodaParser/Helpers.cs
+    startLine: 27
+  assemblies:
+  - CodaParser
+  namespace: CodaParser
+  summary: Convert a coda date to an iso format.
+  example: []
+  syntax:
+    content: public static string FormatDateString(string dateCoda)
+    parameters:
+    - id: dateCoda
+      type: System.String
+      description: The date in format <code>ddMMyy</code>.
+    return:
+      type: System.String
+      description: The date in the format <code>yyyy-MM-dd</code>.
+    content.vb: Public Shared Function FormatDateString(dateCoda As String) As String
+  overload: CodaParser.Helpers.FormatDateString*
+  nameWithType.vb: Helpers.FormatDateString(String)
+  fullName.vb: CodaParser.Helpers.FormatDateString(String)
+  name.vb: FormatDateString(String)
+- uid: CodaParser.Helpers.GetFirstLineOfType``1(System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine})
+  commentId: M:CodaParser.Helpers.GetFirstLineOfType``1(System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine})
+  id: GetFirstLineOfType``1(System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine})
+  parent: CodaParser.Helpers
+  langs:
+  - csharp
+  - vb
+  name: GetFirstLineOfType<T>(IEnumerable<ILine>)
+  nameWithType: Helpers.GetFirstLineOfType<T>(IEnumerable<ILine>)
+  fullName: CodaParser.Helpers.GetFirstLineOfType<T>(System.Collections.Generic.IEnumerable<CodaParser.Lines.ILine>)
+  type: Method
+  source:
+    remote:
+      path: CodaParser/Helpers.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: GetFirstLineOfType
+    path: ../CodaParser/Helpers.cs
+    startLine: 38
+  assemblies:
+  - CodaParser
+  namespace: CodaParser
+  summary: Gets the first line that matches the requested type.
+  example: []
+  syntax:
+    content: 'public static T? GetFirstLineOfType<T>(IEnumerable<ILine> lines) where T : ILine'
+    parameters:
+    - id: lines
+      type: System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine}
+      description: The lines to filter.
+    typeParameters:
+    - id: T
+      description: The type to filter for.
+    return:
+      type: '{T}'
+      description: The first line that matches the <code class="typeparamref">T</code> or <code>null</code>
+    content.vb: Public Shared Function GetFirstLineOfType(Of T As ILine)(lines As IEnumerable(Of ILine)) As T
+  overload: CodaParser.Helpers.GetFirstLineOfType*
+  nameWithType.vb: Helpers.GetFirstLineOfType(Of T)(IEnumerable(Of ILine))
+  fullName.vb: CodaParser.Helpers.GetFirstLineOfType(Of T)(System.Collections.Generic.IEnumerable(Of CodaParser.Lines.ILine))
+  name.vb: GetFirstLineOfType(Of T)(IEnumerable(Of ILine))
+- uid: CodaParser.Helpers.GetTrimmedData(System.String,System.Int32,System.Int32)
+  commentId: M:CodaParser.Helpers.GetTrimmedData(System.String,System.Int32,System.Int32)
+  id: GetTrimmedData(System.String,System.Int32,System.Int32)
+  parent: CodaParser.Helpers
+  langs:
+  - csharp
+  - vb
+  name: GetTrimmedData(string, int, int)
+  nameWithType: Helpers.GetTrimmedData(string, int, int)
+  fullName: CodaParser.Helpers.GetTrimmedData(string, int, int)
+  type: Method
+  source:
+    remote:
+      path: CodaParser/Helpers.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: GetTrimmedData
+    path: ../CodaParser/Helpers.cs
+    startLine: 51
+  assemblies:
+  - CodaParser
+  namespace: CodaParser
+  summary: Get a part of the input string and trim the spaces before returning the result.
+  example: []
+  syntax:
+    content: public static string GetTrimmedData(string data, int startPosition, int length)
+    parameters:
+    - id: data
+      type: System.String
+      description: The value to get the substring from.
+    - id: startPosition
+      type: System.Int32
+      description: The starting position for getting the substring.
+    - id: length
+      type: System.Int32
+      description: The number of characters to get from the data.
+    return:
+      type: System.String
+      description: The trimmed requested part of the input.
+    content.vb: Public Shared Function GetTrimmedData(data As String, startPosition As Integer, length As Integer) As String
+  overload: CodaParser.Helpers.GetTrimmedData*
+  nameWithType.vb: Helpers.GetTrimmedData(String, Integer, Integer)
+  fullName.vb: CodaParser.Helpers.GetTrimmedData(String, Integer, Integer)
+  name.vb: GetTrimmedData(String, Integer, Integer)
+- uid: CodaParser.Helpers.GetTrimmedData(System.String,System.Int32)
+  commentId: M:CodaParser.Helpers.GetTrimmedData(System.String,System.Int32)
+  id: GetTrimmedData(System.String,System.Int32)
+  parent: CodaParser.Helpers
+  langs:
+  - csharp
+  - vb
+  name: GetTrimmedData(string, int)
+  nameWithType: Helpers.GetTrimmedData(string, int)
+  fullName: CodaParser.Helpers.GetTrimmedData(string, int)
+  type: Method
+  source:
+    remote:
+      path: CodaParser/Helpers.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: GetTrimmedData
+    path: ../CodaParser/Helpers.cs
+    startLine: 62
+  assemblies:
+  - CodaParser
+  namespace: CodaParser
+  summary: Get a part of the input string starting from the requested position till the end and trim the spaces before returning the result.
+  example: []
+  syntax:
+    content: public static string GetTrimmedData(string data, int startPosition)
+    parameters:
+    - id: data
+      type: System.String
+      description: The value to get the substring from.
+    - id: startPosition
+      type: System.Int32
+      description: The starting position for getting the substring.
+    return:
+      type: System.String
+      description: The trimmed data from the input.
+    content.vb: Public Shared Function GetTrimmedData(data As String, startPosition As Integer) As String
+  overload: CodaParser.Helpers.GetTrimmedData*
+  nameWithType.vb: Helpers.GetTrimmedData(String, Integer)
+  fullName.vb: CodaParser.Helpers.GetTrimmedData(String, Integer)
+  name.vb: GetTrimmedData(String, Integer)
+- uid: CodaParser.Helpers.TrimSpace(System.String)
+  commentId: M:CodaParser.Helpers.TrimSpace(System.String)
+  id: TrimSpace(System.String)
+  parent: CodaParser.Helpers
+  langs:
+  - csharp
+  - vb
+  name: TrimSpace(string)
+  nameWithType: Helpers.TrimSpace(string)
+  fullName: CodaParser.Helpers.TrimSpace(string)
+  type: Method
+  source:
+    remote:
+      path: CodaParser/Helpers.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: TrimSpace
+    path: ../CodaParser/Helpers.cs
+    startLine: 72
+  assemblies:
+  - CodaParser
+  namespace: CodaParser
+  summary: Remove duplicate spaces from the start en end of the input string, leaving only an optional single space.
+  example: []
+  syntax:
+    content: public static string TrimSpace(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The data to process.
+    return:
+      type: System.String
+      description: The value without duplicate spaces in the beginning and end.
+    content.vb: Public Shared Function TrimSpace(value As String) As String
+  overload: CodaParser.Helpers.TrimSpace*
+  nameWithType.vb: Helpers.TrimSpace(String)
+  fullName.vb: CodaParser.Helpers.TrimSpace(String)
+  name.vb: TrimSpace(String)
+- uid: CodaParser.Helpers.ValidateStringDigitOnly(System.String,System.String)
+  commentId: M:CodaParser.Helpers.ValidateStringDigitOnly(System.String,System.String)
+  id: ValidateStringDigitOnly(System.String,System.String)
+  parent: CodaParser.Helpers
+  langs:
+  - csharp
+  - vb
+  name: ValidateStringDigitOnly(string, string)
+  nameWithType: Helpers.ValidateStringDigitOnly(string, string)
+  fullName: CodaParser.Helpers.ValidateStringDigitOnly(string, string)
+  type: Method
+  source:
+    remote:
+      path: CodaParser/Helpers.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: ValidateStringDigitOnly
+    path: ../CodaParser/Helpers.cs
+    startLine: 89
+  assemblies:
+  - CodaParser
+  namespace: CodaParser
+  summary: Validate that the input string only contains digits, throwing an exception if it doesn't.
+  example: []
+  syntax:
+    content: public static void ValidateStringDigitOnly(string value, string typeName)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to check.
+    - id: typeName
+      type: System.String
+      description: The type that needs this check, used in the exception.
+    content.vb: Public Shared Sub ValidateStringDigitOnly(value As String, typeName As String)
+  overload: CodaParser.Helpers.ValidateStringDigitOnly*
+  nameWithType.vb: Helpers.ValidateStringDigitOnly(String, String)
+  fullName.vb: CodaParser.Helpers.ValidateStringDigitOnly(String, String)
+  name.vb: ValidateStringDigitOnly(String, String)
+- uid: CodaParser.Helpers.ValidateStringLength(System.String,System.Int32,System.String)
+  commentId: M:CodaParser.Helpers.ValidateStringLength(System.String,System.Int32,System.String)
+  id: ValidateStringLength(System.String,System.Int32,System.String)
+  parent: CodaParser.Helpers
+  langs:
+  - csharp
+  - vb
+  name: ValidateStringLength(string, int, string)
+  nameWithType: Helpers.ValidateStringLength(string, int, string)
+  fullName: CodaParser.Helpers.ValidateStringLength(string, int, string)
+  type: Method
+  source:
+    remote:
+      path: CodaParser/Helpers.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: ValidateStringLength
+    path: ../CodaParser/Helpers.cs
+    startLine: 103
+  assemblies:
+  - CodaParser
+  namespace: CodaParser
+  summary: Validate that the input string is exactly the requested length, throwing an exception if it doesn't.
+  example: []
+  syntax:
+    content: public static void ValidateStringLength(string value, int expectedLength, string typeName)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to check.
+    - id: expectedLength
+      type: System.Int32
+      description: The expected length of the value.
+    - id: typeName
+      type: System.String
+      description: The type that needs this check, used in the exception.
+    content.vb: Public Shared Sub ValidateStringLength(value As String, expectedLength As Integer, typeName As String)
+  overload: CodaParser.Helpers.ValidateStringLength*
+  nameWithType.vb: Helpers.ValidateStringLength(String, Integer, String)
+  fullName.vb: CodaParser.Helpers.ValidateStringLength(String, Integer, String)
+  name.vb: ValidateStringLength(String, Integer, String)
+- uid: CodaParser.Helpers.ValidateStringMultipleLengths(System.String,System.Collections.Generic.IEnumerable{System.Int32},System.String)
+  commentId: M:CodaParser.Helpers.ValidateStringMultipleLengths(System.String,System.Collections.Generic.IEnumerable{System.Int32},System.String)
+  id: ValidateStringMultipleLengths(System.String,System.Collections.Generic.IEnumerable{System.Int32},System.String)
+  parent: CodaParser.Helpers
+  langs:
+  - csharp
+  - vb
+  name: ValidateStringMultipleLengths(string, IEnumerable<int>, string)
+  nameWithType: Helpers.ValidateStringMultipleLengths(string, IEnumerable<int>, string)
+  fullName: CodaParser.Helpers.ValidateStringMultipleLengths(string, System.Collections.Generic.IEnumerable<int>, string)
+  type: Method
+  source:
+    remote:
+      path: CodaParser/Helpers.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: ValidateStringMultipleLengths
+    path: ../CodaParser/Helpers.cs
+    startLine: 117
+  assemblies:
+  - CodaParser
+  namespace: CodaParser
+  summary: Validate that the input string is exactly one of the requested lengths, throwing an exception if it doesn't.
+  example: []
+  syntax:
+    content: public static void ValidateStringMultipleLengths(string value, IEnumerable<int> expectedLengthArray, string typeName)
+    parameters:
+    - id: value
+      type: System.String
+      description: The value to check.
+    - id: expectedLengthArray
+      type: System.Collections.Generic.IEnumerable{System.Int32}
+      description: A list of excepted lengths of the value.
+    - id: typeName
+      type: System.String
+      description: The type that needs this check, used in the exception.
+    content.vb: Public Shared Sub ValidateStringMultipleLengths(value As String, expectedLengthArray As IEnumerable(Of Integer), typeName As String)
+  overload: CodaParser.Helpers.ValidateStringMultipleLengths*
+  nameWithType.vb: Helpers.ValidateStringMultipleLengths(String, IEnumerable(Of Integer), String)
+  fullName.vb: CodaParser.Helpers.ValidateStringMultipleLengths(String, System.Collections.Generic.IEnumerable(Of Integer), String)
+  name.vb: ValidateStringMultipleLengths(String, IEnumerable(Of Integer), String)
+references:
+- uid: CodaParser
+  commentId: N:CodaParser
+  href: CodaParser.html
+  name: CodaParser
+  nameWithType: CodaParser
+  fullName: CodaParser
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodaParser.Lines.LineType
+  commentId: T:CodaParser.Lines.LineType
+  parent: CodaParser.Lines
+  href: CodaParser.Lines.LineType.html
+  name: LineType
+  nameWithType: LineType
+  fullName: CodaParser.Lines.LineType
+- uid: CodaParser.Lines.ILine
+  commentId: T:CodaParser.Lines.ILine
+  parent: CodaParser.Lines
+  href: CodaParser.Lines.ILine.html
+  name: ILine
+  nameWithType: ILine
+  fullName: CodaParser.Lines.ILine
+- uid: CodaParser.Helpers.FilterLinesOfTypes*
+  commentId: Overload:CodaParser.Helpers.FilterLinesOfTypes
+  href: CodaParser.Helpers.html#CodaParser_Helpers_FilterLinesOfTypes_System_Collections_Generic_IEnumerable_CodaParser_Lines_ILine__System_Collections_Generic_IEnumerable_CodaParser_Lines_LineType__
+  name: FilterLinesOfTypes
+  nameWithType: Helpers.FilterLinesOfTypes
+  fullName: CodaParser.Helpers.FilterLinesOfTypes
+- uid: System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine}
+  commentId: T:System.Collections.Generic.IEnumerable{CodaParser.Lines.ILine}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ILine>
+  nameWithType: IEnumerable<ILine>
+  fullName: System.Collections.Generic.IEnumerable<CodaParser.Lines.ILine>
+  nameWithType.vb: IEnumerable(Of ILine)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of CodaParser.Lines.ILine)
+  name.vb: IEnumerable(Of ILine)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: CodaParser.Lines.ILine
+    name: ILine
+    href: CodaParser.Lines.ILine.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodaParser.Lines.ILine
+    name: ILine
+    href: CodaParser.Lines.ILine.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{CodaParser.Lines.LineType}
+  commentId: T:System.Collections.Generic.IEnumerable{CodaParser.Lines.LineType}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<LineType>
+  nameWithType: IEnumerable<LineType>
+  fullName: System.Collections.Generic.IEnumerable<CodaParser.Lines.LineType>
+  nameWithType.vb: IEnumerable(Of LineType)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of CodaParser.Lines.LineType)
+  name.vb: IEnumerable(Of LineType)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: CodaParser.Lines.LineType
+    name: LineType
+    href: CodaParser.Lines.LineType.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CodaParser.Lines.LineType
+    name: LineType
+    href: CodaParser.Lines.LineType.html
+  - name: )
+- uid: CodaParser.Lines
+  commentId: N:CodaParser.Lines
+  href: CodaParser.html
+  name: CodaParser.Lines
+  nameWithType: CodaParser.Lines
+  fullName: CodaParser.Lines
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Lines
+    name: Lines
+    href: CodaParser.Lines.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Lines
+    name: Lines
+    href: CodaParser.Lines.html
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: CodaParser.Helpers.FormatDateString*
+  commentId: Overload:CodaParser.Helpers.FormatDateString
+  href: CodaParser.Helpers.html#CodaParser_Helpers_FormatDateString_System_String_
+  name: FormatDateString
+  nameWithType: Helpers.FormatDateString
+  fullName: CodaParser.Helpers.FormatDateString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: CodaParser.Helpers.GetFirstLineOfType*
+  commentId: Overload:CodaParser.Helpers.GetFirstLineOfType
+  href: CodaParser.Helpers.html#CodaParser_Helpers_GetFirstLineOfType__1_System_Collections_Generic_IEnumerable_CodaParser_Lines_ILine__
+  name: GetFirstLineOfType
+  nameWithType: Helpers.GetFirstLineOfType
+  fullName: CodaParser.Helpers.GetFirstLineOfType
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  commentId: '!:T'
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: CodaParser.Helpers.GetTrimmedData*
+  commentId: Overload:CodaParser.Helpers.GetTrimmedData
+  href: CodaParser.Helpers.html#CodaParser_Helpers_GetTrimmedData_System_String_System_Int32_System_Int32_
+  name: GetTrimmedData
+  nameWithType: Helpers.GetTrimmedData
+  fullName: CodaParser.Helpers.GetTrimmedData
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: CodaParser.Helpers.TrimSpace*
+  commentId: Overload:CodaParser.Helpers.TrimSpace
+  href: CodaParser.Helpers.html#CodaParser_Helpers_TrimSpace_System_String_
+  name: TrimSpace
+  nameWithType: Helpers.TrimSpace
+  fullName: CodaParser.Helpers.TrimSpace
+- uid: CodaParser.Helpers.ValidateStringDigitOnly*
+  commentId: Overload:CodaParser.Helpers.ValidateStringDigitOnly
+  href: CodaParser.Helpers.html#CodaParser_Helpers_ValidateStringDigitOnly_System_String_System_String_
+  name: ValidateStringDigitOnly
+  nameWithType: Helpers.ValidateStringDigitOnly
+  fullName: CodaParser.Helpers.ValidateStringDigitOnly
+- uid: CodaParser.Helpers.ValidateStringLength*
+  commentId: Overload:CodaParser.Helpers.ValidateStringLength
+  href: CodaParser.Helpers.html#CodaParser_Helpers_ValidateStringLength_System_String_System_Int32_System_String_
+  name: ValidateStringLength
+  nameWithType: Helpers.ValidateStringLength
+  fullName: CodaParser.Helpers.ValidateStringLength
+- uid: CodaParser.Helpers.ValidateStringMultipleLengths*
+  commentId: Overload:CodaParser.Helpers.ValidateStringMultipleLengths
+  href: CodaParser.Helpers.html#CodaParser_Helpers_ValidateStringMultipleLengths_System_String_System_Collections_Generic_IEnumerable_System_Int32__System_String_
+  name: ValidateStringMultipleLengths
+  nameWithType: Helpers.ValidateStringMultipleLengths
+  fullName: CodaParser.Helpers.ValidateStringMultipleLengths
+- uid: System.Collections.Generic.IEnumerable{System.Int32}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<int>
+  nameWithType: IEnumerable<int>
+  fullName: System.Collections.Generic.IEnumerable<int>
+  nameWithType.vb: IEnumerable(Of Integer)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Integer)
+  name.vb: IEnumerable(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )

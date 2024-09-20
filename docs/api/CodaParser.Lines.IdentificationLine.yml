@@ -1,0 +1,1025 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodaParser.Lines.IdentificationLine
+  commentId: T:CodaParser.Lines.IdentificationLine
+  id: IdentificationLine
+  parent: CodaParser.Lines
+  children:
+  - CodaParser.Lines.IdentificationLine.#ctor(CodaParser.Values.Date,CodaParser.Values.BankIdentificationNumber,System.Boolean,CodaParser.Values.ApplicationCode,CodaParser.Values.FileReference,CodaParser.Values.AccountName,CodaParser.Values.Bic,CodaParser.Values.CompanyIdentificationNumber,CodaParser.Values.ExternalApplicationCode,CodaParser.Values.TransactionReference,CodaParser.Values.RelatedReference,CodaParser.Values.VersionCode)
+  - CodaParser.Lines.IdentificationLine.AccountBic
+  - CodaParser.Lines.IdentificationLine.AccountCompanyIdentificationNumber
+  - CodaParser.Lines.IdentificationLine.AccountName
+  - CodaParser.Lines.IdentificationLine.ApplicationCode
+  - CodaParser.Lines.IdentificationLine.BankIdentificationNumber
+  - CodaParser.Lines.IdentificationLine.CreationDate
+  - CodaParser.Lines.IdentificationLine.ExternalApplicationCode
+  - CodaParser.Lines.IdentificationLine.FileReference
+  - CodaParser.Lines.IdentificationLine.GetLineType
+  - CodaParser.Lines.IdentificationLine.IsDuplicate
+  - CodaParser.Lines.IdentificationLine.RelatedReference
+  - CodaParser.Lines.IdentificationLine.TransactionReference
+  - CodaParser.Lines.IdentificationLine.VersionCode
+  langs:
+  - csharp
+  - vb
+  name: IdentificationLine
+  nameWithType: IdentificationLine
+  fullName: CodaParser.Lines.IdentificationLine
+  type: Class
+  source:
+    remote:
+      path: CodaParser/Lines/IdentificationLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: IdentificationLine
+    path: ../CodaParser/Lines/IdentificationLine.cs
+    startLine: 7
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: The contents of the header record.
+  example: []
+  syntax:
+    content: 'public class IdentificationLine : ILine'
+    content.vb: Public Class IdentificationLine Implements ILine
+  inheritance:
+  - System.Object
+  implements:
+  - CodaParser.Lines.ILine
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CodaParser.Lines.IdentificationLine.#ctor(CodaParser.Values.Date,CodaParser.Values.BankIdentificationNumber,System.Boolean,CodaParser.Values.ApplicationCode,CodaParser.Values.FileReference,CodaParser.Values.AccountName,CodaParser.Values.Bic,CodaParser.Values.CompanyIdentificationNumber,CodaParser.Values.ExternalApplicationCode,CodaParser.Values.TransactionReference,CodaParser.Values.RelatedReference,CodaParser.Values.VersionCode)
+  commentId: M:CodaParser.Lines.IdentificationLine.#ctor(CodaParser.Values.Date,CodaParser.Values.BankIdentificationNumber,System.Boolean,CodaParser.Values.ApplicationCode,CodaParser.Values.FileReference,CodaParser.Values.AccountName,CodaParser.Values.Bic,CodaParser.Values.CompanyIdentificationNumber,CodaParser.Values.ExternalApplicationCode,CodaParser.Values.TransactionReference,CodaParser.Values.RelatedReference,CodaParser.Values.VersionCode)
+  id: '#ctor(CodaParser.Values.Date,CodaParser.Values.BankIdentificationNumber,System.Boolean,CodaParser.Values.ApplicationCode,CodaParser.Values.FileReference,CodaParser.Values.AccountName,CodaParser.Values.Bic,CodaParser.Values.CompanyIdentificationNumber,CodaParser.Values.ExternalApplicationCode,CodaParser.Values.TransactionReference,CodaParser.Values.RelatedReference,CodaParser.Values.VersionCode)'
+  parent: CodaParser.Lines.IdentificationLine
+  langs:
+  - csharp
+  - vb
+  name: IdentificationLine(Date, BankIdentificationNumber, bool, ApplicationCode, FileReference, AccountName, Bic, CompanyIdentificationNumber, ExternalApplicationCode, TransactionReference, RelatedReference, VersionCode)
+  nameWithType: IdentificationLine.IdentificationLine(Date, BankIdentificationNumber, bool, ApplicationCode, FileReference, AccountName, Bic, CompanyIdentificationNumber, ExternalApplicationCode, TransactionReference, RelatedReference, VersionCode)
+  fullName: CodaParser.Lines.IdentificationLine.IdentificationLine(CodaParser.Values.Date, CodaParser.Values.BankIdentificationNumber, bool, CodaParser.Values.ApplicationCode, CodaParser.Values.FileReference, CodaParser.Values.AccountName, CodaParser.Values.Bic, CodaParser.Values.CompanyIdentificationNumber, CodaParser.Values.ExternalApplicationCode, CodaParser.Values.TransactionReference, CodaParser.Values.RelatedReference, CodaParser.Values.VersionCode)
+  type: Constructor
+  source:
+    remote:
+      path: CodaParser/Lines/IdentificationLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: .ctor
+    path: ../CodaParser/Lines/IdentificationLine.cs
+    startLine: 24
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Initializes a new instance of the <xref href="CodaParser.Lines.IdentificationLine" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public IdentificationLine(Date creationDate, BankIdentificationNumber bankIdentificationNumber, bool isDuplicate, ApplicationCode applicationCode, FileReference fileReference, AccountName accountName, Bic accountBic, CompanyIdentificationNumber accountCompanyIdentificationNumber, ExternalApplicationCode externalApplicationCode, TransactionReference transactionReference, RelatedReference relatedReference, VersionCode versionCode)
+    parameters:
+    - id: creationDate
+      type: CodaParser.Values.Date
+      description: The creation date.
+    - id: bankIdentificationNumber
+      type: CodaParser.Values.BankIdentificationNumber
+      description: The bank identification number or zeros.
+    - id: isDuplicate
+      type: System.Boolean
+      description: Indication for duplicity.
+    - id: applicationCode
+      type: CodaParser.Values.ApplicationCode
+      description: The application code
+    - id: fileReference
+      type: CodaParser.Values.FileReference
+      description: File reference as determined by the bank or blank
+    - id: accountName
+      type: CodaParser.Values.AccountName
+      description: Name addressee
+    - id: accountBic
+      type: CodaParser.Values.Bic
+      description: Bic of the bank holding the account.
+    - id: accountCompanyIdentificationNumber
+      type: CodaParser.Values.CompanyIdentificationNumber
+      description: Identification number of the Belgium-based account holder
+    - id: externalApplicationCode
+      type: CodaParser.Values.ExternalApplicationCode
+      description: code "seperate application"
+    - id: transactionReference
+      type: CodaParser.Values.TransactionReference
+      description: Transaction reference or blank.
+    - id: relatedReference
+      type: CodaParser.Values.RelatedReference
+      description: Related reference or blank.
+    - id: versionCode
+      type: CodaParser.Values.VersionCode
+      description: The version code.
+    content.vb: Public Sub New(creationDate As [Date], bankIdentificationNumber As BankIdentificationNumber, isDuplicate As Boolean, applicationCode As ApplicationCode, fileReference As FileReference, accountName As AccountName, accountBic As Bic, accountCompanyIdentificationNumber As CompanyIdentificationNumber, externalApplicationCode As ExternalApplicationCode, transactionReference As TransactionReference, relatedReference As RelatedReference, versionCode As VersionCode)
+  overload: CodaParser.Lines.IdentificationLine.#ctor*
+  nameWithType.vb: IdentificationLine.New(Date, BankIdentificationNumber, Boolean, ApplicationCode, FileReference, AccountName, Bic, CompanyIdentificationNumber, ExternalApplicationCode, TransactionReference, RelatedReference, VersionCode)
+  fullName.vb: CodaParser.Lines.IdentificationLine.New(CodaParser.Values.Date, CodaParser.Values.BankIdentificationNumber, Boolean, CodaParser.Values.ApplicationCode, CodaParser.Values.FileReference, CodaParser.Values.AccountName, CodaParser.Values.Bic, CodaParser.Values.CompanyIdentificationNumber, CodaParser.Values.ExternalApplicationCode, CodaParser.Values.TransactionReference, CodaParser.Values.RelatedReference, CodaParser.Values.VersionCode)
+  name.vb: New(Date, BankIdentificationNumber, Boolean, ApplicationCode, FileReference, AccountName, Bic, CompanyIdentificationNumber, ExternalApplicationCode, TransactionReference, RelatedReference, VersionCode)
+- uid: CodaParser.Lines.IdentificationLine.AccountBic
+  commentId: P:CodaParser.Lines.IdentificationLine.AccountBic
+  id: AccountBic
+  parent: CodaParser.Lines.IdentificationLine
+  langs:
+  - csharp
+  - vb
+  name: AccountBic
+  nameWithType: IdentificationLine.AccountBic
+  fullName: CodaParser.Lines.IdentificationLine.AccountBic
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/IdentificationLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: AccountBic
+    path: ../CodaParser/Lines/IdentificationLine.cs
+    startLine: 53
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the bic of the bank holding the account.
+  example: []
+  syntax:
+    content: public Bic AccountBic { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.Bic
+    content.vb: Public ReadOnly Property AccountBic As Bic
+  overload: CodaParser.Lines.IdentificationLine.AccountBic*
+- uid: CodaParser.Lines.IdentificationLine.AccountCompanyIdentificationNumber
+  commentId: P:CodaParser.Lines.IdentificationLine.AccountCompanyIdentificationNumber
+  id: AccountCompanyIdentificationNumber
+  parent: CodaParser.Lines.IdentificationLine
+  langs:
+  - csharp
+  - vb
+  name: AccountCompanyIdentificationNumber
+  nameWithType: IdentificationLine.AccountCompanyIdentificationNumber
+  fullName: CodaParser.Lines.IdentificationLine.AccountCompanyIdentificationNumber
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/IdentificationLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: AccountCompanyIdentificationNumber
+    path: ../CodaParser/Lines/IdentificationLine.cs
+    startLine: 56
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the identification number of the Belgium-based account holder.
+  example: []
+  syntax:
+    content: public CompanyIdentificationNumber AccountCompanyIdentificationNumber { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.CompanyIdentificationNumber
+    content.vb: Public ReadOnly Property AccountCompanyIdentificationNumber As CompanyIdentificationNumber
+  overload: CodaParser.Lines.IdentificationLine.AccountCompanyIdentificationNumber*
+- uid: CodaParser.Lines.IdentificationLine.AccountName
+  commentId: P:CodaParser.Lines.IdentificationLine.AccountName
+  id: AccountName
+  parent: CodaParser.Lines.IdentificationLine
+  langs:
+  - csharp
+  - vb
+  name: AccountName
+  nameWithType: IdentificationLine.AccountName
+  fullName: CodaParser.Lines.IdentificationLine.AccountName
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/IdentificationLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: AccountName
+    path: ../CodaParser/Lines/IdentificationLine.cs
+    startLine: 59
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the name addressee
+  example: []
+  syntax:
+    content: public AccountName AccountName { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.AccountName
+    content.vb: Public ReadOnly Property AccountName As AccountName
+  overload: CodaParser.Lines.IdentificationLine.AccountName*
+- uid: CodaParser.Lines.IdentificationLine.ApplicationCode
+  commentId: P:CodaParser.Lines.IdentificationLine.ApplicationCode
+  id: ApplicationCode
+  parent: CodaParser.Lines.IdentificationLine
+  langs:
+  - csharp
+  - vb
+  name: ApplicationCode
+  nameWithType: IdentificationLine.ApplicationCode
+  fullName: CodaParser.Lines.IdentificationLine.ApplicationCode
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/IdentificationLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: ApplicationCode
+    path: ../CodaParser/Lines/IdentificationLine.cs
+    startLine: 62
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the application code
+  example: []
+  syntax:
+    content: public ApplicationCode ApplicationCode { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.ApplicationCode
+    content.vb: Public ReadOnly Property ApplicationCode As ApplicationCode
+  overload: CodaParser.Lines.IdentificationLine.ApplicationCode*
+- uid: CodaParser.Lines.IdentificationLine.BankIdentificationNumber
+  commentId: P:CodaParser.Lines.IdentificationLine.BankIdentificationNumber
+  id: BankIdentificationNumber
+  parent: CodaParser.Lines.IdentificationLine
+  langs:
+  - csharp
+  - vb
+  name: BankIdentificationNumber
+  nameWithType: IdentificationLine.BankIdentificationNumber
+  fullName: CodaParser.Lines.IdentificationLine.BankIdentificationNumber
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/IdentificationLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: BankIdentificationNumber
+    path: ../CodaParser/Lines/IdentificationLine.cs
+    startLine: 65
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the bank identification number or zeros.
+  example: []
+  syntax:
+    content: public BankIdentificationNumber BankIdentificationNumber { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.BankIdentificationNumber
+    content.vb: Public ReadOnly Property BankIdentificationNumber As BankIdentificationNumber
+  overload: CodaParser.Lines.IdentificationLine.BankIdentificationNumber*
+- uid: CodaParser.Lines.IdentificationLine.CreationDate
+  commentId: P:CodaParser.Lines.IdentificationLine.CreationDate
+  id: CreationDate
+  parent: CodaParser.Lines.IdentificationLine
+  langs:
+  - csharp
+  - vb
+  name: CreationDate
+  nameWithType: IdentificationLine.CreationDate
+  fullName: CodaParser.Lines.IdentificationLine.CreationDate
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/IdentificationLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: CreationDate
+    path: ../CodaParser/Lines/IdentificationLine.cs
+    startLine: 68
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the creation date.
+  example: []
+  syntax:
+    content: public Date CreationDate { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.Date
+    content.vb: Public ReadOnly Property CreationDate As [Date]
+  overload: CodaParser.Lines.IdentificationLine.CreationDate*
+- uid: CodaParser.Lines.IdentificationLine.ExternalApplicationCode
+  commentId: P:CodaParser.Lines.IdentificationLine.ExternalApplicationCode
+  id: ExternalApplicationCode
+  parent: CodaParser.Lines.IdentificationLine
+  langs:
+  - csharp
+  - vb
+  name: ExternalApplicationCode
+  nameWithType: IdentificationLine.ExternalApplicationCode
+  fullName: CodaParser.Lines.IdentificationLine.ExternalApplicationCode
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/IdentificationLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: ExternalApplicationCode
+    path: ../CodaParser/Lines/IdentificationLine.cs
+    startLine: 71
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the code "seperate application"
+  example: []
+  syntax:
+    content: public ExternalApplicationCode ExternalApplicationCode { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.ExternalApplicationCode
+    content.vb: Public ReadOnly Property ExternalApplicationCode As ExternalApplicationCode
+  overload: CodaParser.Lines.IdentificationLine.ExternalApplicationCode*
+- uid: CodaParser.Lines.IdentificationLine.FileReference
+  commentId: P:CodaParser.Lines.IdentificationLine.FileReference
+  id: FileReference
+  parent: CodaParser.Lines.IdentificationLine
+  langs:
+  - csharp
+  - vb
+  name: FileReference
+  nameWithType: IdentificationLine.FileReference
+  fullName: CodaParser.Lines.IdentificationLine.FileReference
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/IdentificationLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: FileReference
+    path: ../CodaParser/Lines/IdentificationLine.cs
+    startLine: 74
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the file reference as determined by the bank or blank
+  example: []
+  syntax:
+    content: public FileReference FileReference { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.FileReference
+    content.vb: Public ReadOnly Property FileReference As FileReference
+  overload: CodaParser.Lines.IdentificationLine.FileReference*
+- uid: CodaParser.Lines.IdentificationLine.IsDuplicate
+  commentId: P:CodaParser.Lines.IdentificationLine.IsDuplicate
+  id: IsDuplicate
+  parent: CodaParser.Lines.IdentificationLine
+  langs:
+  - csharp
+  - vb
+  name: IsDuplicate
+  nameWithType: IdentificationLine.IsDuplicate
+  fullName: CodaParser.Lines.IdentificationLine.IsDuplicate
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/IdentificationLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: IsDuplicate
+    path: ../CodaParser/Lines/IdentificationLine.cs
+    startLine: 77
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets a value indicating whether there is duplicity.
+  example: []
+  syntax:
+    content: public bool IsDuplicate { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsDuplicate As Boolean
+  overload: CodaParser.Lines.IdentificationLine.IsDuplicate*
+- uid: CodaParser.Lines.IdentificationLine.RelatedReference
+  commentId: P:CodaParser.Lines.IdentificationLine.RelatedReference
+  id: RelatedReference
+  parent: CodaParser.Lines.IdentificationLine
+  langs:
+  - csharp
+  - vb
+  name: RelatedReference
+  nameWithType: IdentificationLine.RelatedReference
+  fullName: CodaParser.Lines.IdentificationLine.RelatedReference
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/IdentificationLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: RelatedReference
+    path: ../CodaParser/Lines/IdentificationLine.cs
+    startLine: 80
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the related reference or blank.
+  example: []
+  syntax:
+    content: public RelatedReference RelatedReference { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.RelatedReference
+    content.vb: Public ReadOnly Property RelatedReference As RelatedReference
+  overload: CodaParser.Lines.IdentificationLine.RelatedReference*
+- uid: CodaParser.Lines.IdentificationLine.TransactionReference
+  commentId: P:CodaParser.Lines.IdentificationLine.TransactionReference
+  id: TransactionReference
+  parent: CodaParser.Lines.IdentificationLine
+  langs:
+  - csharp
+  - vb
+  name: TransactionReference
+  nameWithType: IdentificationLine.TransactionReference
+  fullName: CodaParser.Lines.IdentificationLine.TransactionReference
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/IdentificationLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: TransactionReference
+    path: ../CodaParser/Lines/IdentificationLine.cs
+    startLine: 83
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the transaction reference or blank.
+  example: []
+  syntax:
+    content: public TransactionReference TransactionReference { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.TransactionReference
+    content.vb: Public ReadOnly Property TransactionReference As TransactionReference
+  overload: CodaParser.Lines.IdentificationLine.TransactionReference*
+- uid: CodaParser.Lines.IdentificationLine.VersionCode
+  commentId: P:CodaParser.Lines.IdentificationLine.VersionCode
+  id: VersionCode
+  parent: CodaParser.Lines.IdentificationLine
+  langs:
+  - csharp
+  - vb
+  name: VersionCode
+  nameWithType: IdentificationLine.VersionCode
+  fullName: CodaParser.Lines.IdentificationLine.VersionCode
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/IdentificationLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: VersionCode
+    path: ../CodaParser/Lines/IdentificationLine.cs
+    startLine: 86
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the version code.
+  example: []
+  syntax:
+    content: public VersionCode VersionCode { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.VersionCode
+    content.vb: Public ReadOnly Property VersionCode As VersionCode
+  overload: CodaParser.Lines.IdentificationLine.VersionCode*
+- uid: CodaParser.Lines.IdentificationLine.GetLineType
+  commentId: M:CodaParser.Lines.IdentificationLine.GetLineType
+  id: GetLineType
+  parent: CodaParser.Lines.IdentificationLine
+  langs:
+  - csharp
+  - vb
+  name: GetLineType()
+  nameWithType: IdentificationLine.GetLineType()
+  fullName: CodaParser.Lines.IdentificationLine.GetLineType()
+  type: Method
+  source:
+    remote:
+      path: CodaParser/Lines/IdentificationLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: GetLineType
+    path: ../CodaParser/Lines/IdentificationLine.cs
+    startLine: 89
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the type of the line.
+  example: []
+  syntax:
+    content: public LineType GetLineType()
+    return:
+      type: CodaParser.Lines.LineType
+      description: The type that this line represents.
+    content.vb: Public Function GetLineType() As LineType
+  overload: CodaParser.Lines.IdentificationLine.GetLineType*
+  implements:
+  - CodaParser.Lines.ILine.GetLineType
+references:
+- uid: CodaParser.Lines
+  commentId: N:CodaParser.Lines
+  href: CodaParser.html
+  name: CodaParser.Lines
+  nameWithType: CodaParser.Lines
+  fullName: CodaParser.Lines
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Lines
+    name: Lines
+    href: CodaParser.Lines.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Lines
+    name: Lines
+    href: CodaParser.Lines.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: CodaParser.Lines.ILine
+  commentId: T:CodaParser.Lines.ILine
+  parent: CodaParser.Lines
+  href: CodaParser.Lines.ILine.html
+  name: ILine
+  nameWithType: ILine
+  fullName: CodaParser.Lines.ILine
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodaParser.Lines.IdentificationLine
+  commentId: T:CodaParser.Lines.IdentificationLine
+  href: CodaParser.Lines.IdentificationLine.html
+  name: IdentificationLine
+  nameWithType: IdentificationLine
+  fullName: CodaParser.Lines.IdentificationLine
+- uid: CodaParser.Lines.IdentificationLine.#ctor*
+  commentId: Overload:CodaParser.Lines.IdentificationLine.#ctor
+  href: CodaParser.Lines.IdentificationLine.html#CodaParser_Lines_IdentificationLine__ctor_CodaParser_Values_Date_CodaParser_Values_BankIdentificationNumber_System_Boolean_CodaParser_Values_ApplicationCode_CodaParser_Values_FileReference_CodaParser_Values_AccountName_CodaParser_Values_Bic_CodaParser_Values_CompanyIdentificationNumber_CodaParser_Values_ExternalApplicationCode_CodaParser_Values_TransactionReference_CodaParser_Values_RelatedReference_CodaParser_Values_VersionCode_
+  name: IdentificationLine
+  nameWithType: IdentificationLine.IdentificationLine
+  fullName: CodaParser.Lines.IdentificationLine.IdentificationLine
+  nameWithType.vb: IdentificationLine.New
+  fullName.vb: CodaParser.Lines.IdentificationLine.New
+  name.vb: New
+- uid: CodaParser.Values.Date
+  commentId: T:CodaParser.Values.Date
+  parent: CodaParser.Values
+  href: CodaParser.Values.Date.html
+  name: Date
+  nameWithType: Date
+  fullName: CodaParser.Values.Date
+- uid: CodaParser.Values.BankIdentificationNumber
+  commentId: T:CodaParser.Values.BankIdentificationNumber
+  parent: CodaParser.Values
+  href: CodaParser.Values.BankIdentificationNumber.html
+  name: BankIdentificationNumber
+  nameWithType: BankIdentificationNumber
+  fullName: CodaParser.Values.BankIdentificationNumber
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CodaParser.Values.ApplicationCode
+  commentId: T:CodaParser.Values.ApplicationCode
+  parent: CodaParser.Values
+  href: CodaParser.Values.ApplicationCode.html
+  name: ApplicationCode
+  nameWithType: ApplicationCode
+  fullName: CodaParser.Values.ApplicationCode
+- uid: CodaParser.Values.FileReference
+  commentId: T:CodaParser.Values.FileReference
+  parent: CodaParser.Values
+  href: CodaParser.Values.FileReference.html
+  name: FileReference
+  nameWithType: FileReference
+  fullName: CodaParser.Values.FileReference
+- uid: CodaParser.Values.AccountName
+  commentId: T:CodaParser.Values.AccountName
+  parent: CodaParser.Values
+  href: CodaParser.Values.AccountName.html
+  name: AccountName
+  nameWithType: AccountName
+  fullName: CodaParser.Values.AccountName
+- uid: CodaParser.Values.Bic
+  commentId: T:CodaParser.Values.Bic
+  parent: CodaParser.Values
+  href: CodaParser.Values.Bic.html
+  name: Bic
+  nameWithType: Bic
+  fullName: CodaParser.Values.Bic
+- uid: CodaParser.Values.CompanyIdentificationNumber
+  commentId: T:CodaParser.Values.CompanyIdentificationNumber
+  parent: CodaParser.Values
+  href: CodaParser.Values.CompanyIdentificationNumber.html
+  name: CompanyIdentificationNumber
+  nameWithType: CompanyIdentificationNumber
+  fullName: CodaParser.Values.CompanyIdentificationNumber
+- uid: CodaParser.Values.ExternalApplicationCode
+  commentId: T:CodaParser.Values.ExternalApplicationCode
+  parent: CodaParser.Values
+  href: CodaParser.Values.ExternalApplicationCode.html
+  name: ExternalApplicationCode
+  nameWithType: ExternalApplicationCode
+  fullName: CodaParser.Values.ExternalApplicationCode
+- uid: CodaParser.Values.TransactionReference
+  commentId: T:CodaParser.Values.TransactionReference
+  parent: CodaParser.Values
+  href: CodaParser.Values.TransactionReference.html
+  name: TransactionReference
+  nameWithType: TransactionReference
+  fullName: CodaParser.Values.TransactionReference
+- uid: CodaParser.Values.RelatedReference
+  commentId: T:CodaParser.Values.RelatedReference
+  parent: CodaParser.Values
+  href: CodaParser.Values.RelatedReference.html
+  name: RelatedReference
+  nameWithType: RelatedReference
+  fullName: CodaParser.Values.RelatedReference
+- uid: CodaParser.Values.VersionCode
+  commentId: T:CodaParser.Values.VersionCode
+  parent: CodaParser.Values
+  href: CodaParser.Values.VersionCode.html
+  name: VersionCode
+  nameWithType: VersionCode
+  fullName: CodaParser.Values.VersionCode
+- uid: CodaParser.Values
+  commentId: N:CodaParser.Values
+  href: CodaParser.html
+  name: CodaParser.Values
+  nameWithType: CodaParser.Values
+  fullName: CodaParser.Values
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Values
+    name: Values
+    href: CodaParser.Values.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Values
+    name: Values
+    href: CodaParser.Values.html
+- uid: CodaParser.Lines.IdentificationLine.AccountBic*
+  commentId: Overload:CodaParser.Lines.IdentificationLine.AccountBic
+  href: CodaParser.Lines.IdentificationLine.html#CodaParser_Lines_IdentificationLine_AccountBic
+  name: AccountBic
+  nameWithType: IdentificationLine.AccountBic
+  fullName: CodaParser.Lines.IdentificationLine.AccountBic
+- uid: CodaParser.Lines.IdentificationLine.AccountCompanyIdentificationNumber*
+  commentId: Overload:CodaParser.Lines.IdentificationLine.AccountCompanyIdentificationNumber
+  href: CodaParser.Lines.IdentificationLine.html#CodaParser_Lines_IdentificationLine_AccountCompanyIdentificationNumber
+  name: AccountCompanyIdentificationNumber
+  nameWithType: IdentificationLine.AccountCompanyIdentificationNumber
+  fullName: CodaParser.Lines.IdentificationLine.AccountCompanyIdentificationNumber
+- uid: CodaParser.Lines.IdentificationLine.AccountName*
+  commentId: Overload:CodaParser.Lines.IdentificationLine.AccountName
+  href: CodaParser.Lines.IdentificationLine.html#CodaParser_Lines_IdentificationLine_AccountName
+  name: AccountName
+  nameWithType: IdentificationLine.AccountName
+  fullName: CodaParser.Lines.IdentificationLine.AccountName
+- uid: CodaParser.Lines.IdentificationLine.ApplicationCode*
+  commentId: Overload:CodaParser.Lines.IdentificationLine.ApplicationCode
+  href: CodaParser.Lines.IdentificationLine.html#CodaParser_Lines_IdentificationLine_ApplicationCode
+  name: ApplicationCode
+  nameWithType: IdentificationLine.ApplicationCode
+  fullName: CodaParser.Lines.IdentificationLine.ApplicationCode
+- uid: CodaParser.Lines.IdentificationLine.BankIdentificationNumber*
+  commentId: Overload:CodaParser.Lines.IdentificationLine.BankIdentificationNumber
+  href: CodaParser.Lines.IdentificationLine.html#CodaParser_Lines_IdentificationLine_BankIdentificationNumber
+  name: BankIdentificationNumber
+  nameWithType: IdentificationLine.BankIdentificationNumber
+  fullName: CodaParser.Lines.IdentificationLine.BankIdentificationNumber
+- uid: CodaParser.Lines.IdentificationLine.CreationDate*
+  commentId: Overload:CodaParser.Lines.IdentificationLine.CreationDate
+  href: CodaParser.Lines.IdentificationLine.html#CodaParser_Lines_IdentificationLine_CreationDate
+  name: CreationDate
+  nameWithType: IdentificationLine.CreationDate
+  fullName: CodaParser.Lines.IdentificationLine.CreationDate
+- uid: CodaParser.Lines.IdentificationLine.ExternalApplicationCode*
+  commentId: Overload:CodaParser.Lines.IdentificationLine.ExternalApplicationCode
+  href: CodaParser.Lines.IdentificationLine.html#CodaParser_Lines_IdentificationLine_ExternalApplicationCode
+  name: ExternalApplicationCode
+  nameWithType: IdentificationLine.ExternalApplicationCode
+  fullName: CodaParser.Lines.IdentificationLine.ExternalApplicationCode
+- uid: CodaParser.Lines.IdentificationLine.FileReference*
+  commentId: Overload:CodaParser.Lines.IdentificationLine.FileReference
+  href: CodaParser.Lines.IdentificationLine.html#CodaParser_Lines_IdentificationLine_FileReference
+  name: FileReference
+  nameWithType: IdentificationLine.FileReference
+  fullName: CodaParser.Lines.IdentificationLine.FileReference
+- uid: CodaParser.Lines.IdentificationLine.IsDuplicate*
+  commentId: Overload:CodaParser.Lines.IdentificationLine.IsDuplicate
+  href: CodaParser.Lines.IdentificationLine.html#CodaParser_Lines_IdentificationLine_IsDuplicate
+  name: IsDuplicate
+  nameWithType: IdentificationLine.IsDuplicate
+  fullName: CodaParser.Lines.IdentificationLine.IsDuplicate
+- uid: CodaParser.Lines.IdentificationLine.RelatedReference*
+  commentId: Overload:CodaParser.Lines.IdentificationLine.RelatedReference
+  href: CodaParser.Lines.IdentificationLine.html#CodaParser_Lines_IdentificationLine_RelatedReference
+  name: RelatedReference
+  nameWithType: IdentificationLine.RelatedReference
+  fullName: CodaParser.Lines.IdentificationLine.RelatedReference
+- uid: CodaParser.Lines.IdentificationLine.TransactionReference*
+  commentId: Overload:CodaParser.Lines.IdentificationLine.TransactionReference
+  href: CodaParser.Lines.IdentificationLine.html#CodaParser_Lines_IdentificationLine_TransactionReference
+  name: TransactionReference
+  nameWithType: IdentificationLine.TransactionReference
+  fullName: CodaParser.Lines.IdentificationLine.TransactionReference
+- uid: CodaParser.Lines.IdentificationLine.VersionCode*
+  commentId: Overload:CodaParser.Lines.IdentificationLine.VersionCode
+  href: CodaParser.Lines.IdentificationLine.html#CodaParser_Lines_IdentificationLine_VersionCode
+  name: VersionCode
+  nameWithType: IdentificationLine.VersionCode
+  fullName: CodaParser.Lines.IdentificationLine.VersionCode
+- uid: CodaParser.Lines.IdentificationLine.GetLineType*
+  commentId: Overload:CodaParser.Lines.IdentificationLine.GetLineType
+  href: CodaParser.Lines.IdentificationLine.html#CodaParser_Lines_IdentificationLine_GetLineType
+  name: GetLineType
+  nameWithType: IdentificationLine.GetLineType
+  fullName: CodaParser.Lines.IdentificationLine.GetLineType
+- uid: CodaParser.Lines.ILine.GetLineType
+  commentId: M:CodaParser.Lines.ILine.GetLineType
+  parent: CodaParser.Lines.ILine
+  href: CodaParser.Lines.ILine.html#CodaParser_Lines_ILine_GetLineType
+  name: GetLineType()
+  nameWithType: ILine.GetLineType()
+  fullName: CodaParser.Lines.ILine.GetLineType()
+  spec.csharp:
+  - uid: CodaParser.Lines.ILine.GetLineType
+    name: GetLineType
+    href: CodaParser.Lines.ILine.html#CodaParser_Lines_ILine_GetLineType
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: CodaParser.Lines.ILine.GetLineType
+    name: GetLineType
+    href: CodaParser.Lines.ILine.html#CodaParser_Lines_ILine_GetLineType
+  - name: (
+  - name: )
+- uid: CodaParser.Lines.LineType
+  commentId: T:CodaParser.Lines.LineType
+  parent: CodaParser.Lines
+  href: CodaParser.Lines.LineType.html
+  name: LineType
+  nameWithType: LineType
+  fullName: CodaParser.Lines.LineType

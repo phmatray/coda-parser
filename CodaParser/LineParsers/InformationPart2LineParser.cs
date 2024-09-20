@@ -5,7 +5,7 @@ namespace CodaParser.LineParsers;
 
 /// <summary>
 /// The parser for the second type information line part.
-/// /// </summary>
+/// </summary>
 public class InformationPart2LineParser : ILineParser
 {
     /// <inheritdoc />

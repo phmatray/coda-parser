@@ -1,0 +1,534 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodaParser.Lines.EndSummaryLine
+  commentId: T:CodaParser.Lines.EndSummaryLine
+  id: EndSummaryLine
+  parent: CodaParser.Lines
+  children:
+  - CodaParser.Lines.EndSummaryLine.#ctor(CodaParser.Values.Amount,CodaParser.Values.Amount)
+  - CodaParser.Lines.EndSummaryLine.CreditAmount
+  - CodaParser.Lines.EndSummaryLine.DebetAmount
+  - CodaParser.Lines.EndSummaryLine.GetLineType
+  langs:
+  - csharp
+  - vb
+  name: EndSummaryLine
+  nameWithType: EndSummaryLine
+  fullName: CodaParser.Lines.EndSummaryLine
+  type: Class
+  source:
+    remote:
+      path: CodaParser/Lines/EndSummaryLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: EndSummaryLine
+    path: ../CodaParser/Lines/EndSummaryLine.cs
+    startLine: 7
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: The details of the trailer record.
+  example: []
+  syntax:
+    content: 'public class EndSummaryLine : ILine'
+    content.vb: Public Class EndSummaryLine Implements ILine
+  inheritance:
+  - System.Object
+  implements:
+  - CodaParser.Lines.ILine
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CodaParser.Lines.EndSummaryLine.#ctor(CodaParser.Values.Amount,CodaParser.Values.Amount)
+  commentId: M:CodaParser.Lines.EndSummaryLine.#ctor(CodaParser.Values.Amount,CodaParser.Values.Amount)
+  id: '#ctor(CodaParser.Values.Amount,CodaParser.Values.Amount)'
+  parent: CodaParser.Lines.EndSummaryLine
+  langs:
+  - csharp
+  - vb
+  name: EndSummaryLine(Amount, Amount)
+  nameWithType: EndSummaryLine.EndSummaryLine(Amount, Amount)
+  fullName: CodaParser.Lines.EndSummaryLine.EndSummaryLine(CodaParser.Values.Amount, CodaParser.Values.Amount)
+  type: Constructor
+  source:
+    remote:
+      path: CodaParser/Lines/EndSummaryLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: .ctor
+    path: ../CodaParser/Lines/EndSummaryLine.cs
+    startLine: 14
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Initializes a new instance of the <xref href="CodaParser.Lines.EndSummaryLine" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public EndSummaryLine(Amount debetAmount, Amount creditAmount)
+    parameters:
+    - id: debetAmount
+      type: CodaParser.Values.Amount
+      description: The debit movement.
+    - id: creditAmount
+      type: CodaParser.Values.Amount
+      description: The credit movement.
+    content.vb: Public Sub New(debetAmount As Amount, creditAmount As Amount)
+  overload: CodaParser.Lines.EndSummaryLine.#ctor*
+  nameWithType.vb: EndSummaryLine.New(Amount, Amount)
+  fullName.vb: CodaParser.Lines.EndSummaryLine.New(CodaParser.Values.Amount, CodaParser.Values.Amount)
+  name.vb: New(Amount, Amount)
+- uid: CodaParser.Lines.EndSummaryLine.CreditAmount
+  commentId: P:CodaParser.Lines.EndSummaryLine.CreditAmount
+  id: CreditAmount
+  parent: CodaParser.Lines.EndSummaryLine
+  langs:
+  - csharp
+  - vb
+  name: CreditAmount
+  nameWithType: EndSummaryLine.CreditAmount
+  fullName: CodaParser.Lines.EndSummaryLine.CreditAmount
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/EndSummaryLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: CreditAmount
+    path: ../CodaParser/Lines/EndSummaryLine.cs
+    startLine: 23
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the credit movement.
+  example: []
+  syntax:
+    content: public Amount CreditAmount { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.Amount
+    content.vb: Public ReadOnly Property CreditAmount As Amount
+  overload: CodaParser.Lines.EndSummaryLine.CreditAmount*
+- uid: CodaParser.Lines.EndSummaryLine.DebetAmount
+  commentId: P:CodaParser.Lines.EndSummaryLine.DebetAmount
+  id: DebetAmount
+  parent: CodaParser.Lines.EndSummaryLine
+  langs:
+  - csharp
+  - vb
+  name: DebetAmount
+  nameWithType: EndSummaryLine.DebetAmount
+  fullName: CodaParser.Lines.EndSummaryLine.DebetAmount
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/EndSummaryLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: DebetAmount
+    path: ../CodaParser/Lines/EndSummaryLine.cs
+    startLine: 28
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the debit movement.
+  example: []
+  syntax:
+    content: public Amount DebetAmount { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.Amount
+    content.vb: Public ReadOnly Property DebetAmount As Amount
+  overload: CodaParser.Lines.EndSummaryLine.DebetAmount*
+- uid: CodaParser.Lines.EndSummaryLine.GetLineType
+  commentId: M:CodaParser.Lines.EndSummaryLine.GetLineType
+  id: GetLineType
+  parent: CodaParser.Lines.EndSummaryLine
+  langs:
+  - csharp
+  - vb
+  name: GetLineType()
+  nameWithType: EndSummaryLine.GetLineType()
+  fullName: CodaParser.Lines.EndSummaryLine.GetLineType()
+  type: Method
+  source:
+    remote:
+      path: CodaParser/Lines/EndSummaryLine.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: GetLineType
+    path: ../CodaParser/Lines/EndSummaryLine.cs
+    startLine: 31
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the type of the line.
+  example: []
+  syntax:
+    content: public LineType GetLineType()
+    return:
+      type: CodaParser.Lines.LineType
+      description: The type that this line represents.
+    content.vb: Public Function GetLineType() As LineType
+  overload: CodaParser.Lines.EndSummaryLine.GetLineType*
+  implements:
+  - CodaParser.Lines.ILine.GetLineType
+references:
+- uid: CodaParser.Lines
+  commentId: N:CodaParser.Lines
+  href: CodaParser.html
+  name: CodaParser.Lines
+  nameWithType: CodaParser.Lines
+  fullName: CodaParser.Lines
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Lines
+    name: Lines
+    href: CodaParser.Lines.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Lines
+    name: Lines
+    href: CodaParser.Lines.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: CodaParser.Lines.ILine
+  commentId: T:CodaParser.Lines.ILine
+  parent: CodaParser.Lines
+  href: CodaParser.Lines.ILine.html
+  name: ILine
+  nameWithType: ILine
+  fullName: CodaParser.Lines.ILine
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodaParser.Lines.EndSummaryLine
+  commentId: T:CodaParser.Lines.EndSummaryLine
+  href: CodaParser.Lines.EndSummaryLine.html
+  name: EndSummaryLine
+  nameWithType: EndSummaryLine
+  fullName: CodaParser.Lines.EndSummaryLine
+- uid: CodaParser.Lines.EndSummaryLine.#ctor*
+  commentId: Overload:CodaParser.Lines.EndSummaryLine.#ctor
+  href: CodaParser.Lines.EndSummaryLine.html#CodaParser_Lines_EndSummaryLine__ctor_CodaParser_Values_Amount_CodaParser_Values_Amount_
+  name: EndSummaryLine
+  nameWithType: EndSummaryLine.EndSummaryLine
+  fullName: CodaParser.Lines.EndSummaryLine.EndSummaryLine
+  nameWithType.vb: EndSummaryLine.New
+  fullName.vb: CodaParser.Lines.EndSummaryLine.New
+  name.vb: New
+- uid: CodaParser.Values.Amount
+  commentId: T:CodaParser.Values.Amount
+  parent: CodaParser.Values
+  href: CodaParser.Values.Amount.html
+  name: Amount
+  nameWithType: Amount
+  fullName: CodaParser.Values.Amount
+- uid: CodaParser.Values
+  commentId: N:CodaParser.Values
+  href: CodaParser.html
+  name: CodaParser.Values
+  nameWithType: CodaParser.Values
+  fullName: CodaParser.Values
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Values
+    name: Values
+    href: CodaParser.Values.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Values
+    name: Values
+    href: CodaParser.Values.html
+- uid: CodaParser.Lines.EndSummaryLine.CreditAmount*
+  commentId: Overload:CodaParser.Lines.EndSummaryLine.CreditAmount
+  href: CodaParser.Lines.EndSummaryLine.html#CodaParser_Lines_EndSummaryLine_CreditAmount
+  name: CreditAmount
+  nameWithType: EndSummaryLine.CreditAmount
+  fullName: CodaParser.Lines.EndSummaryLine.CreditAmount
+- uid: CodaParser.Lines.EndSummaryLine.DebetAmount*
+  commentId: Overload:CodaParser.Lines.EndSummaryLine.DebetAmount
+  href: CodaParser.Lines.EndSummaryLine.html#CodaParser_Lines_EndSummaryLine_DebetAmount
+  name: DebetAmount
+  nameWithType: EndSummaryLine.DebetAmount
+  fullName: CodaParser.Lines.EndSummaryLine.DebetAmount
+- uid: CodaParser.Lines.EndSummaryLine.GetLineType*
+  commentId: Overload:CodaParser.Lines.EndSummaryLine.GetLineType
+  href: CodaParser.Lines.EndSummaryLine.html#CodaParser_Lines_EndSummaryLine_GetLineType
+  name: GetLineType
+  nameWithType: EndSummaryLine.GetLineType
+  fullName: CodaParser.Lines.EndSummaryLine.GetLineType
+- uid: CodaParser.Lines.ILine.GetLineType
+  commentId: M:CodaParser.Lines.ILine.GetLineType
+  parent: CodaParser.Lines.ILine
+  href: CodaParser.Lines.ILine.html#CodaParser_Lines_ILine_GetLineType
+  name: GetLineType()
+  nameWithType: ILine.GetLineType()
+  fullName: CodaParser.Lines.ILine.GetLineType()
+  spec.csharp:
+  - uid: CodaParser.Lines.ILine.GetLineType
+    name: GetLineType
+    href: CodaParser.Lines.ILine.html#CodaParser_Lines_ILine_GetLineType
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: CodaParser.Lines.ILine.GetLineType
+    name: GetLineType
+    href: CodaParser.Lines.ILine.html#CodaParser_Lines_ILine_GetLineType
+  - name: (
+  - name: )
+- uid: CodaParser.Lines.LineType
+  commentId: T:CodaParser.Lines.LineType
+  parent: CodaParser.Lines
+  href: CodaParser.Lines.LineType.html
+  name: LineType
+  nameWithType: LineType
+  fullName: CodaParser.Lines.LineType

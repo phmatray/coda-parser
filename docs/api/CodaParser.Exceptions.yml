@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodaParser.Exceptions
+  commentId: N:CodaParser.Exceptions
+  id: CodaParser.Exceptions
+  children:
+  - CodaParser.Exceptions.InvalidValueException
+  langs:
+  - csharp
+  - vb
+  name: CodaParser.Exceptions
+  nameWithType: CodaParser.Exceptions
+  fullName: CodaParser.Exceptions
+  type: Namespace
+  assemblies:
+  - CodaParser
+references:
+- uid: CodaParser.Exceptions.InvalidValueException
+  commentId: T:CodaParser.Exceptions.InvalidValueException
+  href: CodaParser.Exceptions.InvalidValueException.html
+  name: InvalidValueException
+  nameWithType: InvalidValueException
+  fullName: CodaParser.Exceptions.InvalidValueException

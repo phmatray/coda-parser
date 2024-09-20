@@ -1,0 +1,903 @@
+### YamlMime:ManagedReference
+items:
+- uid: CodaParser.Lines.TransactionPart2Line
+  commentId: T:CodaParser.Lines.TransactionPart2Line
+  id: TransactionPart2Line
+  parent: CodaParser.Lines
+  children:
+  - CodaParser.Lines.TransactionPart2Line.#ctor(CodaParser.Values.SequenceNumber,CodaParser.Values.SequenceNumberDetail,CodaParser.Values.Message,CodaParser.Values.ClientReference,CodaParser.Values.Bic,CodaParser.Values.TransactionCodeType,CodaParser.Values.IsoReasonReturnCode,CodaParser.Values.CategoryPurpose,CodaParser.Values.Purpose)
+  - CodaParser.Lines.TransactionPart2Line.CategoryPurpose
+  - CodaParser.Lines.TransactionPart2Line.ClientReference
+  - CodaParser.Lines.TransactionPart2Line.GetLineType
+  - CodaParser.Lines.TransactionPart2Line.IsoReasonReturnCode
+  - CodaParser.Lines.TransactionPart2Line.Message
+  - CodaParser.Lines.TransactionPart2Line.OtherAccountBic
+  - CodaParser.Lines.TransactionPart2Line.Purpose
+  - CodaParser.Lines.TransactionPart2Line.SequenceNumber
+  - CodaParser.Lines.TransactionPart2Line.SequenceNumberDetail
+  - CodaParser.Lines.TransactionPart2Line.TransactionType
+  langs:
+  - csharp
+  - vb
+  name: TransactionPart2Line
+  nameWithType: TransactionPart2Line
+  fullName: CodaParser.Lines.TransactionPart2Line
+  type: Class
+  source:
+    remote:
+      path: CodaParser/Lines/TransactionPart2Line.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: TransactionPart2Line
+    path: ../CodaParser/Lines/TransactionPart2Line.cs
+    startLine: 7
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Continued information about the movement.
+  example: []
+  syntax:
+    content: 'public class TransactionPart2Line : IInformationOrTransactionLine, ILine'
+    content.vb: Public Class TransactionPart2Line Implements IInformationOrTransactionLine, ILine
+  inheritance:
+  - System.Object
+  implements:
+  - CodaParser.Lines.IInformationOrTransactionLine
+  - CodaParser.Lines.ILine
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: CodaParser.Lines.TransactionPart2Line.#ctor(CodaParser.Values.SequenceNumber,CodaParser.Values.SequenceNumberDetail,CodaParser.Values.Message,CodaParser.Values.ClientReference,CodaParser.Values.Bic,CodaParser.Values.TransactionCodeType,CodaParser.Values.IsoReasonReturnCode,CodaParser.Values.CategoryPurpose,CodaParser.Values.Purpose)
+  commentId: M:CodaParser.Lines.TransactionPart2Line.#ctor(CodaParser.Values.SequenceNumber,CodaParser.Values.SequenceNumberDetail,CodaParser.Values.Message,CodaParser.Values.ClientReference,CodaParser.Values.Bic,CodaParser.Values.TransactionCodeType,CodaParser.Values.IsoReasonReturnCode,CodaParser.Values.CategoryPurpose,CodaParser.Values.Purpose)
+  id: '#ctor(CodaParser.Values.SequenceNumber,CodaParser.Values.SequenceNumberDetail,CodaParser.Values.Message,CodaParser.Values.ClientReference,CodaParser.Values.Bic,CodaParser.Values.TransactionCodeType,CodaParser.Values.IsoReasonReturnCode,CodaParser.Values.CategoryPurpose,CodaParser.Values.Purpose)'
+  parent: CodaParser.Lines.TransactionPart2Line
+  langs:
+  - csharp
+  - vb
+  name: TransactionPart2Line(SequenceNumber, SequenceNumberDetail, Message, ClientReference, Bic, TransactionCodeType, IsoReasonReturnCode, CategoryPurpose, Purpose)
+  nameWithType: TransactionPart2Line.TransactionPart2Line(SequenceNumber, SequenceNumberDetail, Message, ClientReference, Bic, TransactionCodeType, IsoReasonReturnCode, CategoryPurpose, Purpose)
+  fullName: CodaParser.Lines.TransactionPart2Line.TransactionPart2Line(CodaParser.Values.SequenceNumber, CodaParser.Values.SequenceNumberDetail, CodaParser.Values.Message, CodaParser.Values.ClientReference, CodaParser.Values.Bic, CodaParser.Values.TransactionCodeType, CodaParser.Values.IsoReasonReturnCode, CodaParser.Values.CategoryPurpose, CodaParser.Values.Purpose)
+  type: Constructor
+  source:
+    remote:
+      path: CodaParser/Lines/TransactionPart2Line.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: .ctor
+    path: ../CodaParser/Lines/TransactionPart2Line.cs
+    startLine: 21
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Initializes a new instance of the <xref href="CodaParser.Lines.TransactionPart2Line" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public TransactionPart2Line(SequenceNumber sequenceNumber, SequenceNumberDetail sequenceNumberDetail, Message message, ClientReference clientReference, Bic otherAccountBic, TransactionCodeType transactionType, IsoReasonReturnCode isoReasonReturnCode, CategoryPurpose categoryPurpose, Purpose purpose)
+    parameters:
+    - id: sequenceNumber
+      type: CodaParser.Values.SequenceNumber
+      description: The continuous sequence number.
+    - id: sequenceNumberDetail
+      type: CodaParser.Values.SequenceNumberDetail
+      description: The detail number.
+    - id: message
+      type: CodaParser.Values.Message
+      description: The communication.
+    - id: clientReference
+      type: CodaParser.Values.ClientReference
+      description: The customer reference.
+    - id: otherAccountBic
+      type: CodaParser.Values.Bic
+      description: The bic of the counterparty's bank.
+    - id: transactionType
+      type: CodaParser.Values.TransactionCodeType
+      description: The type of the transaction.
+    - id: isoReasonReturnCode
+      type: CodaParser.Values.IsoReasonReturnCode
+      description: The reason return code in iso format.
+    - id: categoryPurpose
+      type: CodaParser.Values.CategoryPurpose
+      description: The category of the purpose.
+    - id: purpose
+      type: CodaParser.Values.Purpose
+      description: The purpose.
+    content.vb: Public Sub New(sequenceNumber As SequenceNumber, sequenceNumberDetail As SequenceNumberDetail, message As Message, clientReference As ClientReference, otherAccountBic As Bic, transactionType As TransactionCodeType, isoReasonReturnCode As IsoReasonReturnCode, categoryPurpose As CategoryPurpose, purpose As Purpose)
+  overload: CodaParser.Lines.TransactionPart2Line.#ctor*
+  nameWithType.vb: TransactionPart2Line.New(SequenceNumber, SequenceNumberDetail, Message, ClientReference, Bic, TransactionCodeType, IsoReasonReturnCode, CategoryPurpose, Purpose)
+  fullName.vb: CodaParser.Lines.TransactionPart2Line.New(CodaParser.Values.SequenceNumber, CodaParser.Values.SequenceNumberDetail, CodaParser.Values.Message, CodaParser.Values.ClientReference, CodaParser.Values.Bic, CodaParser.Values.TransactionCodeType, CodaParser.Values.IsoReasonReturnCode, CodaParser.Values.CategoryPurpose, CodaParser.Values.Purpose)
+  name.vb: New(SequenceNumber, SequenceNumberDetail, Message, ClientReference, Bic, TransactionCodeType, IsoReasonReturnCode, CategoryPurpose, Purpose)
+- uid: CodaParser.Lines.TransactionPart2Line.CategoryPurpose
+  commentId: P:CodaParser.Lines.TransactionPart2Line.CategoryPurpose
+  id: CategoryPurpose
+  parent: CodaParser.Lines.TransactionPart2Line
+  langs:
+  - csharp
+  - vb
+  name: CategoryPurpose
+  nameWithType: TransactionPart2Line.CategoryPurpose
+  fullName: CodaParser.Lines.TransactionPart2Line.CategoryPurpose
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/TransactionPart2Line.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: CategoryPurpose
+    path: ../CodaParser/Lines/TransactionPart2Line.cs
+    startLine: 46
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the category of the purpose.
+  example: []
+  syntax:
+    content: public CategoryPurpose CategoryPurpose { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.CategoryPurpose
+    content.vb: Public ReadOnly Property CategoryPurpose As CategoryPurpose
+  overload: CodaParser.Lines.TransactionPart2Line.CategoryPurpose*
+- uid: CodaParser.Lines.TransactionPart2Line.ClientReference
+  commentId: P:CodaParser.Lines.TransactionPart2Line.ClientReference
+  id: ClientReference
+  parent: CodaParser.Lines.TransactionPart2Line
+  langs:
+  - csharp
+  - vb
+  name: ClientReference
+  nameWithType: TransactionPart2Line.ClientReference
+  fullName: CodaParser.Lines.TransactionPart2Line.ClientReference
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/TransactionPart2Line.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: ClientReference
+    path: ../CodaParser/Lines/TransactionPart2Line.cs
+    startLine: 51
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the customer reference.
+  example: []
+  syntax:
+    content: public ClientReference ClientReference { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.ClientReference
+    content.vb: Public ReadOnly Property ClientReference As ClientReference
+  overload: CodaParser.Lines.TransactionPart2Line.ClientReference*
+- uid: CodaParser.Lines.TransactionPart2Line.IsoReasonReturnCode
+  commentId: P:CodaParser.Lines.TransactionPart2Line.IsoReasonReturnCode
+  id: IsoReasonReturnCode
+  parent: CodaParser.Lines.TransactionPart2Line
+  langs:
+  - csharp
+  - vb
+  name: IsoReasonReturnCode
+  nameWithType: TransactionPart2Line.IsoReasonReturnCode
+  fullName: CodaParser.Lines.TransactionPart2Line.IsoReasonReturnCode
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/TransactionPart2Line.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: IsoReasonReturnCode
+    path: ../CodaParser/Lines/TransactionPart2Line.cs
+    startLine: 56
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the reason return code in iso format.
+  example: []
+  syntax:
+    content: public IsoReasonReturnCode IsoReasonReturnCode { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.IsoReasonReturnCode
+    content.vb: Public ReadOnly Property IsoReasonReturnCode As IsoReasonReturnCode
+  overload: CodaParser.Lines.TransactionPart2Line.IsoReasonReturnCode*
+- uid: CodaParser.Lines.TransactionPart2Line.Message
+  commentId: P:CodaParser.Lines.TransactionPart2Line.Message
+  id: Message
+  parent: CodaParser.Lines.TransactionPart2Line
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: TransactionPart2Line.Message
+  fullName: CodaParser.Lines.TransactionPart2Line.Message
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/TransactionPart2Line.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Message
+    path: ../CodaParser/Lines/TransactionPart2Line.cs
+    startLine: 59
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the message.
+  example: []
+  syntax:
+    content: public Message? Message { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.Message
+    content.vb: Public ReadOnly Property Message As Message
+  overload: CodaParser.Lines.TransactionPart2Line.Message*
+  implements:
+  - CodaParser.Lines.IInformationOrTransactionLine.Message
+- uid: CodaParser.Lines.TransactionPart2Line.OtherAccountBic
+  commentId: P:CodaParser.Lines.TransactionPart2Line.OtherAccountBic
+  id: OtherAccountBic
+  parent: CodaParser.Lines.TransactionPart2Line
+  langs:
+  - csharp
+  - vb
+  name: OtherAccountBic
+  nameWithType: TransactionPart2Line.OtherAccountBic
+  fullName: CodaParser.Lines.TransactionPart2Line.OtherAccountBic
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/TransactionPart2Line.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: OtherAccountBic
+    path: ../CodaParser/Lines/TransactionPart2Line.cs
+    startLine: 64
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the bic of the counterparty's bank.
+  example: []
+  syntax:
+    content: public Bic OtherAccountBic { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.Bic
+    content.vb: Public ReadOnly Property OtherAccountBic As Bic
+  overload: CodaParser.Lines.TransactionPart2Line.OtherAccountBic*
+- uid: CodaParser.Lines.TransactionPart2Line.Purpose
+  commentId: P:CodaParser.Lines.TransactionPart2Line.Purpose
+  id: Purpose
+  parent: CodaParser.Lines.TransactionPart2Line
+  langs:
+  - csharp
+  - vb
+  name: Purpose
+  nameWithType: TransactionPart2Line.Purpose
+  fullName: CodaParser.Lines.TransactionPart2Line.Purpose
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/TransactionPart2Line.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: Purpose
+    path: ../CodaParser/Lines/TransactionPart2Line.cs
+    startLine: 69
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the purpose.
+  example: []
+  syntax:
+    content: public Purpose Purpose { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.Purpose
+    content.vb: Public ReadOnly Property Purpose As Purpose
+  overload: CodaParser.Lines.TransactionPart2Line.Purpose*
+- uid: CodaParser.Lines.TransactionPart2Line.SequenceNumber
+  commentId: P:CodaParser.Lines.TransactionPart2Line.SequenceNumber
+  id: SequenceNumber
+  parent: CodaParser.Lines.TransactionPart2Line
+  langs:
+  - csharp
+  - vb
+  name: SequenceNumber
+  nameWithType: TransactionPart2Line.SequenceNumber
+  fullName: CodaParser.Lines.TransactionPart2Line.SequenceNumber
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/TransactionPart2Line.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: SequenceNumber
+    path: ../CodaParser/Lines/TransactionPart2Line.cs
+    startLine: 72
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the sequence number.
+  example: []
+  syntax:
+    content: public SequenceNumber SequenceNumber { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.SequenceNumber
+    content.vb: Public ReadOnly Property SequenceNumber As SequenceNumber
+  overload: CodaParser.Lines.TransactionPart2Line.SequenceNumber*
+  implements:
+  - CodaParser.Lines.IInformationOrTransactionLine.SequenceNumber
+- uid: CodaParser.Lines.TransactionPart2Line.SequenceNumberDetail
+  commentId: P:CodaParser.Lines.TransactionPart2Line.SequenceNumberDetail
+  id: SequenceNumberDetail
+  parent: CodaParser.Lines.TransactionPart2Line
+  langs:
+  - csharp
+  - vb
+  name: SequenceNumberDetail
+  nameWithType: TransactionPart2Line.SequenceNumberDetail
+  fullName: CodaParser.Lines.TransactionPart2Line.SequenceNumberDetail
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/TransactionPart2Line.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: SequenceNumberDetail
+    path: ../CodaParser/Lines/TransactionPart2Line.cs
+    startLine: 77
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the detail number.
+  example: []
+  syntax:
+    content: public SequenceNumberDetail SequenceNumberDetail { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.SequenceNumberDetail
+    content.vb: Public ReadOnly Property SequenceNumberDetail As SequenceNumberDetail
+  overload: CodaParser.Lines.TransactionPart2Line.SequenceNumberDetail*
+- uid: CodaParser.Lines.TransactionPart2Line.TransactionType
+  commentId: P:CodaParser.Lines.TransactionPart2Line.TransactionType
+  id: TransactionType
+  parent: CodaParser.Lines.TransactionPart2Line
+  langs:
+  - csharp
+  - vb
+  name: TransactionType
+  nameWithType: TransactionPart2Line.TransactionType
+  fullName: CodaParser.Lines.TransactionPart2Line.TransactionType
+  type: Property
+  source:
+    remote:
+      path: CodaParser/Lines/TransactionPart2Line.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: TransactionType
+    path: ../CodaParser/Lines/TransactionPart2Line.cs
+    startLine: 82
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the type of the transaction.
+  example: []
+  syntax:
+    content: public TransactionCodeType TransactionType { get; }
+    parameters: []
+    return:
+      type: CodaParser.Values.TransactionCodeType
+    content.vb: Public ReadOnly Property TransactionType As TransactionCodeType
+  overload: CodaParser.Lines.TransactionPart2Line.TransactionType*
+- uid: CodaParser.Lines.TransactionPart2Line.GetLineType
+  commentId: M:CodaParser.Lines.TransactionPart2Line.GetLineType
+  id: GetLineType
+  parent: CodaParser.Lines.TransactionPart2Line
+  langs:
+  - csharp
+  - vb
+  name: GetLineType()
+  nameWithType: TransactionPart2Line.GetLineType()
+  fullName: CodaParser.Lines.TransactionPart2Line.GetLineType()
+  type: Method
+  source:
+    remote:
+      path: CodaParser/Lines/TransactionPart2Line.cs
+      branch: main
+      repo: https://github.com/phmatray/coda-parser.git
+    id: GetLineType
+    path: ../CodaParser/Lines/TransactionPart2Line.cs
+    startLine: 85
+  assemblies:
+  - CodaParser
+  namespace: CodaParser.Lines
+  summary: Gets the type of the line.
+  example: []
+  syntax:
+    content: public LineType GetLineType()
+    return:
+      type: CodaParser.Lines.LineType
+      description: The type that this line represents.
+    content.vb: Public Function GetLineType() As LineType
+  overload: CodaParser.Lines.TransactionPart2Line.GetLineType*
+  implements:
+  - CodaParser.Lines.ILine.GetLineType
+references:
+- uid: CodaParser.Lines
+  commentId: N:CodaParser.Lines
+  href: CodaParser.html
+  name: CodaParser.Lines
+  nameWithType: CodaParser.Lines
+  fullName: CodaParser.Lines
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Lines
+    name: Lines
+    href: CodaParser.Lines.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Lines
+    name: Lines
+    href: CodaParser.Lines.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: CodaParser.Lines.IInformationOrTransactionLine
+  commentId: T:CodaParser.Lines.IInformationOrTransactionLine
+  parent: CodaParser.Lines
+  href: CodaParser.Lines.IInformationOrTransactionLine.html
+  name: IInformationOrTransactionLine
+  nameWithType: IInformationOrTransactionLine
+  fullName: CodaParser.Lines.IInformationOrTransactionLine
+- uid: CodaParser.Lines.ILine
+  commentId: T:CodaParser.Lines.ILine
+  parent: CodaParser.Lines
+  href: CodaParser.Lines.ILine.html
+  name: ILine
+  nameWithType: ILine
+  fullName: CodaParser.Lines.ILine
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CodaParser.Lines.TransactionPart2Line
+  commentId: T:CodaParser.Lines.TransactionPart2Line
+  href: CodaParser.Lines.TransactionPart2Line.html
+  name: TransactionPart2Line
+  nameWithType: TransactionPart2Line
+  fullName: CodaParser.Lines.TransactionPart2Line
+- uid: CodaParser.Lines.TransactionPart2Line.#ctor*
+  commentId: Overload:CodaParser.Lines.TransactionPart2Line.#ctor
+  href: CodaParser.Lines.TransactionPart2Line.html#CodaParser_Lines_TransactionPart2Line__ctor_CodaParser_Values_SequenceNumber_CodaParser_Values_SequenceNumberDetail_CodaParser_Values_Message_CodaParser_Values_ClientReference_CodaParser_Values_Bic_CodaParser_Values_TransactionCodeType_CodaParser_Values_IsoReasonReturnCode_CodaParser_Values_CategoryPurpose_CodaParser_Values_Purpose_
+  name: TransactionPart2Line
+  nameWithType: TransactionPart2Line.TransactionPart2Line
+  fullName: CodaParser.Lines.TransactionPart2Line.TransactionPart2Line
+  nameWithType.vb: TransactionPart2Line.New
+  fullName.vb: CodaParser.Lines.TransactionPart2Line.New
+  name.vb: New
+- uid: CodaParser.Values.SequenceNumber
+  commentId: T:CodaParser.Values.SequenceNumber
+  parent: CodaParser.Values
+  href: CodaParser.Values.SequenceNumber.html
+  name: SequenceNumber
+  nameWithType: SequenceNumber
+  fullName: CodaParser.Values.SequenceNumber
+- uid: CodaParser.Values.SequenceNumberDetail
+  commentId: T:CodaParser.Values.SequenceNumberDetail
+  parent: CodaParser.Values
+  href: CodaParser.Values.SequenceNumberDetail.html
+  name: SequenceNumberDetail
+  nameWithType: SequenceNumberDetail
+  fullName: CodaParser.Values.SequenceNumberDetail
+- uid: CodaParser.Values.Message
+  commentId: T:CodaParser.Values.Message
+  parent: CodaParser.Values
+  href: CodaParser.Values.Message.html
+  name: Message
+  nameWithType: Message
+  fullName: CodaParser.Values.Message
+- uid: CodaParser.Values.ClientReference
+  commentId: T:CodaParser.Values.ClientReference
+  parent: CodaParser.Values
+  href: CodaParser.Values.ClientReference.html
+  name: ClientReference
+  nameWithType: ClientReference
+  fullName: CodaParser.Values.ClientReference
+- uid: CodaParser.Values.Bic
+  commentId: T:CodaParser.Values.Bic
+  parent: CodaParser.Values
+  href: CodaParser.Values.Bic.html
+  name: Bic
+  nameWithType: Bic
+  fullName: CodaParser.Values.Bic
+- uid: CodaParser.Values.TransactionCodeType
+  commentId: T:CodaParser.Values.TransactionCodeType
+  parent: CodaParser.Values
+  href: CodaParser.Values.TransactionCodeType.html
+  name: TransactionCodeType
+  nameWithType: TransactionCodeType
+  fullName: CodaParser.Values.TransactionCodeType
+- uid: CodaParser.Values.IsoReasonReturnCode
+  commentId: T:CodaParser.Values.IsoReasonReturnCode
+  parent: CodaParser.Values
+  href: CodaParser.Values.IsoReasonReturnCode.html
+  name: IsoReasonReturnCode
+  nameWithType: IsoReasonReturnCode
+  fullName: CodaParser.Values.IsoReasonReturnCode
+- uid: CodaParser.Values.CategoryPurpose
+  commentId: T:CodaParser.Values.CategoryPurpose
+  parent: CodaParser.Values
+  href: CodaParser.Values.CategoryPurpose.html
+  name: CategoryPurpose
+  nameWithType: CategoryPurpose
+  fullName: CodaParser.Values.CategoryPurpose
+- uid: CodaParser.Values.Purpose
+  commentId: T:CodaParser.Values.Purpose
+  parent: CodaParser.Values
+  href: CodaParser.Values.Purpose.html
+  name: Purpose
+  nameWithType: Purpose
+  fullName: CodaParser.Values.Purpose
+- uid: CodaParser.Values
+  commentId: N:CodaParser.Values
+  href: CodaParser.html
+  name: CodaParser.Values
+  nameWithType: CodaParser.Values
+  fullName: CodaParser.Values
+  spec.csharp:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Values
+    name: Values
+    href: CodaParser.Values.html
+  spec.vb:
+  - uid: CodaParser
+    name: CodaParser
+    href: CodaParser.html
+  - name: .
+  - uid: CodaParser.Values
+    name: Values
+    href: CodaParser.Values.html
+- uid: CodaParser.Lines.TransactionPart2Line.CategoryPurpose*
+  commentId: Overload:CodaParser.Lines.TransactionPart2Line.CategoryPurpose
+  href: CodaParser.Lines.TransactionPart2Line.html#CodaParser_Lines_TransactionPart2Line_CategoryPurpose
+  name: CategoryPurpose
+  nameWithType: TransactionPart2Line.CategoryPurpose
+  fullName: CodaParser.Lines.TransactionPart2Line.CategoryPurpose
+- uid: CodaParser.Lines.TransactionPart2Line.ClientReference*
+  commentId: Overload:CodaParser.Lines.TransactionPart2Line.ClientReference
+  href: CodaParser.Lines.TransactionPart2Line.html#CodaParser_Lines_TransactionPart2Line_ClientReference
+  name: ClientReference
+  nameWithType: TransactionPart2Line.ClientReference
+  fullName: CodaParser.Lines.TransactionPart2Line.ClientReference
+- uid: CodaParser.Lines.TransactionPart2Line.IsoReasonReturnCode*
+  commentId: Overload:CodaParser.Lines.TransactionPart2Line.IsoReasonReturnCode
+  href: CodaParser.Lines.TransactionPart2Line.html#CodaParser_Lines_TransactionPart2Line_IsoReasonReturnCode
+  name: IsoReasonReturnCode
+  nameWithType: TransactionPart2Line.IsoReasonReturnCode
+  fullName: CodaParser.Lines.TransactionPart2Line.IsoReasonReturnCode
+- uid: CodaParser.Lines.TransactionPart2Line.Message*
+  commentId: Overload:CodaParser.Lines.TransactionPart2Line.Message
+  href: CodaParser.Lines.TransactionPart2Line.html#CodaParser_Lines_TransactionPart2Line_Message
+  name: Message
+  nameWithType: TransactionPart2Line.Message
+  fullName: CodaParser.Lines.TransactionPart2Line.Message
+- uid: CodaParser.Lines.IInformationOrTransactionLine.Message
+  commentId: P:CodaParser.Lines.IInformationOrTransactionLine.Message
+  parent: CodaParser.Lines.IInformationOrTransactionLine
+  href: CodaParser.Lines.IInformationOrTransactionLine.html#CodaParser_Lines_IInformationOrTransactionLine_Message
+  name: Message
+  nameWithType: IInformationOrTransactionLine.Message
+  fullName: CodaParser.Lines.IInformationOrTransactionLine.Message
+- uid: CodaParser.Lines.TransactionPart2Line.OtherAccountBic*
+  commentId: Overload:CodaParser.Lines.TransactionPart2Line.OtherAccountBic
+  href: CodaParser.Lines.TransactionPart2Line.html#CodaParser_Lines_TransactionPart2Line_OtherAccountBic
+  name: OtherAccountBic
+  nameWithType: TransactionPart2Line.OtherAccountBic
+  fullName: CodaParser.Lines.TransactionPart2Line.OtherAccountBic
+- uid: CodaParser.Lines.TransactionPart2Line.Purpose*
+  commentId: Overload:CodaParser.Lines.TransactionPart2Line.Purpose
+  href: CodaParser.Lines.TransactionPart2Line.html#CodaParser_Lines_TransactionPart2Line_Purpose
+  name: Purpose
+  nameWithType: TransactionPart2Line.Purpose
+  fullName: CodaParser.Lines.TransactionPart2Line.Purpose
+- uid: CodaParser.Lines.TransactionPart2Line.SequenceNumber*
+  commentId: Overload:CodaParser.Lines.TransactionPart2Line.SequenceNumber
+  href: CodaParser.Lines.TransactionPart2Line.html#CodaParser_Lines_TransactionPart2Line_SequenceNumber
+  name: SequenceNumber
+  nameWithType: TransactionPart2Line.SequenceNumber
+  fullName: CodaParser.Lines.TransactionPart2Line.SequenceNumber
+- uid: CodaParser.Lines.IInformationOrTransactionLine.SequenceNumber
+  commentId: P:CodaParser.Lines.IInformationOrTransactionLine.SequenceNumber
+  parent: CodaParser.Lines.IInformationOrTransactionLine
+  href: CodaParser.Lines.IInformationOrTransactionLine.html#CodaParser_Lines_IInformationOrTransactionLine_SequenceNumber
+  name: SequenceNumber
+  nameWithType: IInformationOrTransactionLine.SequenceNumber
+  fullName: CodaParser.Lines.IInformationOrTransactionLine.SequenceNumber
+- uid: CodaParser.Lines.TransactionPart2Line.SequenceNumberDetail*
+  commentId: Overload:CodaParser.Lines.TransactionPart2Line.SequenceNumberDetail
+  href: CodaParser.Lines.TransactionPart2Line.html#CodaParser_Lines_TransactionPart2Line_SequenceNumberDetail
+  name: SequenceNumberDetail
+  nameWithType: TransactionPart2Line.SequenceNumberDetail
+  fullName: CodaParser.Lines.TransactionPart2Line.SequenceNumberDetail
+- uid: CodaParser.Lines.TransactionPart2Line.TransactionType*
+  commentId: Overload:CodaParser.Lines.TransactionPart2Line.TransactionType
+  href: CodaParser.Lines.TransactionPart2Line.html#CodaParser_Lines_TransactionPart2Line_TransactionType
+  name: TransactionType
+  nameWithType: TransactionPart2Line.TransactionType
+  fullName: CodaParser.Lines.TransactionPart2Line.TransactionType
+- uid: CodaParser.Lines.TransactionPart2Line.GetLineType*
+  commentId: Overload:CodaParser.Lines.TransactionPart2Line.GetLineType
+  href: CodaParser.Lines.TransactionPart2Line.html#CodaParser_Lines_TransactionPart2Line_GetLineType
+  name: GetLineType
+  nameWithType: TransactionPart2Line.GetLineType
+  fullName: CodaParser.Lines.TransactionPart2Line.GetLineType
+- uid: CodaParser.Lines.ILine.GetLineType
+  commentId: M:CodaParser.Lines.ILine.GetLineType
+  parent: CodaParser.Lines.ILine
+  href: CodaParser.Lines.ILine.html#CodaParser_Lines_ILine_GetLineType
+  name: GetLineType()
+  nameWithType: ILine.GetLineType()
+  fullName: CodaParser.Lines.ILine.GetLineType()
+  spec.csharp:
+  - uid: CodaParser.Lines.ILine.GetLineType
+    name: GetLineType
+    href: CodaParser.Lines.ILine.html#CodaParser_Lines_ILine_GetLineType
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: CodaParser.Lines.ILine.GetLineType
+    name: GetLineType
+    href: CodaParser.Lines.ILine.html#CodaParser_Lines_ILine_GetLineType
+  - name: (
+  - name: )
+- uid: CodaParser.Lines.LineType
+  commentId: T:CodaParser.Lines.LineType
+  parent: CodaParser.Lines
+  href: CodaParser.Lines.LineType.html
+  name: LineType
+  nameWithType: LineType
+  fullName: CodaParser.Lines.LineType

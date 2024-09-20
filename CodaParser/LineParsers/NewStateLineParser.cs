@@ -5,7 +5,7 @@ namespace CodaParser.LineParsers;
 
 /// <summary>
 /// The parser for the final state of the balance.
-/// /// </summary>
+/// </summary>
 public class NewStateLineParser : ILineParser
 {
     /// <inheritdoc />
