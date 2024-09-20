@@ -1,15 +1,17 @@
 # Changelog
 
-## [1.0.2](https://github.com/phmatray/coda-parser/compare/1.0.1..1.0.2) - 2024-09-20
+## [unreleased]
 
 ### 📚 Documentation
 
-- Create DocFX documentation - ([ace1bbf](https://github.com/phmatray/coda-parser/commit/ace1bbf68d14018dd7fde292f96616d951f2d2ca))
+- Create DocFX documentation - ([507b493](https://github.com/phmatray/coda-parser/commit/507b49353fb5a7770b4012563673cf528f1c51ef))
+- Create DocFX documentation - ([f8f12fb](https://github.com/phmatray/coda-parser/commit/f8f12fb3509241fed3a30a6181f322f67d19ba6e))
 - Update README.md - ([c9b1248](https://github.com/phmatray/coda-parser/commit/c9b124895757db0d9f81226aa96dfc64e159d0b9))
 
 ### ⚙️ Miscellaneous Tasks
 
-- Add NuGetApiKey from GitHub - ([296eb91](https://github.com/phmatray/coda-parser/commit/296eb91bbc560c47f3691ac6140c623c467015f4))
+- Add NuGetApiKey from GitHub - ([9d4be24](https://github.com/phmatray/coda-parser/commit/9d4be2450a13feece8564186608c618cd8b28323))
+- Add NuGetApiKey from GitHub - ([7d97cf9](https://github.com/phmatray/coda-parser/commit/7d97cf96dc9cac99498921b3678a62459550a337))
 - Amend commit with the updated CHANGELOG.md - ([126dd56](https://github.com/phmatray/coda-parser/commit/126dd56a99f9196097e5a25a68a113981dce0a54))
 - Add version to the library from Build.cs - ([f29b9b2](https://github.com/phmatray/coda-parser/commit/f29b9b2887e5cf6916b86a8fde1da38d77b724fc))
 - Include CHANGELOG.md in the NuGet package - ([a41ab79](https://github.com/phmatray/coda-parser/commit/a41ab796307475e4f7fdad30c7a767d1ed4d0391))
