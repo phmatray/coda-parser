@@ -7,12 +7,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodaParser", "CodaParser\Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodaParserTests", "CodaParserTests\CodaParserTests.csproj", "{E62067B9-72C1-41C0-8713-9976AC1D41F9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{D9447974-6007-4111-84EF-BF46C1F1DEF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9447974-6007-4111-84EF-BF46C1F1DEF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9447974-6007-4111-84EF-BF46C1F1DEF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{074C725D-CE40-4FB3-AFC0-10A8FBB8A18C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{074C725D-CE40-4FB3-AFC0-10A8FBB8A18C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{074C725D-CE40-4FB3-AFC0-10A8FBB8A18C}.Release|Any CPU.ActiveCfg = Release|Any CPU

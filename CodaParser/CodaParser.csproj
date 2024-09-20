@@ -5,24 +5,50 @@
     <LangVersion>12</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyVersion>0.2.0.0</AssemblyVersion>
-    <FileVersion>1.2.0.0</FileVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <MinVerMinimumMajorMinor>1.0</MinVerMinimumMajorMinor>
+
+    <!-- Package Metadata -->
+    <PackageId>CodaParser</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Philippe Matray</Authors>
+    <Company>Atypical Consulting SRL</Company>
+    <Product>CodaParser</Product>
+    <Description>A C# .NET parser for Belgian CODA banking files.</Description>
+    <PackageTags>CODA; Banking; Parser; .NET; Belgium</PackageTags>
+    <RepositoryUrl>https://github.com/phmatray/CodaParser</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>GPL-2.0-only</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/phmatray/CodaParser</PackageProjectUrl>
+    <PackageIcon>./logo.png</PackageIcon>
+    <Summary>A C# .NET parser for Belgian CODA banking files.</Summary>
+    <Copyright>© Atypical Consulting SRL, 2024</Copyright>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+
+    <!-- Build Properties -->
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    <RootNamespace>CodaParser</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="PolySharp" Version="1.14.1" PrivateAssets="all" />
   </ItemGroup>
-  
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile></DocumentationFile>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <WarningsAsErrors />
-  </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile></DocumentationFile>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <WarningsAsErrors />
-  </PropertyGroup>
+  <!-- Ensure README.md and LICENSE are included in the package -->
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="" />
+    <None Include="..\LICENSE" Pack="true" PackagePath="" />
+    <None Include="..\logo.png" Pack="true" PackagePath="" />
+  </ItemGroup>
 
 </Project>
