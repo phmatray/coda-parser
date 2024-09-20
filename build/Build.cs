@@ -23,7 +23,8 @@ using static Nuke.Common.Tools.DotNet.DotNetTasks;
     "ci",
     GitHubActionsImage.UbuntuLatest,
     On = [GitHubActionsTrigger.Push],
-    InvokedTargets = [nameof(Test)])]
+    InvokedTargets = [nameof(Test)],
+    ImportSecrets = [nameof(NuGetApiKey)])]
 class Build : NukeBuild
 {
     [Solution]
