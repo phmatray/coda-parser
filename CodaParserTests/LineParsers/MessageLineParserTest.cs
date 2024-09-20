@@ -12,7 +12,7 @@ internal class MessageLineParserTest
     {
         var parser = new MessageLineParser();
 
-        var sample = "4 00010005                      THIS IS A PUBLIC MESSAGE                                                                       0";
+        const string sample = "4 00010005                      THIS IS A PUBLIC MESSAGE                                                                       0";
 
         Assert.That(parser.CanAcceptString(sample), Is.True);
 
@@ -28,7 +28,7 @@ internal class MessageLineParserTest
     {
         var parser = new MessageLineParser();
 
-        var sample = "4 00020000                                              ACCOUNT INFORMATION                                                    1";
+        const string sample = "4 00020000                                              ACCOUNT INFORMATION                                                    1";
 
         Assert.That(parser.CanAcceptString(sample), Is.True);
 

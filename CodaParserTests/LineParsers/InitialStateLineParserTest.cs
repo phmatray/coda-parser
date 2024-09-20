@@ -13,7 +13,7 @@ internal class InitialStateLineParserTest
     {
         var parser = new InitialStateLineParser();
 
-        var sample = "13155001548226815 EUR0BE                  0000000004004100241214CODELICIOUS               PROFESSIONAL ACCOUNT               255";
+        const string sample = "13155001548226815 EUR0BE                  0000000004004100241214CODELICIOUS               PROFESSIONAL ACCOUNT               255";
 
         Assert.That(parser.CanAcceptString(sample), Is.True);
 
@@ -27,7 +27,7 @@ internal class InitialStateLineParserTest
     {
         var parser = new InitialStateLineParser();
 
-        var sample = "10155001548226815 EUR0BE                  0000000004004100241214CODELICIOUS               PROFESSIONAL ACCOUNT               255";
+        const string sample = "10155001548226815 EUR0BE                  0000000004004100241214CODELICIOUS               PROFESSIONAL ACCOUNT               255";
 
         Assert.That(parser.CanAcceptString(sample), Is.True);
 

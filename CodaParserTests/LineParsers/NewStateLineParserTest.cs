@@ -3,6 +3,8 @@ using CodaParser.LineParsers;
 using CodaParser.Lines;
 using NUnit.Framework;
 
+namespace CodaParserTests.LineParsers;
+
 [TestFixture]
 public class NewStateLineParserTest
 {
@@ -11,7 +13,7 @@ public class NewStateLineParserTest
     {
         var parser = new NewStateLineParser();
 
-        var sample = "8225001548226815 EUR0BE                  1000000500012100120515                                                                0";
+        const string sample = "8225001548226815 EUR0BE                  1000000500012100120515                                                                0";
 
         Assert.That(parser.CanAcceptString(sample), Is.True);
 

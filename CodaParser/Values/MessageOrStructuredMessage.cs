@@ -6,7 +6,7 @@ public class MessageOrStructuredMessage
     {
         Helpers.ValidateStringMultipleLengths(value, [54, 74], "MessageOrStructuredMessage");
 
-        var hasStructuredMessage = value[..1] == "1" ? true : false;
+        var hasStructuredMessage = value[..1] == "1";
         StructuredMessage = null;
         Message = null;
 

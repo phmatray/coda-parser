@@ -86,7 +86,7 @@ public class TransactionParser
 
         var message = string.Join("", transactionLines.Select(line =>
         {
-            Message? m = null;
+            Message? m;
             switch (line)
             {
                 case TransactionPart1Line l:
@@ -131,7 +131,7 @@ public class TransactionParser
 
             message += string.Join("", informationLines.Select(line =>
             {
-                Message? m = null;
+                Message? m;
                 switch (line)
                 {
                     case InformationPart1Line i:

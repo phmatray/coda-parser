@@ -12,7 +12,7 @@ public class InformationPart3LineParserTest
     {
         var parser = new InformationPart3LineParser();
 
-        var sample = "3300010001SOME INFORMATION ABOUT THIS TRANSACTION                                                                            0 0";
+        const string sample = "3300010001SOME INFORMATION ABOUT THIS TRANSACTION                                                                            0 0";
 
         Assert.That(parser.CanAcceptString(sample), Is.True);
 
@@ -20,6 +20,6 @@ public class InformationPart3LineParserTest
 
         Assert.That(result.SequenceNumber.Value, Is.EqualTo(1));
         Assert.That(result.SequenceNumberDetail.Value, Is.EqualTo(1));
-        Assert.That(result.Message.Value, Is.EqualTo("SOME INFORMATION ABOUT THIS TRANSACTION "));
+        Assert.That(result.Message?.Value, Is.EqualTo("SOME INFORMATION ABOUT THIS TRANSACTION "));
     }
 }

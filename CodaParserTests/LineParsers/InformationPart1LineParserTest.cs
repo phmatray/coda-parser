@@ -2,6 +2,8 @@ using CodaParser.LineParsers;
 using CodaParser.Lines;
 using NUnit.Framework;
 
+namespace CodaParserTests.LineParsers;
+
 [TestFixture]
 public class InformationPart1LineParserTest
 {
@@ -9,7 +11,7 @@ public class InformationPart1LineParserTest
     public void TestSample1()
     {
         var parser = new InformationPart1LineParser();
-        var sample = "31000100010007500005482        004800001001BVBA.BAKKER PIET                                                                  1 0";
+        const string sample = "31000100010007500005482        004800001001BVBA.BAKKER PIET                                                                  1 0";
 
         Assert.That(parser.CanAcceptString(sample), Is.True);
 
@@ -33,7 +35,7 @@ public class InformationPart1LineParserTest
     public void TestSampleWithAccents()
     {
         var parser = new InformationPart1LineParser();
-        var sample = "31000100073403076534383000143  335370000ekeningING Plus BE12 3215 1548 2121 EUR Compte à vue BE25 3215 2158 2315             0 1";
+        const string sample = "31000100073403076534383000143  335370000ekeningING Plus BE12 3215 1548 2121 EUR Compte à vue BE25 3215 2158 2315             0 1";
 
         Assert.That(parser.CanAcceptString(sample), Is.True);
         var result = (InformationPart1Line)parser.Parse(sample);

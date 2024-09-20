@@ -13,7 +13,7 @@ public class IdentificationLineParserTest
     {
         var parser = new IdentificationLineParser();
 
-        var sample = "0000018011520105        0938409934CODELICIOUS               GEBABEBB   09029308273 00001          984309          834080       2";
+        const string sample = "0000018011520105        0938409934CODELICIOUS               GEBABEBB   09029308273 00001          984309          834080       2";
 
         Assert.That(parser.CanAcceptString(sample), Is.True);
 

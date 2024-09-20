@@ -12,7 +12,7 @@ public class InformationPart2LineParserTest
     {
         var parser = new InformationPart2LineParser();
 
-        var sample = "3200010001MAIN STREET 928                    5480 SOME CITY                                                                  0 0";
+        const string sample = "3200010001MAIN STREET 928                    5480 SOME CITY                                                                  0 0";
 
         Assert.That(parser.CanAcceptString(sample), Is.True);
 
@@ -20,6 +20,6 @@ public class InformationPart2LineParserTest
 
         Assert.That(result.SequenceNumber.Value, Is.EqualTo(1));
         Assert.That(result.SequenceNumberDetail.Value, Is.EqualTo(1));
-        Assert.That(result.Message.Value, Is.EqualTo("MAIN STREET 928                    5480 SOME CITY "));
+        Assert.That(result.Message?.Value, Is.EqualTo("MAIN STREET 928                    5480 SOME CITY "));
     }
 }

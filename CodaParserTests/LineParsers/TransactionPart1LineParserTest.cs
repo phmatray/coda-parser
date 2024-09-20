@@ -3,6 +3,8 @@ using CodaParser.LineParsers;
 using CodaParser.Lines;
 using NUnit.Framework;
 
+namespace CodaParserTests.LineParsers;
+
 [TestFixture]
 internal class TransactionPart1LineParserTest
 {
@@ -11,7 +13,7 @@ internal class TransactionPart1LineParserTest
     {
         var parser = new TransactionPart1LineParser();
 
-        var sample = "21000100000001200002835        0000000001767820251214001120000112/4554/46812   813                                 25121421401 0";
+        const string sample = "21000100000001200002835        0000000001767820251214001120000112/4554/46812   813                                 25121421401 0";
 
         Assert.That(parser.CanAcceptString(sample), Is.True);
 
@@ -25,7 +27,7 @@ internal class TransactionPart1LineParserTest
         Assert.That(result.TransactionCode.Family.Value, Is.EqualTo("01"));
         Assert.That(result.TransactionCode.Operation.Value, Is.EqualTo("12"));
         Assert.That(result.TransactionCode.Category.Value, Is.EqualTo("000"));
-        Assert.That(result.MessageOrStructuredMessage.Message.Value, Is.EqualTo("112/4554/46812   813 "));
+        Assert.That(result.MessageOrStructuredMessage.Message?.Value, Is.EqualTo("112/4554/46812   813 "));
         Assert.That(result.MessageOrStructuredMessage.StructuredMessage, Is.Null);
         Assert.That(result.TransactionDate.Value, Is.EqualTo(new DateTime(2014, 12, 25)));
         Assert.That(result.StatementSequenceNumber.Value, Is.EqualTo(214));
@@ -37,7 +39,7 @@ internal class TransactionPart1LineParserTest
     {
         var parser = new TransactionPart1LineParser();
 
-        var sample = "21000100000001200002835        0000000002767820251214001120001101112455446812  813                                 25121421401 0";
+        const string sample = "21000100000001200002835        0000000002767820251214001120001101112455446812  813                                 25121421401 0";
 
         Assert.That(parser.CanAcceptString(sample), Is.True);
 
@@ -66,7 +68,7 @@ internal class TransactionPart1LineParserTest
     {
         var parser = new TransactionPart1LineParser();
 
-        var sample = "2100280000VAAS00026BSDDXXXXXXXX1000000000050000050815005030001127050815112BEA123XXXXXXXXXXX                  M123  25121421401 0";
+        const string sample = "2100280000VAAS00026BSDDXXXXXXXX1000000000050000050815005030001127050815112BEA123XXXXXXXXXXX                  M123  25121421401 0";
 
         Assert.That(parser.CanAcceptString(sample), Is.True);
 

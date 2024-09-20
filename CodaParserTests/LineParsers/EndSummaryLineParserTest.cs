@@ -12,7 +12,7 @@ public class EndSummaryLineParserTest
     {
         var parser = new EndSummaryLineParser();
 
-        var sample = "9               000015000000016837520000000003967220                                                                           1";
+        const string sample = "9               000015000000016837520000000003967220                                                                           1";
 
         Assert.That(parser.CanAcceptString(sample), Is.True);
 
