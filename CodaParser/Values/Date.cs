@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CodaParser.Values;
+﻿namespace CodaParser.Values;
 
 public class Date
 {

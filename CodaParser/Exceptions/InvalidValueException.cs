@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CodaParser.Exceptions;
+﻿namespace CodaParser.Exceptions;
 
 /// <summary>
 /// Exception indicating that there was an invalid value.

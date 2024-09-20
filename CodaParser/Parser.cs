@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using CodaParser.Lines;
 using CodaParser.StatementParsers;
 using CodaParser.Statements;
