@@ -15,8 +15,10 @@ public class AccountOtherPartyParser
     /// <returns>The account of the other party.</returns>
     public AccountOtherParty Parse(IEnumerable<ILine> lines)
     {
-        var transactionPart2Line = Helpers.GetFirstLineOfType<TransactionPart2Line>(lines);
-        var transactionPart3Line = Helpers.GetFirstLineOfType<TransactionPart3Line>(lines);
+        var linesList = lines.ToList();
+        
+        var transactionPart2Line = Helpers.GetFirstLineOfType<TransactionPart2Line>(linesList);
+        var transactionPart3Line = Helpers.GetFirstLineOfType<TransactionPart3Line>(linesList);
 
         var bic = "";
         if (transactionPart2Line != null)

@@ -15,34 +15,36 @@ public class StatementParser
     /// <returns>A single <see cref="Statement"/>.</returns>
     public Statement Parse(IEnumerable<ILine> lines)
     {
+        var linesList = lines.ToList();
+
         var date = new DateTime(1, 1, 1);
-        var identificationLine = Helpers.GetFirstLineOfType<IdentificationLine>(lines);
+        var identificationLine = Helpers.GetFirstLineOfType<IdentificationLine>(linesList);
         if (identificationLine != null)
         {
             date = identificationLine.CreationDate.Value;
         }
 
         var initialBalance = 0.0m;
-        var initialStateLine = Helpers.GetFirstLineOfType<InitialStateLine>(lines);
+        var initialStateLine = Helpers.GetFirstLineOfType<InitialStateLine>(linesList);
         if (initialStateLine != null)
         {
             initialBalance = initialStateLine.Balance.Value;
         }
 
         var newBalance = 0.0m;
-        var newStateLine = Helpers.GetFirstLineOfType<NewStateLine>(lines);
+        var newStateLine = Helpers.GetFirstLineOfType<NewStateLine>(linesList);
         if (newStateLine != null)
         {
             newBalance = newStateLine.Balance.Value;
         }
 
         var messageParser = new MessageParser();
-        var informationalMessage = messageParser.Parse(lines.OfType<MessageLine>());
+        var informationalMessage = messageParser.Parse(linesList.OfType<MessageLine>());
 
         var accountParser = new AccountParser();
         var account = accountParser.Parse(
             Helpers.FilterLinesOfTypes(
-                lines,
+                linesList,
                 [
                     LineType.Identification,
                     LineType.InitialState
@@ -50,7 +52,7 @@ public class StatementParser
             )
         );
 
-        var transactionLines = GroupTransactions(lines.OfType<IInformationOrTransactionLine>());
+        var transactionLines = GroupTransactions(linesList.OfType<IInformationOrTransactionLine>());
 
         var transactionParser = new TransactionParser();
         var transactions = transactionLines.Select(l => transactionParser.Parse(l));

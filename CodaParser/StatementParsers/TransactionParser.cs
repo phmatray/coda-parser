@@ -16,7 +16,9 @@ public class TransactionParser
     /// <returns>A single <see cref="Transaction"/>.</returns>
     public Transaction Parse(IEnumerable<ILine> lines)
     {
-        var transactionPart1Line = Helpers.GetFirstLineOfType<TransactionPart1Line>(lines);
+        var linesList = lines.ToList();
+        
+        var transactionPart1Line = Helpers.GetFirstLineOfType<TransactionPart1Line>(linesList);
 
         var transactionDate = new DateTime(1, 1, 1);
         var valutaDate = new DateTime(1, 1, 1);
@@ -38,7 +40,7 @@ public class TransactionParser
             }
         }
 
-        var informationPart1Line = Helpers.GetFirstLineOfType<InformationPart1Line>(lines);
+        var informationPart1Line = Helpers.GetFirstLineOfType<InformationPart1Line>(linesList);
 
         var structuredMessage = "";
         if (!string.IsNullOrEmpty(transactionPart1Line?.MessageOrStructuredMessage.StructuredMessage?.Value))
@@ -51,7 +53,7 @@ public class TransactionParser
         }
 
         var linesWithAccountInfo = Helpers.FilterLinesOfTypes(
-            lines,
+            linesList,
             [
                 LineType.TransactionPart2,
                 LineType.TransactionPart3
@@ -60,7 +62,7 @@ public class TransactionParser
         var accountOtherPartyParser = new AccountOtherPartyParser();
         var account = accountOtherPartyParser.Parse(linesWithAccountInfo);
 
-        var message = ConstructMessage(lines);
+        var message = ConstructMessage(linesList);
 
         return new Transaction(
             account,
@@ -76,8 +78,10 @@ public class TransactionParser
 
     private string ConstructMessage(IEnumerable<ILine> lines)
     {
+        var linesList = lines.ToList();
+        
         var transactionLines = Helpers.FilterLinesOfTypes(
-            lines,
+            linesList,
             [
                 LineType.TransactionPart1,
                 LineType.TransactionPart2,
@@ -86,38 +90,27 @@ public class TransactionParser
 
         var message = string.Join("", transactionLines.Select(line =>
         {
-            Message? m;
-            switch (line)
+            Message? m = line switch
             {
-                case TransactionPart1Line l:
-                    m = l.MessageOrStructuredMessage.Message;
-                    break;
-
-                case TransactionPart2Line l:
-                    m = l.Message;
-                    break;
-
-                case TransactionPart3Line l:
-                    m = l.Message;
-                    break;
-
-                default:
-                    throw new InvalidOperationException("Don't know how to get the message of an object of type " + line.GetType().Name);
-            }
+                TransactionPart1Line l => l.MessageOrStructuredMessage.Message,
+                TransactionPart2Line l => l.Message,
+                TransactionPart3Line l => l.Message,
+                _ => throw new InvalidOperationException("Don't know how to get the message of an object of type " + line.GetType().Name)
+            };
 
             return m?.Value ?? "";
         }));
 
         if (string.IsNullOrEmpty(message))
         {
-            var transactionLine = Helpers.GetFirstLineOfType<TransactionPart2Line>(lines);
+            var transactionLine = Helpers.GetFirstLineOfType<TransactionPart2Line>(linesList);
             if (transactionLine != null && !string.IsNullOrEmpty(transactionLine.ClientReference.Value))
             {
                 message = transactionLine.ClientReference.Value;
             }
 
             var informationLines = Helpers.FilterLinesOfTypes(
-                lines,
+                linesList,
                 [
                     LineType.InformationPart1,
                     LineType.InformationPart2,
@@ -131,24 +124,13 @@ public class TransactionParser
 
             message += string.Join("", informationLines.Select(line =>
             {
-                Message? m;
-                switch (line)
+                Message? m = line switch
                 {
-                    case InformationPart1Line i:
-                        m = i.MessageOrStructuredMessage.Message;
-                        break;
-
-                    case InformationPart2Line i:
-                        m = i.Message;
-                        break;
-
-                    case InformationPart3Line i:
-                        m = i.Message;
-                        break;
-
-                    default:
-                        throw new InvalidOperationException("Don't know how to get the message of an object of type " + line.GetType().Name);
-                }
+                    InformationPart1Line i => i.MessageOrStructuredMessage.Message,
+                    InformationPart2Line i => i.Message,
+                    InformationPart3Line i => i.Message,
+                    _ => throw new InvalidOperationException("Don't know how to get the message of an object of type " + line.GetType().Name)
+                };
 
                 return m?.Value ?? "";
             }));

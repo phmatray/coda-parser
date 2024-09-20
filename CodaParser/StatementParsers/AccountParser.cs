@@ -14,8 +14,10 @@ public class AccountParser
     /// <returns>The account of the customer.</returns>
     public Statements.Account Parse(IEnumerable<ILine> lines)
     {
-        var identificationLine = Helpers.GetFirstLineOfType<IdentificationLine>(lines);
-        var initialStateLine = Helpers.GetFirstLineOfType<InitialStateLine>(lines);
+        var linesList = lines.ToList();
+        
+        var identificationLine = Helpers.GetFirstLineOfType<IdentificationLine>(linesList);
+        var initialStateLine = Helpers.GetFirstLineOfType<InitialStateLine>(linesList);
 
         return new Statements.Account(
             identificationLine?.AccountName.Value ?? "",

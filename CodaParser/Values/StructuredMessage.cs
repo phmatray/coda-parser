@@ -9,7 +9,7 @@ public class StructuredMessage
         StructuredMessageType = value[..3];
         StructuredMessageFull = value[3..];
 
-        if (StructuredMessageType == "101" || StructuredMessageType == "102")
+        if (StructuredMessageType is "101" or "102")
         {
             Value = StructuredMessageFull[..12];
         }

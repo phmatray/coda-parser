@@ -12,7 +12,7 @@ public class ParserTest
     public void TestHas4EntriesWithStructuredMessage()
     {
         var parser = new Parser();
-        var result = parser.ParseFile(GetSamplePath("sample1.cod"));
+        var result = parser.ParseFile(GetSamplePath("sample1.cod")).ToList();
 
         Assert.That(result, Has.Count.EqualTo(1));
         var firstResult = result.First();
@@ -52,7 +52,7 @@ public class ParserTest
     public void TestNoAccount()
     {
         var parser = new Parser();
-        var result = parser.ParseFile(GetSamplePath("sample2.cod"));
+        var result = parser.ParseFile(GetSamplePath("sample2.cod")).ToList();
 
         Assert.That(result.First().Transactions.First().Account.Name, Is.Empty);
         Assert.That(result.First().Transactions.First().Message, Is.EqualTo("Zichtrekening nr  21354598  - 2,11Justification in annex 00001680"));
@@ -62,7 +62,7 @@ public class ParserTest
     public void TestSample5SimpleFormat()
     {
         var parser = new Parser();
-        var result = parser.ParseFile(GetSamplePath("sample5.cod"));
+        var result = parser.ParseFile(GetSamplePath("sample5.cod")).ToList();
 
         Assert.That(result, Has.Count.EqualTo(1));
         var statement = result.First();
@@ -95,7 +95,7 @@ public class ParserTest
     public void TestSample6()
     {
         var parser = new Parser();
-        var result = parser.ParseFile(GetSamplePath("sample6.cod"));
+        var result = parser.ParseFile(GetSamplePath("sample6.cod")).ToList();
 
         Assert.That(result, Has.Count.EqualTo(1));
         var statement = result.First();

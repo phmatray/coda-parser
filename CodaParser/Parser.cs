@@ -61,15 +61,10 @@ public class Parser : IParser<Statement>
     {
         var linesGroupedPerStatement = GroupTransactionsPerStatement(lines);
 
-        var statements = new List<Statement>();
         var parser = new StatementParser();
-        foreach (var linesForStatement in linesGroupedPerStatement)
-        {
-            var statement = parser.Parse(linesForStatement);
 
-            statements.Add(statement);
-        }
-
-        return statements;
+        return linesGroupedPerStatement
+            .Select(linesForStatement => parser.Parse(linesForStatement))
+            .ToList();
     }
 }

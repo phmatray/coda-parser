@@ -117,12 +117,9 @@ public static class Helpers
     /// <param name="typeName">The type that needs this check, used in the exception.</param>
     public static void ValidateStringMultipleLengths(string value, IEnumerable<int> expectedLengthArray, string typeName)
     {
-        foreach (var expectedLength in expectedLengthArray)
+        if (expectedLengthArray.Any(expectedLength => value.Length == expectedLength))
         {
-            if (value.Length == expectedLength)
-            {
-                return;
-            }
+            return;
         }
 
         throw new InvalidValueException(typeName, value, "Length not valid");

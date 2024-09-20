@@ -28,16 +28,10 @@ public class LinesParser : IParser<ILine>
         {
             if (!string.IsNullOrEmpty(line))
             {
-                ILine? lineObject = null;
-
-                foreach (var parser in _lineParsers)
-                {
-                    if (parser.CanAcceptString(line))
-                    {
-                        lineObject = parser.Parse(line);
-                        break;
-                    }
-                }
+                ILine? lineObject = _lineParsers
+                    .Where(parser => parser.CanAcceptString(line))
+                    .Select(parser => parser.Parse(line))
+                    .FirstOrDefault();
 
                 if (lineObject == null)
                 {

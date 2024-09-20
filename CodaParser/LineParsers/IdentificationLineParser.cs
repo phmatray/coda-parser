@@ -20,7 +20,7 @@ public class IdentificationLineParser : ILineParser
         return new IdentificationLine(
             new Date(codaLine.Substring(5, 6)),
             new BankIdentificationNumber(codaLine.Substring(11, 3)),
-            codaLine.Substring(16, 1) == "D" ? true : false,
+            codaLine.Substring(16, 1) == "D",
             new ApplicationCode(codaLine.Substring(14, 2)),
             new FileReference(codaLine.Substring(24, 10)),
             new AccountName(codaLine.Substring(34, 26)),

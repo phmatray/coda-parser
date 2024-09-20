@@ -41,6 +41,6 @@ public class InformationPart1LineParserTest
         var result = (InformationPart1Line)parser.Parse(sample);
 
         Assert.That(result.SequenceNumber.Value, Is.EqualTo(1));
-        Assert.That(result.MessageOrStructuredMessage.Message.Value, Is.EqualTo("ekeningING Plus BE12 3215 1548 2121 EUR Compte à vue BE25 3215 2158 2315 "));
+        Assert.That(result.MessageOrStructuredMessage.Message?.Value, Is.EqualTo("ekeningING Plus BE12 3215 1548 2121 EUR Compte à vue BE25 3215 2158 2315 "));
     }
 }
