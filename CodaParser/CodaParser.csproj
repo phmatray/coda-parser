@@ -31,7 +31,7 @@
     <Summary>A C# .NET parser for Belgian CODA banking files.</Summary>
     <Copyright>© Atypical Consulting SRL, 2024</Copyright>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    
+
     <!-- Build Properties -->
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <IncludeSymbols>true</IncludeSymbols>
@@ -45,9 +45,10 @@
     <PackageReference Include="PolySharp" Version="1.14.1" PrivateAssets="all" />
   </ItemGroup>
 
-  <!-- Ensure README.md and LICENSE are included in the package -->
+  <!-- Ensure README.md, LICENSE, CHANGELOG.md, and logo.png are included in the package -->
   <ItemGroup>
     <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\CHANGELOG.md" Pack="true" PackagePath="\" />
     <None Include="..\LICENSE" Pack="true" PackagePath="\" />
     <None Include="..\logo.png" Pack="true" PackagePath="\" />
   </ItemGroup>

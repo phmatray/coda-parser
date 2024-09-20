@@ -1,5 +1,13 @@
 # Changelog
 
+## [unreleased]
+
+### ⚙️ Miscellaneous Tasks
+
+- Include CHANGELOG.md in the NuGet package - ([4610df9](https://github.com/phmatray/coda-parser/commit/4610df9213f6290b7b34a654b5dacddcfcdca723))
+- Generate CHANGELOG.md using git-cliff - ([141058e](https://github.com/phmatray/coda-parser/commit/141058e8c6484b5207f64a7634fec421be9cc4c2))
+
+
 ## [1.0.1](https://github.com/phmatray/coda-parser/compare/1.0.0..1.0.1) - 2024-09-20
 
 ### 🐛 Bug Fixes

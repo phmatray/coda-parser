@@ -78,7 +78,7 @@ class Build : NukeBuild
         });
     
     Target GenerateChangelog => _ => _
-        // .DependsOn(Test)
+        .DependsOn(Test)
         .Executes(() =>
         {
             // Ensure NPM is installed
@@ -110,7 +110,7 @@ class Build : NukeBuild
         });
 
     Target Pack => _ => _
-        .DependsOn(Test)
+        .DependsOn(GenerateChangelog, Test)
         .Executes(() =>
         {
             DotNetPack(s => s
