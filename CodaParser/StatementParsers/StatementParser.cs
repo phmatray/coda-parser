@@ -43,11 +43,10 @@ public class StatementParser
         var account = accountParser.Parse(
             Helpers.FilterLinesOfTypes(
                 lines,
-                new[]
-                {
+                [
                     LineType.Identification,
                     LineType.InitialState
-                }
+                ]
             )
         );
 
@@ -79,7 +78,7 @@ public class StatementParser
                 sequenceNumber = transactionOrInformationLine.SequenceNumber.Value;
                 idx += 1;
 
-                transactions[idx] = new List<IInformationOrTransactionLine>();
+                transactions[idx] = [];
             }
 
             transactions[idx].Add(transactionOrInformationLine);

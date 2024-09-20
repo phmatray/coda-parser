@@ -52,11 +52,10 @@ public class TransactionParser
 
         var linesWithAccountInfo = Helpers.FilterLinesOfTypes(
             lines,
-            new[]
-            {
+            [
                 LineType.TransactionPart2,
                 LineType.TransactionPart3
-            });
+            ]);
 
         var accountOtherPartyParser = new AccountOtherPartyParser();
         var account = accountOtherPartyParser.Parse(linesWithAccountInfo);
@@ -79,12 +78,11 @@ public class TransactionParser
     {
         var transactionLines = Helpers.FilterLinesOfTypes(
             lines,
-            new[]
-            {
+            [
                 LineType.TransactionPart1,
                 LineType.TransactionPart2,
                 LineType.TransactionPart3
-            });
+            ]);
 
         var message = string.Join("", transactionLines.Select(line =>
         {
@@ -120,12 +118,11 @@ public class TransactionParser
 
             var informationLines = Helpers.FilterLinesOfTypes(
                 lines,
-                new[]
-                {
+                [
                     LineType.InformationPart1,
                     LineType.InformationPart2,
                     LineType.InformationPart3
-                });
+                ]);
 
             if (!string.IsNullOrEmpty(message))
             {

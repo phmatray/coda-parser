@@ -4,7 +4,7 @@ public class MessageOrStructuredMessage
 {
     public MessageOrStructuredMessage(string value, TransactionCode transactionCode)
     {
-        Helpers.ValidateStringMultipleLengths(value, new[] { 54, 74 }, "MessageOrStructuredMessage");
+        Helpers.ValidateStringMultipleLengths(value, [54, 74], "MessageOrStructuredMessage");
 
         var hasStructuredMessage = value[..1] == "1" ? true : false;
         StructuredMessage = null;

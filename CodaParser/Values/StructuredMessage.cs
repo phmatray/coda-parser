@@ -4,7 +4,7 @@ public class StructuredMessage
 {
     public StructuredMessage(string value, TransactionCode transactionCode)
     {
-        Helpers.ValidateStringMultipleLengths(value, new[] { 53, 73 }, "StructuredMessage");
+        Helpers.ValidateStringMultipleLengths(value, [53, 73], "StructuredMessage");
 
         StructuredMessageType = value[..3];
         StructuredMessageFull = value[3..];

@@ -67,7 +67,7 @@ public class LinesParser : IParser<ILine>
     /// <returns>The non-empty lines from the file.</returns>
     private IEnumerable<string> FileToCodaLines(string codaFile)
     {
-        return System.IO.File.ReadAllLines(codaFile, Encoding.UTF8).Where(m => !string.IsNullOrEmpty(m));
+        return File.ReadAllLines(codaFile, Encoding.UTF8).Where(m => !string.IsNullOrEmpty(m));
     }
 
     /// <summary>
@@ -76,8 +76,8 @@ public class LinesParser : IParser<ILine>
     /// <returns>A list of known parsers.</returns>
     private IEnumerable<ILineParser> InitLineParsers()
     {
-        return new ILineParser[]
-        {
+        return
+        [
             new IdentificationLineParser(),
             new InitialStateLineParser(),
             new TransactionPart1LineParser(),
@@ -88,7 +88,7 @@ public class LinesParser : IParser<ILine>
             new InformationPart3LineParser(),
             new MessageLineParser(),
             new NewStateLineParser(),
-            new EndSummaryLineParser(),
-        };
+            new EndSummaryLineParser()
+        ];
     }
 }
