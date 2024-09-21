@@ -1,1 +1,2 @@
+- Christophe Devos
 - Philippe Matray
