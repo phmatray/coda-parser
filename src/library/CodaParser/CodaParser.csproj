@@ -43,13 +43,13 @@
 
   <!-- Ensure README.md, LICENSE, CHANGELOG.md, and logo.png are included in the package -->
   <ItemGroup>
-    <None Include="..\README.md" Pack="true" PackagePath="\" />
-    <None Include="..\CHANGELOG.md" Pack="true" PackagePath="\" />
-    <None Include="..\LICENSE" Pack="true" PackagePath="\" />
-    <None Include="..\logo.png" Pack="true" PackagePath="\" />
+    <None Include="..\..\..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\..\CHANGELOG.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\..\LICENSE" Pack="true" PackagePath="\" />
+    <None Include="..\..\..\logo.png" Pack="true" PackagePath="\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\CODE_OF_CONDUCT.md">
+    <Content Include="..\..\..\CODE_OF_CONDUCT.md">
       <Link>CODE_OF_CONDUCT.md</Link>
     </Content>
   </ItemGroup>

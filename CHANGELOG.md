@@ -10,7 +10,6 @@
 
 ### ⚙️ Miscellaneous Tasks
 
-- Add NuGetApiKey from GitHub - ([9d4be24](https://github.com/phmatray/coda-parser/commit/9d4be2450a13feece8564186608c618cd8b28323))
 - Add NuGetApiKey from GitHub - ([7d97cf9](https://github.com/phmatray/coda-parser/commit/7d97cf96dc9cac99498921b3678a62459550a337))
 - Amend commit with the updated CHANGELOG.md - ([126dd56](https://github.com/phmatray/coda-parser/commit/126dd56a99f9196097e5a25a68a113981dce0a54))
 - Add version to the library from Build.cs - ([f29b9b2](https://github.com/phmatray/coda-parser/commit/f29b9b2887e5cf6916b86a8fde1da38d77b724fc))

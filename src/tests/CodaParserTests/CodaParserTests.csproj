@@ -53,7 +53,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CodaParser\CodaParser.csproj" />
+    <ProjectReference Include="..\..\library\CodaParser\CodaParser.csproj" />
   </ItemGroup>
 
 </Project>

@@ -42,8 +42,8 @@ class Build : NukeBuild
     [MinVer]
     readonly MinVer MinVer;
     
-    AbsolutePath OutputDirectory
-        => RootDirectory / "output";
+    AbsolutePath ArtifactsDirectory
+        => RootDirectory / "artifacts";
     
     AbsolutePath ChangelogFile
         => RootDirectory / "CHANGELOG.md";
@@ -53,18 +53,21 @@ class Build : NukeBuild
     
     AbsolutePath DocfxSite
         => RootDirectory / "_site";
+    
+    AbsolutePath CliffConfig
+        => RootDirectory / "cliff.toml";
 
     public static int Main()
         => Execute<Build>(x => x.Pack);
 
     Target Clean => _ => _
-        .Before(Restore)
         .Executes(() =>
         {
-            OutputDirectory.CreateOrCleanDirectory();
+            ArtifactsDirectory.CreateOrCleanDirectory();
         });
 
     Target Restore => _ => _
+        .DependsOn(Clean)
         .Executes(() =>
         {
             DotNetRestore(s => s.SetProjectFile(Solution));
@@ -100,38 +103,29 @@ class Build : NukeBuild
         .DependsOn(Test)
         .Executes(() =>
         {
-            // Ensure NPM is installed
-            if (NpmTasks.NpmPath.IsEmpty())
-            {
-                throw new Exception("NPM is not installed. Please install Node.js and NPM.");
-            }
-           
             // Ensure git-cliff is installed
             // You can install git-cliff as a dev dependency or ensure it's available in PATH
             // Here, we assume git-cliff is installed and available in PATH
 
             Log.Information("Generating CHANGELOG.md using git-cliff...");
 
-            // Paths
-            var gitCliffConfigPath = RootDirectory / "cliff.toml";
-            var gitCliffOutputPath = ChangelogFile;
-
             // Check if config file exists
-            if (!gitCliffConfigPath.FileExists())
+            if (!CliffConfig.FileExists())
             {
-                throw new Exception($"Configuration file not found: {gitCliffConfigPath}");
+                throw new Exception($"Configuration file not found: {CliffConfig}");
             }
-
+            
             // Run git-cliff command
-            ProcessTasks.StartProcess("git-cliff", $"--config {gitCliffConfigPath} --output {gitCliffOutputPath}");
+            ProcessTasks.StartProcess("git-cliff", $"--config {CliffConfig} --output {ChangelogFile}");
 
-            Log.Information("CHANGELOG.md generated successfully.");
+            // Log.Information("CHANGELOG.md generated successfully.");
+            Log.Information($"{ChangelogFile} generated successfully.");
             
             // Amend commit with the updated CHANGELOG.md
             GitTasks.Git($"add {ChangelogFile}");
             GitTasks.Git($"commit --amend --no-edit");
             
-            Log.Information("Amended commit with updated CHANGELOG.md.");
+            Log.Information($"Amended commit with updated {ChangelogFile}.");   
         });
 
     Target Pack => _ => _
@@ -141,7 +135,7 @@ class Build : NukeBuild
             DotNetPack(s => s
                 .SetProject(Solution)
                 .SetConfiguration(Configuration)
-                .SetOutputDirectory(OutputDirectory)
+                .SetOutputDirectory(ArtifactsDirectory)
                 .EnableNoBuild()
                 .EnableNoRestore()
                 .SetIncludeSymbols(true)
@@ -170,7 +164,7 @@ class Build : NukeBuild
         .Requires(() => NuGetApiKey)
         .Executes(() =>
         {
-            OutputDirectory
+            ArtifactsDirectory
                 .GlobFiles("*.nupkg")
                 .ForEach(package =>
                 {
@@ -181,7 +175,7 @@ class Build : NukeBuild
                         .EnableSkipDuplicate());
                 });
 
-            OutputDirectory
+            ArtifactsDirectory
                 .GlobFiles("*.snupkg")
                 .ForEach(symbolsPackage =>
                 {
