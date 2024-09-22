@@ -2,6 +2,11 @@
 
 ## [unreleased]
 
+### 🚜 Refactor
+
+- Update solution structure - ([8305299](https://github.com/phmatray/coda-parser/commit/83052993368928215b74d99b56213ffb9972b0e8))
+- Update solution structure - ([8d46993](https://github.com/phmatray/coda-parser/commit/8d4699335212f2c8fb76d4f7c9aae15a50d6ffff))
+
 ### 📚 Documentation
 
 - Create DocFX documentation - ([507b493](https://github.com/phmatray/coda-parser/commit/507b49353fb5a7770b4012563673cf528f1c51ef))
@@ -10,6 +15,9 @@
 
 ### ⚙️ Miscellaneous Tasks
 
+- Add Christophe Devos as contributor - ([c1816d9](https://github.com/phmatray/coda-parser/commit/c1816d943d62a02a41f93a9acd60c2700cd9d8c5))
+- Add Philippe Matray as contributor - ([9fccfcd](https://github.com/phmatray/coda-parser/commit/9fccfcd12ae4fc4fdb63cafe4bb58f6bbd51a880))
+- Add NuGetApiKey from GitHub - ([272541b](https://github.com/phmatray/coda-parser/commit/272541b64ad43c7b9e98ba8aa231d9c574643831))
 - Add NuGetApiKey from GitHub - ([7d97cf9](https://github.com/phmatray/coda-parser/commit/7d97cf96dc9cac99498921b3678a62459550a337))
 - Amend commit with the updated CHANGELOG.md - ([126dd56](https://github.com/phmatray/coda-parser/commit/126dd56a99f9196097e5a25a68a113981dce0a54))
 - Add version to the library from Build.cs - ([f29b9b2](https://github.com/phmatray/coda-parser/commit/f29b9b2887e5cf6916b86a8fde1da38d77b724fc))

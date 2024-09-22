@@ -1,5 +1,13 @@
 {
   "version": 1,
   "isRoot": true,
-  "tools": {}
+  "tools": {
+    "buildsphere": {
+      "version": "0.1.0",
+      "commands": [
+        "build-sphere"
+      ],
+      "rollForward": false
+    }
+  }
 }
