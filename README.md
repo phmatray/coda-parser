@@ -1,7 +1,7 @@
 # CodaParser
 
 ![NuGet](https://img.shields.io/nuget/v/CodaParser)
-![License](https://img.shields.io/github/license/phmatray/CodaParser)
+![License](https://img.shields.io/github/license/phmatray/coda-parser)
 ![.NET](https://img.shields.io/badge/.NET-Standard%202.0-blue.svg)
 
 CodaParser is a modern C# .NET library for parsing Belgian CODA banking files. It is a fork of [supervos/coda-parser](https://github.com/supervos/coda-parser) by Christophe Devos, bringing enhanced functionality and updated dependencies to the .NET ecosystem.
